@@ -15,21 +15,30 @@
     <style>
         /* Spacing between navbar and body content */
         #header {
-            margin-bottom: 4cm;
+          margin-bottom: 4cm;
         }
-        
+      
         /* Ensure proper spacing for the first section */
         #our-story {
-            margin-top: 1cm;
+          margin-top: 1cm;
         }
-
- /* Mobile view (max-width: 768px) */
- @media (max-width: 768px) {
-    body {
-      padding-top: 100px; /* more space between navbar and content */
-    }
-
-    </style>
+      
+        /* Mobile view (max-width: 768px) */
+        @media (max-width: 768px) {
+          body {
+            padding-top: 2cm; /* adds space below fixed navbar */
+          }
+      
+          #header {
+            margin-bottom: 3cm;
+          }
+      
+          #our-story {
+            margin-top: 1cm;
+          }
+        }
+      </style>
+      
 </head>
 <body>
     <!-- Header Section -->
