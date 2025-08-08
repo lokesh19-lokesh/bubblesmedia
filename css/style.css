@@ -1837,3 +1837,47 @@ img {
     font-size: 0.95rem;
     color: #555;
 }
+
+
+
+/* Grid Layout */
+.service-features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+/* Feature Card Box Style */
+.feature-card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 24px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+/* Icon Styling */
+.feature-icon {
+    font-size: 32px;
+    color: #ff8c08; /* Adjust to match your brand */
+    margin-bottom: 15px;
+}
+
+/* Heading & Paragraph Styling */
+.feature-card h3 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.feature-card p {
+    font-size: 0.95rem;
+    color: #555;
+}
