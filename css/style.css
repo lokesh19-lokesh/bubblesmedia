@@ -161,12 +161,43 @@ img {
     color: var(--white);
 }
 
+
+/* .btn-primary {
+    background-color: var(red);
+    color: var(red);
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+} */
+
+
+
+
+/* .btn-primary:hover {
+    background-color: var(--dark-color);
+    color: var(--white);
+    transform: translateY(-3px);
+    box-shadow: var(--box-shadow-hover);
+} */
+
+
+
 .btn-primary:hover {
     background-color: var(--dark-color);
     color: var(--white);
     transform: translateY(-3px);
     box-shadow: var(--box-shadow-hover);
+    cursor: pointer;
 }
+
+
+
+
 
 .btn-secondary {
     background-color: transparent;
@@ -1639,3 +1670,122 @@ img {
     line-height: 1.6;
   }
   
+
+
+
+
+
+
+
+
+
+
+  /* Pricing Grid */
+.pricing-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+/* Pricing Card Style - Box Appearance */
+.pricing-card {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    max-width: 350px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pricing-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+/* Featured card (highlighted in the center) */
+.pricing-card.featured {
+    border: 2px solid #ff8c08;
+    background: #fff7f0;
+}
+
+/* Headers */
+.pricing-header h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ff8c08;
+}
+
+.price span {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Features */
+.pricing-features ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 20px 0;
+}
+
+.pricing-features li {
+    margin-bottom: 12px;
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+}
+
+.pricing-features i {
+    margin-right: 8px;
+    color: #28a745;
+}
+
+.pricing-features .not-included i {
+    color: #dc3545;
+    text-decoration: line-through;
+}
+
+.pricing-features .not-included {
+    color: #aaa;
+}
+
+/* Footer */
+.pricing-footer {
+    margin-top: auto;
+    text-align: center;
+}
+
+.btn {
+    padding: 10px 24px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.btn-primary {
+    background-color: #ff8c08;
+    color: #fff;
+}
+
+.btn-secondary {
+    background-color: #2a2a2a;
+    color: #fff;
+}
+
+.custom-package {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 1rem;
+}
