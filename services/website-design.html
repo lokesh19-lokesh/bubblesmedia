@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Bubbles Media offers professional website design services in Hyderabad, creating responsive, user-friendly, and conversion-focused websites that help businesses establish a strong online presence">
     <title>Website Design Services | Bubbles Media - Digital Marketing Agency</title>
+      <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../media/logo.png">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/responsive.css">
     <!-- Font Awesome for icons -->
@@ -19,6 +21,100 @@
         #page-banner {
             margin-top: 1cm;
         }
+
+        .pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+  }
+
+  /* Pricing Card Styling */
+  .pricing-card {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .pricing-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  }
+
+  .pricing-card.featured {
+    border: 2px solid #007bff;
+    box-shadow: 0 6px 18px rgba(0, 123, 255, 0.1);
+  }
+
+  .pricing-header h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  .price {
+    font-size: 1.8rem;
+    margin: 10px 0;
+  }
+
+  .price .currency {
+    font-size: 1.2rem;
+    vertical-align: super;
+  }
+
+  .featured-tag {
+    background: #007bff;
+    color: #fff;
+    padding: 5px 12px;
+    font-size: 0.8rem;
+    border-radius: 50px;
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+
+  .pricing-features ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    text-align: left;
+  }
+
+  .pricing-features li {
+    margin: 8px 0;
+    font-size: 0.95rem;
+  }
+
+  .pricing-features i {
+    margin-right: 8px;
+    color: #28a745;
+  }
+
+  .pricing-features i.fa-times {
+    color: #dc3545;
+  }
+
+  .pricing-footer .btn {
+    margin-top: 15px;
+  }
+
+  .custom-package {
+    margin-top: 60px;
+    text-align: center;
+  }
+
+  .custom-package h3 {
+    margin-bottom: 10px;
+  }
+
+  .custom-package p {
+    max-width: 600px;
+    margin: 0 auto 20px;
+  }
+
+
     </style>
     <!-- Slick Carousel -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
@@ -52,11 +148,11 @@
                             <li><a href="seo.html">SEO Services</a></li>
                             <li><a href="sem.html">Meta Ads / Google Ads</a></li>
                             <li><a href="social-media.html">Social Media Marketing</a></li>
-                            <li><a href="content.html">Content Marketing</a></li>
                             <li><a href="website-design.html" class="active">Website Design</a></li>
                         </ul>
                     </li>
                     <li><a href="../about.html">About Us</a></li>
+                    <!-- <li><a href="../case-studies.html">Case Studies</a></li> -->
                     <li><a href="../blog.html">Blog</a></li>
                     <li><a href="../contact.html">Contact</a></li>
                 </ul>
@@ -70,15 +166,19 @@
     <!-- Page Banner -->
     <section id="page-banner" class="section-padding">
         <div class="container">
-            <div class="page-banner-content">
-                <h1>Website Design Services</h1>
+            <div class="service-hero-content">
+                <h1>Website Design Services in Hyderabad</h1>
                 <p>Creating beautiful, functional websites that convert visitors into customers</p>
+                <div class="hero-buttons">
+                    <!-- <a href="../contact.html" class="btn btn-primary">Get a Free SEO Audit</a> -->
+                    <a href="#service-pricing" class="btn btn-secondary">View Pricing</a>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Service Overview Section -->
-    <section id="service-overview" class="section-padding">
+    <!-- <section id="service-overview" class="section-padding">
         <div class="container">
             <div class="service-overview-content">
                 <div class="service-overview-text">
@@ -93,10 +193,10 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- Service Features Section -->
-    <section id="service-features" class="section-padding bg-light">
+    <!-- <section id="service-features" class="section-padding bg-light">
         <div class="container">
             <div class="section-header">
                 <h2>Our Website Design Services</h2>
@@ -161,10 +261,10 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- Benefits Section -->
-    <section id="service-benefits" class="section-padding">
+    <!-- <section id="service-benefits" class="section-padding">
         <div class="container">
             <div class="section-header">
                 <h2>Why Choose Our Website Design Services</h2>
@@ -227,10 +327,10 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- Process Section -->
-    <section id="service-process" class="section-padding bg-light">
+    <!-- <section id="service-process" class="section-padding bg-light">
         <div class="container">
             <div class="section-header">
                 <h2>Our Website Design Process</h2>
@@ -317,10 +417,10 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- Website Types Section -->
-    <section id="website-types" class="section-padding">
+    <!-- <section id="website-types" class="section-padding">
         <div class="container">
             <div class="section-header">
                 <h2>Website Types We Excel In</h2>
@@ -389,7 +489,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- Pricing Section -->
     <section id="service-pricing" class="section-padding bg-light">
@@ -404,7 +504,7 @@
                         <h3>Basic</h3>
                         <div class="price">
                             <span class="currency">₹</span>
-                            <span class="amount">30,000</span>
+                            <span class="amount">9,999</span>
                             <span class="period">starting at</span>
                         </div>
                         <p>Perfect for small businesses and startups</p>
@@ -433,7 +533,7 @@
                         <h3>Professional</h3>
                         <div class="price">
                             <span class="currency">₹</span>
-                            <span class="amount">60,000</span>
+                            <span class="amount">30,000</span>
                             <span class="period">starting at</span>
                         </div>
                         <p>Ideal for growing businesses with specific needs</p>
@@ -493,7 +593,7 @@
         </div>
     </section>
 
-    <!-- UX/UI Design Section -->
+    <!-- UX/UI Design Section
     <section id="ux-ui-design" class="section-padding">
         <div class="container">
             <div class="section-header">
@@ -523,7 +623,7 @@
     </section>
 
     <!-- FAQ Section -->
-    <section id="service-faq" class="section-padding bg-light">
+    <!-- <section id="service-faq" class="section-padding bg-light">
         <div class="container">
             <div class="section-header">
                 <h2>Frequently Asked Questions</h2>
@@ -535,8 +635,8 @@
                         <h3>How long does it take to design and develop a website?</h3>
                         <span class="faq-toggle"><i class="fas fa-plus"></i></span>
                     </div>
-                    <div class="faq-answer">
-                        <p>The timeline for website design and development varies based on the complexity of the project, the number of pages, custom functionality requirements, and content preparation. Here's a general timeline:</p>
+                    <div class="faq-answer"> -->
+                        <!-- <p>The timeline for website design and development varies based on the complexity of the project, the number of pages, custom functionality requirements, and content preparation. Here's a general timeline:</p>
                         <ul>
                             <li><strong>Basic websites (5-7 pages):</strong> 4-6 weeks</li>
                             <li><strong>Medium-sized websites (8-15 pages):</strong> 6-10 weeks</li>
@@ -549,8 +649,8 @@
                     <div class="faq-question">
                         <h3>Do you provide content for the website?</h3>
                         <span class="faq-toggle"><i class="fas fa-plus"></i></span>
-                    </div>
-                    <div class="faq-answer">
+                    </div> -->
+                    <!-- <div class="faq-answer">
                         <p>We offer content creation services as part of our Professional and Enterprise packages, and as an add-on service for our Basic package. Our content services include:</p>
                         <ul>
                             <li><strong>Content Strategy:</strong> Developing a plan for what content your website needs and how it should be structured</li>
@@ -572,8 +672,8 @@
                         <ul>
                             <li>Proper scaling of content and images for different screen sizes</li>
                             <li>Touch-friendly navigation and interactive elements</li>
-                            <li>Optimized loading times for mobile connections</li>
-                            <li>Consistent branding and functionality across all devices</li>
+                            <li>Optimized loading times for mobile connections</li> -->
+                            <!-- <li>Consistent branding and functionality across all devices</li>
                         </ul>
                         <p>We also test all websites on multiple devices and browsers before launch to ensure a seamless experience for all users, regardless of how they access your site.</p>
                     </div>
@@ -601,8 +701,8 @@
                     <div class="faq-question">
                         <h3>What CMS do you use for website development?</h3>
                         <span class="faq-toggle"><i class="fas fa-plus"></i></span>
-                    </div>
-                    <div class="faq-answer">
+                    </div> -->
+                    <!-- <div class="faq-answer">
                         <p>We work with various Content Management Systems (CMS) and can recommend the best option based on your specific needs, technical requirements, and long-term goals. Some of the CMS platforms we commonly work with include:</p>
                         <ul>
                             <li><strong>WordPress:</strong> Highly versatile and user-friendly, ideal for most business websites, blogs, and even e-commerce sites with WooCommerce</li>
@@ -632,10 +732,10 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section>  -->
 
     <!-- Testimonials Section -->
-    <section id="service-testimonials" class="section-padding">
+    <!-- <section id="service-testimonials" class="section-padding">
         <div class="container">
             <div class="section-header">
                 <h2>Client Success Stories</h2>
@@ -701,10 +801,10 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- CTA Section -->
-    <section id="service-cta" class="section-padding bg-light">
+    <!-- <section id="service-cta" class="section-padding bg-light">
         <div class="container">
             <div class="cta-content">
                 <h2>Ready to Transform Your Digital Presence?</h2>
@@ -714,7 +814,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- Footer -->
     <footer id="footer">
@@ -728,7 +828,7 @@
                     <div class="social-links">
                         <a href="https://www.facebook.com/thebubblesmedia" target="_blank" title="Follow us on Facebook"><i class="fab fa-facebook-f"></i></a>
                         <a href="#" target="_blank" title="Follow us on Twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="https://www.instagram.com/p/DMQJMXhPodR/?igsh=MTZmaXBpenhzaDdkZA==" target="_blank" title="Follow us on Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.instagram.com/thebubblesmedia/?hl=en" target="_blank" title="Follow us on Instagram"><i class="fab fa-instagram"></i></a>
                         <a href="#" target="_blank" title="Connect with us on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                         <a href="#" target="_blank" title="Read our blog on Medium"><i class="fab fa-medium-m"></i></a>
                     </div>
@@ -748,7 +848,6 @@
                         <li><a href="seo.html">SEO Services</a></li>
                         <li><a href="sem.html">Meta Ads / Google Ads</a></li>
                         <li><a href="social-media.html">Social Media Marketing</a></li>
-                        <li><a href="content.html">Content Marketing</a></li>
                         <li><a href="website-design.html">Website Design</a></li>
                     </ul>
                 </div>
@@ -756,7 +855,8 @@
                     <h4>Contact Info</h4>
                     <ul class="contact-info">
                         <li><i class="fas fa-map-marker-alt"></i> Hyderabad, Telangana, India</li>
-                        <li><i class="fas fa-phone"></i> +91 9390314113</li>
+                        <li><i class="fas fa-phone"></i> <a href="tel:+919390314113" style="color: inherit; text-decoration: none;">+91 9390314113</a></li>
+                        <li><i class="fab fa-whatsapp"></i> <a href="https://wa.me/919390314113" target="_blank" style="color: inherit; text-decoration: none;">WhatsApp</a></li>
                         <li><i class="fas fa-envelope"></i> info@bubblesmedia.com</li>
                     </ul>
                     <div class="newsletter">
@@ -781,6 +881,14 @@
             </div>
         </div>
     </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <div id="whatsapp-float" class="whatsapp-float">
+        <a href="https://wa.me/919390314113?text=Hi%20Bubbles%20Media!%20I%20would%20like%20to%20know%20more%20about%20your%20website%20design%20services." target="_blank" class="whatsapp-btn">
+            <i class="fab fa-whatsapp"></i>
+            <span class="whatsapp-text">Chat on WhatsApp</span>
+        </a>
+    </div>
 
     <!-- Live Chat Widget -->
     <div id="live-chat-widget" class="live-chat-widget">
@@ -817,6 +925,10 @@
                     <div class="contact-item">
                         <i class="fas fa-phone"></i>
                         <span>+91 9390314113</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <span><a href="https://wa.me/919390314113" target="_blank" style="color: inherit; text-decoration: none;">WhatsApp</a></span>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-envelope"></i>

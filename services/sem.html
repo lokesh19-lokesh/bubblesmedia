@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Bubbles Media offers expert SEM and Google Ads services to help businesses in Hyderabad and beyond maximize their PPC campaigns and achieve higher ROI">
     <title>SEM / Google Ads Services | Bubbles Media - Digital Marketing Agency</title>
+      <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../media/logo.png">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/responsive.css">
     <!-- Font Awesome for icons -->
@@ -19,6 +21,100 @@
         #page-banner {
             margin-top: 1cm;
         }
+
+
+        .pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+  }
+
+  /* Pricing Card Styling */
+  .pricing-card {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .pricing-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  }
+
+  .pricing-card.featured {
+    border: 2px solid #007bff;
+    box-shadow: 0 6px 18px rgba(0, 123, 255, 0.1);
+  }
+
+  .pricing-header h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  .price {
+    font-size: 1.8rem;
+    margin: 10px 0;
+  }
+
+  .price .currency {
+    font-size: 1.2rem;
+    vertical-align: super;
+  }
+
+  .featured-tag {
+    background: #007bff;
+    color: #fff;
+    padding: 5px 12px;
+    font-size: 0.8rem;
+    border-radius: 50px;
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+
+  .pricing-features ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    text-align: left;
+  }
+
+  .pricing-features li {
+    margin: 8px 0;
+    font-size: 0.95rem;
+  }
+
+  .pricing-features i {
+    margin-right: 8px;
+    color: #28a745;
+  }
+
+  .pricing-features i.fa-times {
+    color: #dc3545;
+  }
+
+  .pricing-footer .btn {
+    margin-top: 15px;
+  }
+
+  .custom-package {
+    margin-top: 60px;
+    text-align: center;
+  }
+
+  .custom-package h3 {
+    margin-bottom: 10px;
+  }
+
+  .custom-package p {
+    max-width: 600px;
+    margin: 0 auto 20px;
+  }
+
     </style>
     <!-- Slick Carousel -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
@@ -52,11 +148,11 @@
                             <li><a href="seo.html">SEO Services</a></li>
                             <li><a href="sem.html" class="active">Meta Ads / Google Ads</a></li>
                             <li><a href="social-media.html">Social Media Marketing</a></li>
-                            <li><a href="content.html">Content Marketing</a></li>
                             <li><a href="website-design.html">Website Design</a></li>
                         </ul>
                     </li>
                     <li><a href="../about.html">About Us</a></li>
+                    <!-- <li><a href="../case-studies.html">Case Studies</a></li> -->
                     <li><a href="../blog.html">Blog</a></li>
                     <li><a href="../contact.html">Contact</a></li>
                 </ul>
@@ -67,29 +163,16 @@
         </div>
     </header>
 
-    <!-- Page Banner -->
-    <section id="page-banner" class="section-padding">
+    <<!-- Service Hero Section -->
+    <section id="service-hero" class="section-padding">
         <div class="container">
-            <div class="page-banner-content">
-                <h1>SEM / Google Ads Services</h1>
-                <p>Drive targeted traffic and maximize ROI with our expert PPC management</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Service Overview Section -->
-    <section id="service-overview" class="section-padding">
-        <div class="container">
-            <div class="service-overview-content">
-                <div class="service-overview-text">
-                    <h2>Maximize Your Advertising Budget with Strategic PPC Campaigns</h2>
-                    <p>In today's competitive digital landscape, effective Search Engine Marketing (SEM) and Google Ads campaigns are essential for businesses looking to drive immediate, targeted traffic to their websites and generate qualified leads.</p>
-                    <p>At Bubbles Media, we specialize in creating and managing high-performing paid search campaigns that deliver measurable results. Our data-driven approach ensures that every rupee of your advertising budget works efficiently to achieve your business goals.</p>
-                    <p>Whether you're looking to increase sales, generate leads, boost brand awareness, or drive foot traffic to your physical location in Hyderabad, our SEM experts will develop a customized strategy tailored to your specific objectives.</p>
+            <div class="service-hero-content">
+                <h1>Meta/Google Ads Services in Hyderabad</h1>
+                <p>boost your business with Google & Meta Ads?
+                    Get expert ad campaign setup, targeting, and optimization to reach your ideal customers.</p>
+                <div class="hero-buttons">
                     <a href="../contact.html" class="btn btn-primary">Get a Free PPC Audit</a>
-                </div>
-                <div class="service-overview-image">
-                    <img src="../images/sem-overview.jpg" alt="SEM and Google Ads Management">
+                    <a href="#service-pricing" class="btn btn-secondary">View Pricing</a>
                 </div>
             </div>
         </div>
@@ -99,7 +182,7 @@
     <section id="service-features" class="section-padding bg-light">
         <div class="container">
             <div class="section-header">
-                <h2>Our SEM / Google Ads Services</h2>
+                <h2>Our Meta / Google Ads Services</h2>
                 <p>Comprehensive paid search solutions to drive your business growth</p>
             </div>
             <div class="service-features-grid">
@@ -164,7 +247,7 @@
     </section>
 
     <!-- Benefits Section -->
-    <section id="service-benefits" class="section-padding">
+    <!-- <section id="service-benefits" class="section-padding">
         <div class="container">
             <div class="section-header">
                 <h2>Why Choose Our SEM Services</h2>
@@ -230,7 +313,7 @@
     </section>
 
     <!-- Process Section -->
-    <section id="service-process" class="section-padding bg-light">
+    <!-- <section id="service-process" class="section-padding bg-light">
         <div class="container">
             <div class="section-header">
                 <h2>Our SEM Management Process</h2>
@@ -304,13 +387,13 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --> 
 
     <!-- Pricing Section -->
     <section id="service-pricing" class="section-padding">
         <div class="container">
             <div class="section-header">
-                <h2>SEM / Google Ads Packages</h2>
+                <h2>Meta / Google Ads Packages</h2>
                 <p>Flexible solutions tailored to your business needs and budget</p>
             </div>
             <div class="pricing-grid">
@@ -319,7 +402,7 @@
                         <h3>Starter</h3>
                         <div class="price">
                             <span class="currency">₹</span>
-                            <span class="amount">15,000</span>
+                            <span class="amount">3,999</span>
                             <span class="period">/month</span>
                         </div>
                         <p>Perfect for small businesses new to Google Ads</p>
@@ -349,8 +432,8 @@
                         <h3>Growth</h3>
                         <div class="price">
                             <span class="currency">₹</span>
-                            <span class="amount">30,000</span>
-                            <span class="period">/month</span>
+                            <span class="amount">11,999</span>
+                            <span class="period">/3month</span>
                         </div>
                         <p>Ideal for established businesses seeking growth</p>
                     </div>
@@ -378,8 +461,8 @@
                         <h3>Premium</h3>
                         <div class="price">
                             <span class="currency">₹</span>
-                            <span class="amount">60,000</span>
-                            <span class="period">/month</span>
+                            <span class="amount">35,991</span>
+                            <span class="period">/6month</span>
                         </div>
                         <p>Comprehensive solution for maximum results</p>
                     </div>
@@ -403,16 +486,16 @@
                     </div>
                 </div>
             </div>
-            <div class="custom-package">
+            <!-- <div class="custom-package">
                 <h3>Need a Custom Solution?</h3>
                 <p>We offer tailored packages for businesses with specific requirements or larger ad spends. Contact us to discuss your needs.</p>
                 <a href="../contact.html" class="btn btn-secondary">Request Custom Quote</a>
-            </div>
+            </div> -->
         </div>
     </section>
 
     <!-- FAQ Section -->
-    <section id="service-faq" class="section-padding bg-light">
+    <!-- <section id="service-faq" class="section-padding bg-light">
         <div class="container">
             <div class="section-header">
                 <h2>Frequently Asked Questions</h2>
@@ -486,10 +569,10 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- Testimonials Section -->
-    <section id="service-testimonials" class="section-padding">
+    <!-- <section id="service-testimonials" class="section-padding">
         <div class="container">
             <div class="section-header">
                 <h2>Client Success Stories</h2>
@@ -555,10 +638,10 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- CTA Section -->
-    <section id="service-cta" class="section-padding bg-light">
+    <!-- <section id="service-cta" class="section-padding bg-light">
         <div class="container">
             <div class="cta-content">
                 <h2>Ready to Boost Your Business with Strategic Google Ads?</h2>
@@ -568,7 +651,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- Footer -->
     <footer id="footer">
@@ -582,7 +665,7 @@
                     <div class="social-links">
                         <a href="https://www.facebook.com/thebubblesmedia" target="_blank" title="Follow us on Facebook"><i class="fab fa-facebook-f"></i></a>
                         <a href="#" target="_blank" title="Follow us on Twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="https://www.instagram.com/p/DMQJMXhPodR/?igsh=MTZmaXBpenhzaDdkZA==" target="_blank" title="Follow us on Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.instagram.com/thebubblesmedia/?hl=en" target="_blank" title="Follow us on Instagram"><i class="fab fa-instagram"></i></a>
                         <a href="#" target="_blank" title="Connect with us on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                         <a href="#" target="_blank" title="Read our blog on Medium"><i class="fab fa-medium-m"></i></a>
                     </div>
@@ -602,7 +685,6 @@
                         <li><a href="seo.html">SEO Services</a></li>
                         <li><a href="sem.html">Meta Ads / Google Ads</a></li>
                         <li><a href="social-media.html">Social Media Marketing</a></li>
-                        <li><a href="content.html">Content Marketing</a></li>
                         <li><a href="website-design.html">Website Design</a></li>
                     </ul>
                 </div>
@@ -610,7 +692,8 @@
                     <h4>Contact Info</h4>
                     <ul class="contact-info">
                         <li><i class="fas fa-map-marker-alt"></i> Hyderabad, Telangana, India</li>
-                        <li><i class="fas fa-phone"></i> +91 9390314113</li>
+                        <li><i class="fas fa-phone"></i> <a href="tel:+919390314113" style="color: inherit; text-decoration: none;">+91 9390314113</a></li>
+                        <li><i class="fab fa-whatsapp"></i> <a href="https://wa.me/919390314113" target="_blank" style="color: inherit; text-decoration: none;">WhatsApp</a></li>
                         <li><i class="fas fa-envelope"></i> info@bubblesmedia.com</li>
                     </ul>
                     <div class="newsletter">
@@ -635,6 +718,14 @@
             </div>
         </div>
     </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <div id="whatsapp-float" class="whatsapp-float">
+        <a href="https://wa.me/919390314113?text=Hi%20Bubbles%20Media!%20I%20would%20like%20to%20know%20more%20about%20your%20SEM%20and%20Google%20Ads%20services." target="_blank" class="whatsapp-btn">
+            <i class="fab fa-whatsapp"></i>
+            <span class="whatsapp-text">Chat on WhatsApp</span>
+        </a>
+    </div>
 
     <!-- Live Chat Widget -->
     <div id="live-chat-widget" class="live-chat-widget">
@@ -671,6 +762,10 @@
                     <div class="contact-item">
                         <i class="fas fa-phone"></i>
                         <span>+91 9390314113</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <span><a href="https://wa.me/919390314113" target="_blank" style="color: inherit; text-decoration: none;">WhatsApp</a></span>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-envelope"></i>
