@@ -1669,6 +1669,9 @@ img {
     color: #555;
     line-height: 1.6;
   }
+<<<<<<< HEAD
+  
+=======
   
 
 
@@ -1881,3 +1884,97 @@ img {
     font-size: 0.95rem;
     color: #555;
 }
+>>>>>>> 6523b32280b80c0d661117bc8f30bbfa37e737c7
+
+
+
+
+
+
+
+
+
+#blog-newsletter {
+    background: linear-gradient(135deg, #f8faff, #eef3f9);
+    border-radius: 10px;
+    padding: 60px 20px;
+    text-align: center;
+}
+.newsletter-content {
+    max-width: 800px;
+    margin: auto;
+}
+.newsletter-text h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #222;
+}
+.newsletter-text p {
+    color: #555;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.newsletter-benefits {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px;
+}
+.newsletter-benefits li {
+    display: inline-block;
+    margin: 5px 15px;
+    color: #444;
+    font-size: 14px;
+}
+.newsletter-benefits i {
+    color: #0073e6;
+    margin-right: 6px;
+}
+
+/* Form Styling */
+.newsletter-form {
+    background: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    max-width: 500px;
+    margin: auto;
+}
+.newsletter-form .form-group {
+    margin-bottom: 15px;
+}
+.newsletter-form input,
+.newsletter-form select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+    transition: 0.3s;
+}
+.newsletter-form input:focus,
+.newsletter-form select:focus {
+    border-color: #0073e6;
+    box-shadow: 0 0 5px rgba(0,115,230,0.3);
+}
+.newsletter-form button {
+    background: #0073e6;
+    color: white;
+    padding: 12px;
+    border: none;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.newsletter-form button:hover {
+    background: #005bb5;
+}
+.form-disclaimer {
+    font-size: 12px;
+    color: #777;
+    margin-top: 10px;
+}
+
