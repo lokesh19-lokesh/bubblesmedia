@@ -1,6 +1,38 @@
 // Main JavaScript for Bubbles Media Website
 
 $(document).ready(function() {
+    // WhatsApp Integration
+    function initWhatsAppIntegration() {
+        // Add click tracking for WhatsApp links
+        $('a[href*="wa.me"]').on('click', function() {
+            // Track WhatsApp clicks (you can add analytics here)
+            console.log('WhatsApp link clicked');
+            
+            // Optional: Add a small delay to show user feedback
+            $(this).addClass('clicked');
+            setTimeout(() => {
+                $(this).removeClass('clicked');
+            }, 200);
+        });
+        
+        // Add hover effects for WhatsApp buttons
+        $('.whatsapp-btn').hover(
+            function() {
+                $(this).css('transform', 'scale(1.05)');
+            },
+            function() {
+                $(this).css('transform', 'scale(1)');
+            }
+        );
+        
+        // Show WhatsApp button after page load for better UX
+        setTimeout(() => {
+            $('.whatsapp-float').fadeIn(500);
+        }, 1000);
+    }
+    
+    // Initialize WhatsApp integration
+    initWhatsAppIntegration();
     // Check if chatbot elements exist
     if ($('.chat-toggle').length > 0) {
         console.log('Chatbot elements found');
