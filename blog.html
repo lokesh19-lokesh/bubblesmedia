@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore Bubbles Media's blog for the latest insights, tips, and strategies on SEO, SEM, Social Media, Content Marketing and Website Design">
+    <title>Blog | Bubbles Media - Digital Marketing Agency</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header id="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><img src="media/logo.png" alt="Bubbles Media Logo"></a>
+            </div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#">Services</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="services/seo.html">SEO Services</a></li>
+                            <li><a href="services/sem.html">SEM / Google Ads</a></li>
+                            <li><a href="services/social-media.html">Social Media Marketing</a></li>
+                            <li><a href="services/content.html">Content Marketing</a></li>
+                            <li><a href="services/website-design.html">Website Design</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="case-studies.html">Case Studies</a></li>
+                    <li><a href="blog.html" class="active">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Banner -->
+    <section id="page-banner" class="section-padding">
+        <div class="container">
+            <div class="page-banner-content">
+                <h1>Blog & Resources</h1>
+                <p>Insights, tips, and strategies to help your business succeed online</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Filter Section -->
+    <section id="blog-filter" class="section-padding">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Posts</button>
+                <button class="filter-btn" data-filter="seo">SEO</button>
+                <button class="filter-btn" data-filter="sem">SEM / PPC</button>
+                <button class="filter-btn" data-filter="social">Social Media</button>
+                <button class="filter-btn" data-filter="content">Content Marketing</button>
+                <button class="filter-btn" data-filter="design">Web Design</button>
+            </div>
+            <div class="search-box">
+                <input type="text" id="blog-search" placeholder="Search articles...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Post Section -->
+    <section id="featured-post" class="section-padding bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Article</h2>
+            </div>
+            <div class="featured-post-card">
+                <div class="featured-post-image">
+                    <img src="images/blog-featured.jpg" alt="The Future of SEO in 2023 and Beyond">
+                </div>
+                <div class="featured-post-content">
+                    <div class="post-meta">
+                        <span class="post-category">SEO</span>
+                        <span class="post-date">June 15, 2023</span>
+                    </div>
+                    <h3>The Future of SEO in 2023 and Beyond: AI, Voice Search, and User Experience</h3>
+                    <p>As search engines continue to evolve, SEO strategies must adapt to new technologies and user behaviors. In this comprehensive guide, we explore how artificial intelligence, voice search optimization, and enhanced user experience are reshaping the SEO landscape...</p>
+                    <div class="post-author">
+                        <img src="images/author-1.jpg" alt="Vikram Singh">
+                        <span>By Vikram Singh</span>
+                    </div>
+                    <a href="blog/future-of-seo-2023.html" class="btn btn-primary">Read Full Article</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recent Posts Section -->
+    <section id="recent-posts" class="section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2>Recent Articles</h2>
+                <p>Stay updated with our latest insights and strategies</p>
+            </div>
+            <div class="blog-grid">
+                <!-- Blog Post 1 -->
+                <div class="blog-card" data-category="social">
+                    <div class="blog-image">
+                        <img src="images/blog-1.jpg" alt="Instagram Algorithm Changes 2023">
+                    </div>
+                    <div class="blog-content">
+                        <div class="post-meta">
+                            <span class="post-category">Social Media</span>
+                            <span class="post-date">June 10, 2023</span>
+                        </div>
+                        <h3>Instagram Algorithm Changes 2023: What Marketers Need to Know</h3>
+                        <p>Instagram's latest algorithm updates are changing how content is discovered and prioritized. Learn how these changes impact your social media strategy and what adjustments you need to make...</p>
+                        <div class="post-author">
+                            <img src="images/author-2.jpg" alt="Ananya Reddy">
+                            <span>By Ananya Reddy</span>
+                        </div>
+                        <a href="blog/instagram-algorithm-changes-2023.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Blog Post 2 -->
+                <div class="blog-card" data-category="sem">
+                    <div class="blog-image">
+                        <img src="images/blog-2.jpg" alt="Google Ads Performance Max Campaigns">
+                    </div>
+                    <div class="blog-content">
+                        <div class="post-meta">
+                            <span class="post-category">SEM / PPC</span>
+                            <span class="post-date">June 5, 2023</span>
+                        </div>
+                        <h3>Maximizing ROI with Google Ads Performance Max Campaigns</h3>
+                        <p>Performance Max campaigns are revolutionizing how advertisers approach Google Ads. This guide breaks down how to set up, optimize, and measure these AI-driven campaigns for maximum return on investment...</p>
+                        <div class="post-author">
+                            <img src="images/author-3.jpg" alt="Rahul Sharma">
+                            <span>By Rahul Sharma</span>
+                        </div>
+                        <a href="blog/google-ads-performance-max.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Blog Post 3 -->
+                <div class="blog-card" data-category="content">
+                    <div class="blog-image">
+                        <img src="images/blog-3.jpg" alt="Content Marketing Strategy Guide">
+                    </div>
+                    <div class="blog-content">
+                        <div class="post-meta">
+                            <span class="post-category">Content Marketing</span>
+                            <span class="post-date">May 28, 2023</span>
+                        </div>
+                        <h3>The Ultimate Guide to Creating a Content Marketing Strategy That Converts</h3>
+                        <p>Effective content marketing goes beyond creating blog posts and videos. Learn how to develop a comprehensive strategy that aligns with your business goals and drives measurable conversions...</p>
+                        <div class="post-author">
+                            <img src="images/author-4.jpg" alt="Priya Sharma">
+                            <span>By Priya Sharma</span>
+                        </div>
+                        <a href="blog/content-marketing-strategy-guide.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Blog Post 4 -->
+                <div class="blog-card" data-category="design">
+                    <div class="blog-image">
+                        <img src="images/blog-4.jpg" alt="Web Design Trends 2023">
+                    </div>
+                    <div class="blog-content">
+                        <div class="post-meta">
+                            <span class="post-category">Web Design</span>
+                            <span class="post-date">May 20, 2023</span>
+                        </div>
+                        <h3>10 Web Design Trends Dominating 2023: Balancing Aesthetics and Performance</h3>
+                        <p>The web design landscape is constantly evolving. Discover the top trends of 2023 that combine stunning visuals with optimal performance, and learn how to implement them in your next website project...</p>
+                        <div class="post-author">
+                            <img src="images/author-5.jpg" alt="Karthik Menon">
+                            <span>By Karthik Menon</span>
+                        </div>
+                        <a href="blog/web-design-trends-2023.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Blog Post 5 -->
+                <div class="blog-card" data-category="seo">
+                    <div class="blog-image">
+                        <img src="images/blog-5.jpg" alt="Local SEO Guide for Hyderabad Businesses">
+                    </div>
+                    <div class="blog-content">
+                        <div class="post-meta">
+                            <span class="post-category">SEO</span>
+                            <span class="post-date">May 15, 2023</span>
+                        </div>
+                        <h3>Local SEO Guide for Hyderabad Businesses: Dominate Your Neighborhood</h3>
+                        <p>Local search optimization is crucial for businesses serving specific geographic areas. This comprehensive guide provides Hyderabad businesses with actionable strategies to improve local visibility...</p>
+                        <div class="post-author">
+                            <img src="images/author-1.jpg" alt="Vikram Singh">
+                            <span>By Vikram Singh</span>
+                        </div>
+                        <a href="blog/local-seo-guide-hyderabad.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Blog Post 6 -->
+                <div class="blog-card" data-category="social">
+                    <div class="blog-image">
+                        <img src="images/blog-6.jpg" alt="Threads App Marketing Guide">
+                    </div>
+                    <div class="blog-content">
+                        <div class="post-meta">
+                            <span class="post-category">Social Media</span>
+                            <span class="post-date">May 8, 2023</span>
+                        </div>
+                        <h3>Threads App: A Marketer's Guide to Instagram's Twitter Competitor</h3>
+                        <p>Meta's Threads app is gaining traction as a Twitter alternative. Learn how brands can leverage this new platform, understand its unique features, and develop effective content strategies...</p>
+                        <div class="post-author">
+                            <img src="images/author-2.jpg" alt="Ananya Reddy">
+                            <span>By Ananya Reddy</span>
+                        </div>
+                        <a href="blog/threads-app-marketing-guide.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="pagination">
+                <a href="#" class="active">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#"><i class="fas fa-angle-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section id="blog-newsletter" class="section-padding bg-light">
+        <div class="container">
+            <div class="newsletter-content">
+                <div class="newsletter-text">
+                    <h2>Subscribe to Our Newsletter</h2>
+                    <p>Get the latest digital marketing insights, tips, and strategies delivered straight to your inbox. No spam, just valuable content to help your business grow.</p>
+                    <ul class="newsletter-benefits">
+                        <li><i class="fas fa-check"></i> Weekly digital marketing tips</li>
+                        <li><i class="fas fa-check"></i> Exclusive guides and resources</li>
+                        <li><i class="fas fa-check"></i> Industry news and updates</li>
+                        <li><i class="fas fa-check"></i> Special offers and events</li>
+                    </ul>
+                </div>
+                <div class="newsletter-form">
+                    <form id="blog-newsletter-form">
+                        <div class="form-group">
+                            <input type="text" id="newsletter-name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="newsletter-email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <select id="newsletter-interests" required>
+                                <option value="" disabled selected>Interested in...</option>
+                                <option value="seo">SEO</option>
+                                <option value="sem">SEM / Google Ads</option>
+                                <option value="social">Social Media</option>
+                                <option value="content">Content Marketing</option>
+                                <option value="design">Web Design</option>
+                                <option value="all">All Topics</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Subscribe Now</button>
+                    </form>
+                    <p class="form-disclaimer">By subscribing, you agree to receive marketing emails from Bubbles Media. You can unsubscribe at any time.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <h3>Bubbles Media</h3>
+                    </div>
+                    <p>Your trusted digital marketing partner in Hyderabad, helping businesses grow their online presence and achieve measurable results.</p>
+                    <div class="social-links">
+                        <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-medium-m"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="case-studies.html">Case Studies</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Our Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services/seo.html">SEO Services</a></li>
+                        <li><a href="services/sem.html">SEM / Google Ads</a></li>
+                        <li><a href="services/social-media.html">Social Media Marketing</a></li>
+                        <li><a href="services/content.html">Content Marketing</a></li>
+                        <li><a href="services/website-design.html">Website Design</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Contact Info</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> Hyderabad, Telangana, India</li>
+                        <li><i class="fas fa-phone"></i> +91 9876543210</li>
+                        <li><i class="fas fa-envelope"></i> info@bubblesmedia.com</li>
+                    </ul>
+                    <div class="newsletter">
+                        <h4>Subscribe to Newsletter</h4>
+                        <form id="newsletter-form">
+                            <div class="form-group">
+                                <input type="email" id="footer-newsletter-email" placeholder="Your Email" required>
+                                <button type="submit" class="btn btn-primary">Subscribe</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>&copy; 2023 Bubbles Media. All Rights Reserved.</p>
+                </div>
+                <div class="legal-links">
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <a href="terms-of-service.html">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Live Chat Widget Placeholder -->
+    <div id="live-chat-widget" class="live-chat-widget">
+        <button class="chat-toggle">
+            <i class="fas fa-comments"></i>
+        </button>
+        <div class="chat-container">
+            <div class="chat-header">
+                <h4>Chat with us</h4>
+                <button class="chat-close"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="chat-body">
+                <div class="chat-messages">
+                    <div class="message agent">
+                        <p>Hello! How can we help you today?</p>
+                    </div>
+                </div>
+                <div class="chat-input">
+                    <input type="text" placeholder="Type your message...">
+                    <button><i class="fas fa-paper-plane"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

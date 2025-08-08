@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Bubbles Media - Get in touch with our digital marketing experts in Hyderabad for SEO, SEM, Social Media, Content Marketing and Website Design services">
+    <title>Contact Us | Bubbles Media - Digital Marketing Agency</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Leaflet CSS for map -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="anonymous">
+</head>
+<body>
+    <!-- Header Section -->
+    <header id="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><img src="media/logo.png" alt="Bubbles Media Logo"></a>
+            </div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#">Services</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="services/seo.html">SEO Services</a></li>
+                            <li><a href="services/sem.html">SEM / Google Ads</a></li>
+                            <li><a href="services/social-media.html">Social Media Marketing</a></li>
+                            <li><a href="services/content.html">Content Marketing</a></li>
+                            <li><a href="services/website-design.html">Website Design</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="case-studies.html">Case Studies</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Banner -->
+    <section id="page-banner" class="section-padding">
+        <div class="container">
+            <div class="page-banner-content">
+                <h1>Contact Us</h1>
+                <p>Get in touch with our digital marketing experts</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Info Section -->
+    <section id="contact-info" class="section-padding">
+        <div class="container">
+            <div class="contact-info-grid">
+                <div class="contact-info-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Visit Our Office</h3>
+                    <p>123 Digital Avenue, Hitech City<br>Hyderabad, Telangana 500081<br>India</p>
+                </div>
+                <div class="contact-info-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <h3>Call Us</h3>
+                    <p>Phone: +91 9876543210<br>Toll Free: 1800-123-4567<br>Mon-Fri: 9:00 AM - 6:00 PM</p>
+                </div>
+                <div class="contact-info-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email Us</h3>
+                    <p>info@bubblesmedia.com<br>support@bubblesmedia.com<br>careers@bubblesmedia.com</p>
+                </div>
+                <div class="contact-info-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-share-alt"></i>
+                    </div>
+                    <h3>Connect With Us</h3>
+                    <div class="social-links">
+                        <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-medium-m"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form and Map Section -->
+    <section id="contact-form-map" class="section-padding bg-light">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-form-container">
+                    <div class="section-header">
+                        <h2>Send Us a Message</h2>
+                        <p>Fill out the form below and we'll get back to you as soon as possible</p>
+                    </div>
+                    <form id="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Your Email</label>
+                                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+                            </div>
+                            <div class="form-group">
+                                <label for="company">Company Name</label>
+                                <input type="text" id="company" name="company" placeholder="Enter your company name">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="Enter subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Service of Interest</label>
+                            <select id="service" name="service" required>
+                                <option value="" disabled selected>Select a service</option>
+                                <option value="seo">SEO Services</option>
+                                <option value="sem">SEM / Google Ads</option>
+                                <option value="social">Social Media Marketing</option>
+                                <option value="content">Content Marketing</option>
+                                <option value="website">Website Design</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Enter your message" required></textarea>
+                        </div>
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="consent" name="consent" required>
+                            <label for="consent">I agree to the <a href="privacy-policy.html">Privacy Policy</a> and consent to being contacted by Bubbles Media.</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+                <div class="map-container">
+                    <div class="section-header">
+                        <h2>Our Location</h2>
+                        <p>Find us in Hyderabad, India</p>
+                    </div>
+                    <div id="map"></div>
+                    <div class="office-hours">
+                        <h3>Office Hours</h3>
+                        <ul>
+                            <li><span>Monday - Friday:</span> 9:00 AM - 6:00 PM</li>
+                            <li><span>Saturday:</span> 10:00 AM - 2:00 PM</li>
+                            <li><span>Sunday:</span> Closed</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Inquiry Section -->
+    <section id="quick-inquiry" class="section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2>Book a Free Consultation</h2>
+                <p>Schedule a call with our digital marketing experts</p>
+            </div>
+            <div class="inquiry-content">
+                <div class="inquiry-text">
+                    <p>Not ready to fill out a detailed form? No problem! Book a quick 30-minute consultation with one of our digital marketing specialists to discuss your business needs and how we can help you achieve your goals.</p>
+                    <ul class="inquiry-benefits">
+                        <li><i class="fas fa-check"></i> No obligation consultation</li>
+                        <li><i class="fas fa-check"></i> Personalized recommendations</li>
+                        <li><i class="fas fa-check"></i> Flexible scheduling options</li>
+                        <li><i class="fas fa-check"></i> Meet via video call or in person</li>
+                    </ul>
+                </div>
+                <div class="inquiry-form">
+                    <form id="quick-inquiry-form">
+                        <div class="form-group">
+                            <input type="text" id="inquiry-name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="inquiry-email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="inquiry-phone" placeholder="Your Phone Number" required>
+                        </div>
+                        <div class="form-group">
+                            <select id="inquiry-preferred-time" required>
+                                <option value="" disabled selected>Preferred Time</option>
+                                <option value="morning">Morning (9 AM - 12 PM)</option>
+                                <option value="afternoon">Afternoon (12 PM - 3 PM)</option>
+                                <option value="evening">Evening (3 PM - 6 PM)</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Book Consultation</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="contact-faq" class="section-padding bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+                <p>Common questions about working with us</p>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What is the typical process when working with Bubbles Media?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our process typically follows four key stages: Audit, Strategy, Execution, and Reporting. We begin with a comprehensive analysis of your current digital presence, develop a tailored strategy based on your goals, implement the planned activities, and provide regular reports on performance and results.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Do you offer customized packages or only fixed service plans?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>While we have standard service packages, we understand that every business has unique needs. We offer fully customized solutions tailored to your specific goals, budget, and timeline. During our initial consultation, we'll discuss your requirements and develop a proposal that addresses your particular challenges.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How long does it take to see results from digital marketing efforts?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>The timeline for results varies depending on the services and your starting point. PPC and social media advertising can show results within days or weeks, while SEO typically takes 3-6 months to see significant improvements. Content marketing often builds momentum over 6-12 months. During our onboarding, we'll set realistic expectations based on your specific situation.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What industries do you specialize in?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We have experience across various industries including e-commerce, healthcare, real estate, education, technology, hospitality, and professional services. Our team's diverse expertise allows us to understand the unique challenges and opportunities in different sectors, though we particularly excel in local business marketing within the Hyderabad region.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How do you measure and report on campaign performance?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We provide comprehensive monthly reports that track key performance indicators (KPIs) relevant to your goals. These may include traffic, conversions, rankings, engagement metrics, and ROI calculations. We use various analytics tools to gather data and present it in an easy-to-understand format. Additionally, we schedule regular review meetings to discuss results and strategy adjustments.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <h3>Bubbles Media</h3>
+                    </div>
+                    <p>Your trusted digital marketing partner in Hyderabad, helping businesses grow their online presence and achieve measurable results.</p>
+                    <div class="social-links">
+                        <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-medium-m"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="case-studies.html">Case Studies</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Our Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services/seo.html">SEO Services</a></li>
+                        <li><a href="services/sem.html">SEM / Google Ads</a></li>
+                        <li><a href="services/social-media.html">Social Media Marketing</a></li>
+                        <li><a href="services/content.html">Content Marketing</a></li>
+                        <li><a href="services/website-design.html">Website Design</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Contact Info</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> Hyderabad, Telangana, India</li>
+                        <li><i class="fas fa-phone"></i> +91 9876543210</li>
+                        <li><i class="fas fa-envelope"></i> info@bubblesmedia.com</li>
+                    </ul>
+                    <div class="newsletter">
+                        <h4>Subscribe to Newsletter</h4>
+                        <form id="newsletter-form">
+                            <div class="form-group">
+                                <input type="email" id="footer-newsletter-email" placeholder="Your Email" required>
+                                <button type="submit" class="btn btn-primary">Subscribe</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>&copy; 2023 Bubbles Media. All Rights Reserved.</p>
+                </div>
+                <div class="legal-links">
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <a href="terms-of-service.html">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Live Chat Widget Placeholder -->
+    <div id="live-chat-widget" class="live-chat-widget">
+        <button class="chat-toggle">
+            <i class="fas fa-comments"></i>
+        </button>
+        <div class="chat-container">
+            <div class="chat-header">
+                <h4>Chat with us</h4>
+                <button class="chat-close"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="chat-body">
+                <div class="chat-messages">
+                    <div class="message agent">
+                        <p>Hello! How can we help you today?</p>
+                    </div>
+                </div>
+                <div class="chat-input">
+                    <input type="text" placeholder="Type your message...">
+                    <button><i class="fas fa-paper-plane"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Leaflet JS for map -->
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+    <script>
+        // Initialize map
+        document.addEventListener('DOMContentLoaded', function() {
+            if (document.getElementById('map')) {
+                // Coordinates for Hyderabad (approximate)
+                const hyderabad = [17.3850, 78.4867];
+                const map = L.map('map').setView(hyderabad, 13);
+                
+                L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                }).addTo(map);
+                
+                // Add marker for office location
+                const officeLocation = [17.4400, 78.3800]; // Hitech City approximate coordinates
+                L.marker(officeLocation).addTo(map)
+                    .bindPopup('<strong>Bubbles Media</strong><br>123 Digital Avenue<br>Hitech City, Hyderabad')
+                    .openPopup();
+            }
+        });
+    </script>
+</body>
+</html>
