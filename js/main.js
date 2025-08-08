@@ -1,6 +1,27 @@
 // Main JavaScript for Bubbles Media Website
 
 $(document).ready(function() {
+    // Check if chatbot elements exist
+    if ($('.chat-toggle').length > 0) {
+        console.log('Chatbot elements found');
+        // Ensure chatbot is visible
+        $('.live-chat-widget').css({
+            'z-index': '9999',
+            'position': 'fixed',
+            'bottom': '30px',
+            'right': '30px'
+        });
+        $('.chat-toggle').css({
+            'display': 'block',
+            'visibility': 'visible',
+            'background': 'red !important',
+            'border': '3px solid yellow !important'
+        });
+        console.log('Chatbot styling applied');
+    } else {
+        console.log('Chatbot elements not found');
+    }
+    
     // Mobile Menu Toggle
     $('.mobile-menu-toggle').on('click', function() {
         $('.nav-menu').toggleClass('active');
@@ -38,85 +59,121 @@ $(document).ready(function() {
     });
 
     // Testimonial Carousel
-    $('.testimonial-carousel').slick({
-        dots: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 2,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 5000,
-        responsive: [
-            {
-                breakpoint: 992,
-                settings: {
-                    slidesToShow: 1
+    if ($('.testimonial-carousel').length > 0) {
+        $('.testimonial-carousel').slick({
+            dots: true,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 5000,
+            responsive: [
+                {
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 1
+                    }
                 }
-            }
-        ]
-    });
+            ]
+        });
+    }
 
     // Client Logo Carousel
-    $('.logo-carousel').slick({
-        dots: false,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 6,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 3000,
-        responsive: [
-            {
-                breakpoint: 992,
-                settings: {
-                    slidesToShow: 4
+    if ($('.logo-carousel').length > 0) {
+        $('.logo-carousel').slick({
+            dots: false,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 6,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 3000,
+            responsive: [
+                {
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 4
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 3
+                    }
+                },
+                {
+                    breakpoint: 576,
+                    settings: {
+                        slidesToShow: 2
+                    }
                 }
-            },
-            {
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 3
-                }
-            },
-            {
-                breakpoint: 576,
-                settings: {
-                    slidesToShow: 2
-                }
-            }
-        ]
-    });
+            ]
+        });
+    }
 
     // Live Chat Widget Toggle
-    $('.chat-toggle').on('click', function() {
-        $('.chat-container').fadeToggle().addClass('show');
-        $('.chat-badge').hide(); // Hide badge when chat is opened
-    });
+    if ($('.chat-toggle').length > 0) {
+        console.log('Attaching chat toggle event');
+        $('.chat-toggle').on('click', function() {
+            console.log('Chat toggle clicked');
+            $('.chat-container').fadeToggle().addClass('show');
+            $('.chat-badge').hide(); // Hide badge when chat is opened
+        });
+    } else {
+        console.log('Chat toggle not found');
+    }
 
-    $('.chat-close').on('click', function() {
-        $('.chat-container').fadeOut().removeClass('show');
-    });
+    if ($('.chat-close').length > 0) {
+        console.log('Attaching chat close event');
+        $('.chat-close').on('click', function() {
+            console.log('Chat close clicked');
+            $('.chat-container').fadeOut().removeClass('show');
+        });
+    } else {
+        console.log('Chat close not found');
+    }
 
     // Quick Response Buttons
-    $('.quick-response-btn').on('click', function() {
-        var message = $(this).data('message');
-        $('.chat-input input').val(message);
-        sendMessage();
-    });
+    if ($('.quick-response-btn').length > 0) {
+        console.log('Attaching quick response events');
+        $('.quick-response-btn').on('click', function() {
+            console.log('Quick response clicked:', $(this).data('message'));
+            var message = $(this).data('message');
+            $('.chat-input input').val(message);
+            sendMessage();
+        });
+    } else {
+        console.log('Quick response buttons not found');
+    }
 
     // Chat Input Functionality
-    $('.send-btn').on('click', function() {
-        sendMessage();
-    });
-
-    $('.chat-input input').on('keypress', function(e) {
-        if (e.which === 13) {
+    if ($('.send-btn').length > 0) {
+        console.log('Attaching send button event');
+        $('.send-btn').on('click', function() {
+            console.log('Send button clicked');
             sendMessage();
-        }
-    });
+        });
+    } else {
+        console.log('Send button not found');
+    }
+
+    if ($('.chat-input input').length > 0) {
+        console.log('Attaching chat input event');
+        $('.chat-input input').on('keypress', function(e) {
+            if (e.which === 13) {
+                console.log('Enter key pressed');
+                sendMessage();
+            }
+        });
+    } else {
+        console.log('Chat input not found');
+    }
 
     function sendMessage() {
+        console.log('sendMessage function called');
         var message = $('.chat-input input').val().trim();
+        console.log('Message:', message);
         if (message !== '') {
             // Add user message
             var userMessage = `
