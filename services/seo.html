@@ -17,6 +17,18 @@
     <!-- Header Section -->
     <header id="header">
         <div class="container">
+            <div class="dots">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
             <div class="logo">
                 <a href="../index.html"><img src="../media/logo.png" alt="Bubbles Media Logo"></a>
             </div>
@@ -49,9 +61,12 @@
     <section id="service-hero" class="section-padding">
         <div class="container">
             <div class="service-hero-content">
-                <h1>SEO Services</h1>
-                <p>Boost your organic visibility and drive targeted traffic to your website with our comprehensive SEO strategies</p>
-                <a href="../contact.html" class="btn btn-primary">Get a Free SEO Audit</a>
+                <h1>SEO Services in Hyderabad</h1>
+                <p>Boost your organic visibility and drive targeted traffic to your website with our comprehensive SEO strategies. Get found by customers searching for your services.</p>
+                <div class="hero-buttons">
+                    <a href="../contact.html" class="btn btn-primary">Get a Free SEO Audit</a>
+                    <a href="#service-pricing" class="btn btn-secondary">View Pricing</a>
+                </div>
             </div>
         </div>
     </section>
@@ -68,9 +83,23 @@
                     <p>In today's digital landscape, appearing on the first page of Google is essential for business success. Our SEO services are designed to improve your website's visibility in search engine results, drive organic traffic, and increase conversions.</p>
                     <p>We combine technical expertise with creative strategies to deliver measurable results. Our team stays updated with the latest algorithm changes and industry trends to ensure your website maintains its competitive edge.</p>
                     <p>Whether you're a local business in Hyderabad looking to dominate local search or an enterprise aiming for national or international reach, our tailored SEO solutions will help you achieve your goals.</p>
+                    <div class="seo-stats">
+                        <div class="stat-item">
+                            <h3>200%+</h3>
+                            <p>Average Traffic Increase</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>50+</h3>
+                            <p>Keywords Ranked</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>95%</h3>
+                            <p>Client Satisfaction</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="service-overview-image">
-                    <img src="../images/seo-overview.jpg" alt="SEO Services Overview">
+                    <img src="../media/bubble.jpg" alt="SEO Services Overview" style="border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
                 </div>
             </div>
         </div>
@@ -380,11 +409,11 @@
                     </div>
                     <p>Your trusted digital marketing partner in Hyderabad, helping businesses grow their online presence and achieve measurable results.</p>
                     <div class="social-links">
-                        <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-                        <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" target="_blank"><i class="fab fa-medium-m"></i></a>
+                        <a href="https://www.facebook.com/thebubblesmedia" target="_blank" title="Follow us on Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" target="_blank" title="Follow us on Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/p/DMQJMXhPodR/?igsh=MTZmaXBpenhzaDdkZA==" target="_blank" title="Follow us on Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" target="_blank" title="Connect with us on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" target="_blank" title="Read our blog on Medium"><i class="fab fa-medium-m"></i></a>
                     </div>
                 </div>
                 <div class="footer-column">
@@ -411,7 +440,7 @@
                     <h4>Contact Info</h4>
                     <ul class="contact-info">
                         <li><i class="fas fa-map-marker-alt"></i> Hyderabad, Telangana, India</li>
-                        <li><i class="fas fa-phone"></i> +91 9876543210</li>
+                        <li><i class="fas fa-phone"></i> +91 9390314113</li>
                         <li><i class="fas fa-envelope"></i> info@bubblesmedia.com</li>
                     </ul>
                     <div class="newsletter">
@@ -437,25 +466,56 @@
         </div>
     </footer>
 
-    <!-- Live Chat Widget Placeholder -->
+    <!-- Live Chat Widget -->
     <div id="live-chat-widget" class="live-chat-widget">
         <button class="chat-toggle">
             <i class="fas fa-comments"></i>
+            <span class="chat-badge">1</span>
         </button>
         <div class="chat-container">
             <div class="chat-header">
-                <h4>Chat with us</h4>
+                <div class="chat-header-info">
+                    <h4><i class="fas fa-headset"></i> Bubbles Media Support</h4>
+                    <p class="chat-status"><i class="fas fa-circle online"></i> Online</p>
+                </div>
                 <button class="chat-close"><i class="fas fa-times"></i></button>
             </div>
             <div class="chat-body">
                 <div class="chat-messages">
                     <div class="message agent">
-                        <p>Hello! How can we help you with your SEO needs today?</p>
+                        <div class="message-avatar">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <div class="message-content">
+                            <p>Hello! 👋 Welcome to Bubbles Media. How can we help you with your SEO needs today?</p>
+                            <span class="message-time">Just now</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="quick-responses">
+                    <button class="quick-response-btn" data-message="I need SEO services">SEO Services</button>
+                    <button class="quick-response-btn" data-message="Tell me about your pricing">Pricing</button>
+                    <button class="quick-response-btn" data-message="I want to schedule a call">Schedule Call</button>
+                </div>
+                <div class="chat-contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+91 9390314113</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@bubblesmedia.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <span>Mon-Fri: 9AM-6PM</span>
                     </div>
                 </div>
                 <div class="chat-input">
-                    <input type="text" placeholder="Type your message...">
-                    <button><i class="fas fa-paper-plane"></i></button>
+                    <input type="text" placeholder="Type your message..." maxlength="500">
+                    <button class="send-btn" title="Send message">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
                 </div>
             </div>
         </div>

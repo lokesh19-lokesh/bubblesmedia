@@ -89,15 +89,23 @@ $(document).ready(function() {
 
     // Live Chat Widget Toggle
     $('.chat-toggle').on('click', function() {
-        $('.chat-container').fadeToggle();
+        $('.chat-container').fadeToggle().addClass('show');
+        $('.chat-badge').hide(); // Hide badge when chat is opened
     });
 
     $('.chat-close').on('click', function() {
-        $('.chat-container').fadeOut();
+        $('.chat-container').fadeOut().removeClass('show');
+    });
+
+    // Quick Response Buttons
+    $('.quick-response-btn').on('click', function() {
+        var message = $(this).data('message');
+        $('.chat-input input').val(message);
+        sendMessage();
     });
 
     // Chat Input Functionality
-    $('.chat-input button').on('click', function() {
+    $('.send-btn').on('click', function() {
         sendMessage();
     });
 
@@ -111,17 +119,71 @@ $(document).ready(function() {
         var message = $('.chat-input input').val().trim();
         if (message !== '') {
             // Add user message
-            $('.chat-messages').append('<div class="message user"><p>' + message + '</p></div>');
+            var userMessage = `
+                <div class="message user">
+                    <div class="message-avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="message-content">
+                        <p>${message}</p>
+                        <span class="message-time">${getCurrentTime()}</span>
+                    </div>
+                </div>
+            `;
+            $('.chat-messages').append(userMessage);
             $('.chat-input input').val('');
             
             // Scroll to bottom of chat
             $('.chat-messages').scrollTop($('.chat-messages')[0].scrollHeight);
             
-            // Simulate agent response (in a real app, this would be handled by a backend)
+            // Simulate agent response based on message content
             setTimeout(function() {
-                $('.chat-messages').append('<div class="message agent"><p>Thank you for your message. One of our agents will respond shortly.</p></div>');
+                var agentResponse = getAgentResponse(message);
+                var agentMessage = `
+                    <div class="message agent">
+                        <div class="message-avatar">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <div class="message-content">
+                            <p>${agentResponse}</p>
+                            <span class="message-time">${getCurrentTime()}</span>
+                        </div>
+                    </div>
+                `;
+                $('.chat-messages').append(agentMessage);
                 $('.chat-messages').scrollTop($('.chat-messages')[0].scrollHeight);
             }, 1000);
+        }
+    }
+
+    function getCurrentTime() {
+        var now = new Date();
+        var hours = now.getHours();
+        var minutes = now.getMinutes();
+        var ampm = hours >= 12 ? 'PM' : 'AM';
+        hours = hours % 12;
+        hours = hours ? hours : 12;
+        minutes = minutes < 10 ? '0' + minutes : minutes;
+        return hours + ':' + minutes + ' ' + ampm;
+    }
+
+    function getAgentResponse(message) {
+        message = message.toLowerCase();
+        
+        if (message.includes('seo') || message.includes('search') || message.includes('optimization')) {
+            return "Great! Our SEO services include keyword research, on-page optimization, technical SEO, and content strategy. We've helped businesses increase organic traffic by 200%+ on average. Would you like to schedule a free consultation?";
+        } else if (message.includes('pricing') || message.includes('cost') || message.includes('price')) {
+            return "Our pricing varies based on your specific needs and goals. We offer flexible packages starting from ₹15,000/month. Would you like to discuss your requirements? You can call us at +91 9390314113 for a detailed quote.";
+        } else if (message.includes('schedule') || message.includes('call') || message.includes('meeting')) {
+            return "Perfect! I can help you schedule a call. Our team is available Mon-Fri, 9AM-6PM. You can call us directly at +91 9390314113 or email us at info@bubblesmedia.com. What time works best for you?";
+        } else if (message.includes('social media') || message.includes('facebook') || message.includes('instagram')) {
+            return "Our social media marketing services include content creation, community management, paid advertising, and analytics. We help brands build meaningful connections with their audience. Would you like to see some case studies?";
+        } else if (message.includes('website') || message.includes('design') || message.includes('development')) {
+            return "We create stunning, responsive websites that convert visitors into customers. Our designs are modern, user-friendly, and optimized for performance. Would you like to see our portfolio?";
+        } else if (message.includes('contact') || message.includes('phone') || message.includes('email')) {
+            return "You can reach us at:\n📞 Phone: +91 9390314113\n📧 Email: info@bubblesmedia.com\n📍 Location: Hyderabad, Telangana\n⏰ Hours: Mon-Fri, 9AM-6PM";
+        } else {
+            return "Thank you for your message! Our team will get back to you shortly. In the meantime, feel free to call us at +91 9390314113 or email us at info@bubblesmedia.com for immediate assistance.";
         }
     }
 
