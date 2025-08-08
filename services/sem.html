@@ -19,6 +19,100 @@
         #page-banner {
             margin-top: 1cm;
         }
+
+
+        .pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+  }
+
+  /* Pricing Card Styling */
+  .pricing-card {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .pricing-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  }
+
+  .pricing-card.featured {
+    border: 2px solid #007bff;
+    box-shadow: 0 6px 18px rgba(0, 123, 255, 0.1);
+  }
+
+  .pricing-header h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  .price {
+    font-size: 1.8rem;
+    margin: 10px 0;
+  }
+
+  .price .currency {
+    font-size: 1.2rem;
+    vertical-align: super;
+  }
+
+  .featured-tag {
+    background: #007bff;
+    color: #fff;
+    padding: 5px 12px;
+    font-size: 0.8rem;
+    border-radius: 50px;
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+
+  .pricing-features ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    text-align: left;
+  }
+
+  .pricing-features li {
+    margin: 8px 0;
+    font-size: 0.95rem;
+  }
+
+  .pricing-features i {
+    margin-right: 8px;
+    color: #28a745;
+  }
+
+  .pricing-features i.fa-times {
+    color: #dc3545;
+  }
+
+  .pricing-footer .btn {
+    margin-top: 15px;
+  }
+
+  .custom-package {
+    margin-top: 60px;
+    text-align: center;
+  }
+
+  .custom-package h3 {
+    margin-bottom: 10px;
+  }
+
+  .custom-package p {
+    max-width: 600px;
+    margin: 0 auto 20px;
+  }
+
     </style>
     <!-- Slick Carousel -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
