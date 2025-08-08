@@ -259,9 +259,9 @@
         z-index:999;
     }
 
-    /* Animated Dots Responsive */
+    /* Animated Dots Responsive - Now enabled for all devices */
     #header .dots {
-        display: none; /* Hide on mobile for better performance */
+        display: block;
     }
 }
 
@@ -432,9 +432,61 @@
 
 /* Extra Small Devices (Portrait Phones, less than 576px) */
 @media (max-width: 575.98px) {
-    /* Hide dots on mobile for better performance */
+    /* Enable dots animation on mobile */
     #header .dots {
-        display: none;
+        display: block;
+        z-index: 10;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+    }
+    
+    /* Mobile-specific dot animations */
+    #header .dots .dot {
+        width: 8px;
+        height: 8px;
+        opacity: 0.6;
+        background-color: var(--primary-color);
+        border-radius: 50%;
+        position: absolute;
+        z-index: 10;
+    }
+    
+    /* Adjust dot positions for mobile */
+    #header .dots .dot:nth-child(1),
+    #header .dots .dot:nth-child(2) {
+        top: 8px;
+        left: 0;
+        animation: moveRight 6s linear infinite;
+    }
+    
+    #header .dots .dot:nth-child(3),
+    #header .dots .dot:nth-child(4) {
+        top: 0;
+        left: 25vw;
+        animation: moveDown 5s ease-in-out infinite;
+    }
+    
+    #header .dots .dot:nth-child(5),
+    #header .dots .dot:nth-child(6) {
+        top: 50px;
+        right: 0;
+        animation: moveLeft 8s linear infinite;
+    }
+    
+    #header .dots .dot:nth-child(7),
+    #header .dots .dot:nth-child(8) {
+        bottom: 0;
+        left: 50vw;
+        animation: moveUp 6s ease-in-out infinite;
+    }
+    
+    #header .dots .dot:nth-child(9),
+    #header .dots .dot:nth-child(10) {
+        top: 40%;
+        left: 50%;
+        animation: moveDiagonal 7s ease-in-out infinite;
     }
     
     #hero {
@@ -480,8 +532,8 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        width: 0%;
-        height: 0%;
+        width: 90%;
+        height: 70%;
         background: rgba(0, 0, 0, 0.2);
         z-index: 1;
         border-radius: 12px;
@@ -490,6 +542,63 @@
 
 /* Small Devices (Landscape Phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
+    /* Enable dots animation on tablets */
+    #header .dots {
+        display: block;
+        z-index: 10;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+    }
+    
+    /* Tablet-specific dot animations */
+    #header .dots .dot {
+        width: 9px;
+        height: 9px;
+        opacity: 0.65;
+        background-color: var(--primary-color);
+        border-radius: 50%;
+        position: absolute;
+        z-index: 10;
+    }
+    
+    /* Adjust dot positions for tablets */
+    #header .dots .dot:nth-child(1),
+    #header .dots .dot:nth-child(2) {
+        top: 10px;
+        left: 0;
+        animation: moveRight 7s linear infinite;
+    }
+    
+    #header .dots .dot:nth-child(3),
+    #header .dots .dot:nth-child(4) {
+        top: 0;
+        left: 30vw;
+        animation: moveDown 6s ease-in-out infinite;
+    }
+    
+    #header .dots .dot:nth-child(5),
+    #header .dots .dot:nth-child(6) {
+        top: 60px;
+        right: 0;
+        animation: moveLeft 9s linear infinite;
+    }
+    
+    #header .dots .dot:nth-child(7),
+    #header .dots .dot:nth-child(8) {
+        bottom: 0;
+        left: 60vw;
+        animation: moveUp 7s ease-in-out infinite;
+    }
+    
+    #header .dots .dot:nth-child(9),
+    #header .dots .dot:nth-child(10) {
+        top: 45%;
+        left: 50%;
+        animation: moveDiagonal 8s ease-in-out infinite;
+    }
+    
     #hero {
         min-height: 65vh;
         height: 65vh;
@@ -519,13 +628,13 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        width: 100%;
-        height: 100%;
+        width: 85%;
+        height: 65%;
         object-fit: cover;
         object-position: center;
-        border-radius: 1px;
-        box-shadow: 0 10px 30px rgba(239, 28, 28, 0.4);
-        background: #f52a2a;
+        border-radius: 15px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+        background: #000;
     }
 
     .overlay {
@@ -543,6 +652,63 @@
 
 /* Medium Devices (Tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
+    /* Enable dots animation on medium devices */
+    #header .dots {
+        display: block;
+        z-index: 10;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+    }
+    
+    /* Medium device-specific dot animations */
+    #header .dots .dot {
+        width: 10px;
+        height: 10px;
+        opacity: 0.7;
+        background-color: var(--primary-color);
+        border-radius: 50%;
+        position: absolute;
+        z-index: 10;
+    }
+    
+    /* Adjust dot positions for medium devices */
+    #header .dots .dot:nth-child(1),
+    #header .dots .dot:nth-child(2) {
+        top: 12px;
+        left: 0;
+        animation: moveRight 8s linear infinite;
+    }
+    
+    #header .dots .dot:nth-child(3),
+    #header .dots .dot:nth-child(4) {
+        top: 0;
+        left: 35vw;
+        animation: moveDown 7s ease-in-out infinite;
+    }
+    
+    #header .dots .dot:nth-child(5),
+    #header .dots .dot:nth-child(6) {
+        top: 70px;
+        right: 0;
+        animation: moveLeft 10s linear infinite;
+    }
+    
+    #header .dots .dot:nth-child(7),
+    #header .dots .dot:nth-child(8) {
+        bottom: 0;
+        left: 65vw;
+        animation: moveUp 8s ease-in-out infinite;
+    }
+    
+    #header .dots .dot:nth-child(9),
+    #header .dots .dot:nth-child(10) {
+        top: 50%;
+        left: 50%;
+        animation: moveDiagonal 9s ease-in-out infinite;
+    }
+    
     #hero {
         min-height: 70vh;
         height: 70vh;
@@ -560,8 +726,8 @@
         position: absolute;
         top: 0;
         left: 0;
-        width: 0%;
-        height: 0%;
+        width: 100%;
+        height: 100%;
         z-index: 0;
         overflow: hidden;
         background: transparent;
