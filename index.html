@@ -67,7 +67,238 @@
             </video>
             <div class="overlay"></div>
         </div>
-    </section>
+    </section> -->
+
+<<<<<<< HEAD
+    <style>
+    .hero-section {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #bcd4d0;
+        padding: 40px 20px;
+    }
+
+    /* Left Content */
+    .hero-left {
+        flex: 1;
+        min-width: 300px;
+        padding: 20px;
+    }
+    .hero-left h4 {
+        font-size: 16px;
+        color: #4e5c56;
+        font-weight: normal;
+        display: flex;
+        align-items: center;
+    }
+    .hero-left h1 {
+        font-size: 40px;
+        font-weight: bold;
+        margin: 10px 0;
+        line-height: 1.2;
+        color: #000;
+    }
+    .hero-left p {
+        font-size: 20px;
+        color: #0d2d69;
+        font-style: italic;
+        font-weight: 500;
+    }
+    .btn-main {
+        display: inline-block;
+        padding: 14px 25px;
+        background-color: #ff8c08;
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        margin-top: 20px;
+        border-radius: 4px;
+    }
+    .btn-enquire {
+        display: inline-block;
+        background-color: #ff8c08;
+        color: white;
+        font-weight: bold;
+        padding: 12px 20px;
+        margin-top: 15px;
+        border-radius: 8px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .play-text {
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+        margin-left: 15px;
+        color: #0d2d69;
+        font-weight: 500;
+        cursor: pointer;
+    }
+    .play-text svg {
+        width: 18px;
+        height: 18px;
+    }
+
+    /* Right Content */
+    .hero-right {
+        flex: 1;
+        min-width: 300px;
+        position: relative;
+        text-align: center;
+    }
+    .hero-right img {
+        max-width: 100%;
+    }
+    .badge {
+        position: absolute;
+        background: white;
+        padding: 6px 12px;
+        border-radius: 8px;
+        font-size: 14px;
+        font-weight: bold;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+    }
+    .badge-google {
+        top: 30px;
+        right: 20px;
+    }
+    .badge-woo {
+        top: -30px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: none;
+        box-shadow: none;
+    }
+    .badge-projects {
+        top: 100px;
+        left: 20px;
+    }
+    .badge-shopify {
+        bottom: 40px;
+        right: 20px;
+    }
+    .rating {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        background: transparent;
+        font-size: 14px;
+        text-align: center;
+    }
+    .rating img {
+        width: 90px;
+    }
+    .rating span {
+        display: block;
+        font-weight: bold;
+        color: #0d2d69;
+    }
+    .rating small {
+        color: #0d2d69;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+        .hero-section {
+            flex-direction: column;
+            text-align: center;
+        }
+        .btn-enquire {
+            justify-content: center;
+        }
+        .badge-google, .badge-woo, .badge-projects, .badge-shopify, .rating {
+            position: static;
+            transform: none;
+            margin: 10px auto;
+        }
+    }
+</style>
+
+<section class="hero-section">
+    <!-- Left Side -->
+    <div class="hero-left">
+        <!-- <h4>Welcome To <strong>Bubbles</strong></h4> -->
+         <h4>Welcome To&nbsp;&nbsp;<strong>Bubbles</strong></h4>
+
+        <h1>Custom Web Applications Tailored to Your Needs</h1>
+        <p style="color: #ff8c08;">GET UP TO 50% OFF – ENQUIRE NOW!</p>
+
+        <a href="#" class="btn-main">FREE WEBSITE HOSTING & EMAILS</a>
+        <div style="margin-top: 20px; display:flex; align-items:center; flex-wrap:wrap;">
+            <a href="#" class="btn-enquire">ENQUIRE NOW! ▼</a>
+            <!-- <div class="play-text">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M8 5v14l11-7z"></path>
+                </svg>
+                PLAY VIDEO
+            </div> -->
+        </div>
+    </div>
+
+    <!-- Right Side -->
+    <div class="hero-right">
+        <img src="./media/Techvizo-banner.webp" alt="Woman with laptop">
+
+        <!-- <div class="badge badge-google">Google Workspace</div> -->
+        <div class="badge badge-woo"><img src="https://via.placeholder.com/60" alt="WooCommerce"></div>
+        <!-- <div class="badge badge-projects">100+ Projects</div> -->
+        <!-- <div class="badge badge-shopify">Official Shopify Experts</div> -->
+        
+        <div class="rating">
+            ⭐⭐⭐⭐⭐
+            <span>4.5</span>
+            <small>rating based on Google Reviews</small>
+        </div>
+    </div>
+</section>
+
+
+ <section class="partners">
+  <div class="section-title">
+    <h4 style="color: #ff8c08;">Our Clients</h4>
+    <h2>Trusted by Clients Across All Major Platforms</h2>
+  </div>
+
+  <div class="carousel-container">
+    <div class="carousel-track">
+      <div style="background-color: #000;" class="carousel-item"><img src="./media/client/samhitha-logo.png" alt="samhitha"></div>
+      <div style="background-color: #000;" class="carousel-item"><img src="./media/client/maaspace-logo.png" alt="maaspace"></div>
+      <div style="background-color: #000;" class="carousel-item"><img src="./media/client/homezointeriors.png" alt="homezointeriors"></div>
+
+      <div style="background-color: #000;" class="carousel-item"><img src="./media/client/lotus-logo.png" alt="React.js"></div>
+      <div style="background-color: #000;" class="carousel-item"><img src="./media/client/chithra-decors-logo.png" alt="Node.js"></div>
+      <div style="background-color: #000;" class="carousel-item"><img src="./media/client/construction-logo.png" alt="construction"></div>
+        <!-- <img style="background-color: #000;" src="./media/client/smat-logoo.png" alt=""> -->
+      <div class="carousel-item"><img src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Cloudflare_Logo.svg" alt="Cloudflare"></div>
+        <!-- <img src="https://upload.wikimedia.org/wikipedia/commons/2/20/WordPress_logo.svg" alt="WordPress"> -->
+      <div class="carousel-item"><img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Shopify_logo_2018.svg" alt="Shopify"></div>
+      <div class="carousel-item"><img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/OpenAI_Logo.svg" alt="OpenAI"></div>
+
+
+      <!-- duplicate logos for smooth infinite scroll -->
+       <div style="background-color: #000;" class="carousel-item"><img src="./media/client/samhitha-logo.png" alt="samhitha"></div>
+      <div style="background-color: #000;" class="carousel-item"><img src="./media/client/maaspace-logo.png" alt="maaspace"></div>
+      <div style="background-color: #000;" class="carousel-item"><img src="./media/client/homezointeriors.png" alt="homezointeriors"></div>
+      <div style="background-color: #000;" class="carousel-item"><img src="./media/client/lotus-logo.png" alt="lotus"></div>
+      <div style="background-color: #000;" class="carousel-item"><img src="./media/client/chithra-decors-logo.png" alt="chithra"></div>
+      <div style="background-color: #000;" class="carousel-item"><img src="./media/client/construction-logo.png" alt="construction"></div>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/GoDaddy_logo.svg" alt="GoDaddy">
+      <div class="carousel-item"><img src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Cloudflare_Logo.svg" alt="Cloudflare"></div>
+
+      <div class="carousel-item"><img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Shopify_logo_2018.svg" alt="Shopify"></div>
+      <div class="carousel-item"><img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/OpenAI_Logo.svg" alt="OpenAI"></div>
+ 
+    </div>
+  </div>
+</section>
+
+
+
 
     <!-- Services Overview Section -->
     <section id="services-overview" class="section-padding">
