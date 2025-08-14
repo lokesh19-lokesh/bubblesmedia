@@ -1,6 +1,58 @@
 // Main JavaScript for Bubbles Media Website
 
 $(document).ready(function() {
+    // Hero Form Validation
+    function initHeroFormValidation() {
+        $('#hero-form').on('submit', function(e) {
+            e.preventDefault();
+            
+            let isValid = true;
+            const nameField = $('#hero-name');
+            const emailField = $('#hero-email');
+            const phoneField = $('#hero-phone');
+            
+            // Simple validation
+            if (nameField.val().trim() === '') {
+                nameField.addClass('error');
+                isValid = false;
+            } else {
+                nameField.removeClass('error');
+            }
+            
+            // Email validation
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(emailField.val().trim())) {
+                emailField.addClass('error');
+                isValid = false;
+            } else {
+                emailField.removeClass('error');
+            }
+            
+            // Phone validation (optional)
+            if (phoneField.val().trim() !== '' && !/^\d{10,15}$/.test(phoneField.val().trim().replace(/[\s-()]/g, ''))) {
+                phoneField.addClass('error');
+                isValid = false;
+            } else {
+                phoneField.removeClass('error');
+            }
+            
+            if (isValid) {
+                // Show success message
+                $('.form-container').html('<div class="success-message"><i class="fas fa-check-circle"></i><h3>Thank You!</h3><p>We\'ve received your request and will contact you shortly.</p></div>');
+                
+                // You can add AJAX form submission here
+                // $.ajax({ ... });
+            }
+        });
+        
+        // Remove error class on input
+        $('#hero-form input, #hero-form select').on('focus', function() {
+            $(this).removeClass('error');
+        });
+    }
+    
+    // Initialize hero form validation
+    initHeroFormValidation();
     // WhatsApp Integration
     function initWhatsAppIntegration() {
         // Add click tracking for WhatsApp links
