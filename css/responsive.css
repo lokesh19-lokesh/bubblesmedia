@@ -20,6 +20,14 @@
         text-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
         color: #ffffff;
     }
+    
+    .hero-text h1 {
+        font-size: 3rem;
+    }
+    
+    .hero-form {
+        flex: 0 0 350px;
+    }
 
     /* Animated Dots Desktop */
     #header .dots {
@@ -69,6 +77,18 @@
         margin: 0 auto 30px;
         line-height: 1.6;
         font-size: 1.2rem;
+    }
+    
+    .hero-buttons {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    
+    .hero-form {
+        flex: 0 0 100%;
+        max-width: 500px;
+        width: 100%;
     }
 
     .contact-form {
@@ -277,6 +297,29 @@
         text-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
         color: #ffffff;
         letter-spacing: 1.2px;
+    }
+    
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+    
+    .hero-text p {
+        font-size: 1rem;
+    }
+    
+    .hero-content {
+        padding: 30px 15px;
+    }
+    
+    .hero-buttons .btn {
+        width: 100%;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
     }
 
     .cta-buttons {

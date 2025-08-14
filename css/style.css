@@ -342,8 +342,115 @@ img {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.5);
     z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.hero-text {
+    flex: 1;
+    color: var(--white);
+    padding-right: 50px;
+}
+
+.hero-text h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    color: var(--white);
+    line-height: 1.2;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    max-width: 600px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.hero-form {
+    flex: 0 0 400px;
+    background: var(--white);
+    border-radius: var(--border-radius-md);
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+}
+
+.form-container {
+    padding: 30px;
+}
+
+.form-container h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--dark-color);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid var(--light-gray);
+    border-radius: var(--border-radius-sm);
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: var(--primary-color);
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(255, 140, 8, 0.2);
+}
+
+.form-group select {
+    appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg fill="%23777" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+}
+
+.form-group input.error,
+.form-group select.error {
+    border-color: #ff3b30;
+    background-color: rgba(255, 59, 48, 0.05);
+}
+
+.success-message {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.success-message i {
+    font-size: 3rem;
+    color: #4cd964;
+    margin-bottom: 15px;
+}
+
+.success-message h3 {
+    margin-bottom: 10px;
+    color: var(--dark-color);
+}
+
+.success-message p {
+    color: var(--gray);
 }
 
 /* ===== SERVICES OVERVIEW SECTION ===== */
