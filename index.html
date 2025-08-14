@@ -59,7 +59,7 @@
     </header>
 
     <!-- Hero Section -->
-    <section id="hero" class="section-padding">
+    <!-- <section id="hero" class="section-padding">
         <div class="hero-background">
             <video autoplay muted loop playsinline class="hero-bg-video">
                 <source src="media/bubbles.mp4" type="video/mp4">
@@ -67,7 +67,235 @@
             </video>
             <div class="overlay"></div>
         </div>
-    </section>
+    </section> -->
+
+    <style>
+    .hero-section {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #bcd4d0;
+        padding: 40px 20px;
+    }
+
+    /* Left Content */
+    .hero-left {
+        flex: 1;
+        min-width: 300px;
+        padding: 20px;
+    }
+    .hero-left h4 {
+        font-size: 16px;
+        color: #4e5c56;
+        font-weight: normal;
+        display: flex;
+        align-items: center;
+    }
+    .hero-left h1 {
+        font-size: 40px;
+        font-weight: bold;
+        margin: 10px 0;
+        line-height: 1.2;
+        color: #000;
+    }
+    .hero-left p {
+        font-size: 20px;
+        color: #0d2d69;
+        font-style: italic;
+        font-weight: 500;
+    }
+    .btn-main {
+        display: inline-block;
+        padding: 14px 25px;
+        background-color: #ff8c08;
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        margin-top: 20px;
+        border-radius: 4px;
+    }
+    .btn-enquire {
+        display: inline-block;
+        background-color: #ff8c08;
+        color: white;
+        font-weight: bold;
+        padding: 12px 20px;
+        margin-top: 15px;
+        border-radius: 8px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .play-text {
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+        margin-left: 15px;
+        color: #0d2d69;
+        font-weight: 500;
+        cursor: pointer;
+    }
+    .play-text svg {
+        width: 18px;
+        height: 18px;
+    }
+
+    /* Right Content */
+    .hero-right {
+        flex: 1;
+        min-width: 300px;
+        position: relative;
+        text-align: center;
+    }
+    .hero-right img {
+        max-width: 100%;
+    }
+    .badge {
+        position: absolute;
+        background: white;
+        padding: 6px 12px;
+        border-radius: 8px;
+        font-size: 14px;
+        font-weight: bold;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+    }
+    .badge-google {
+        top: 30px;
+        right: 20px;
+    }
+    .badge-woo {
+        top: -30px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: none;
+        box-shadow: none;
+    }
+    .badge-projects {
+        top: 100px;
+        left: 20px;
+    }
+    .badge-shopify {
+        bottom: 40px;
+        right: 20px;
+    }
+    .rating {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        background: transparent;
+        font-size: 14px;
+        text-align: center;
+    }
+    .rating img {
+        width: 90px;
+    }
+    .rating span {
+        display: block;
+        font-weight: bold;
+        color: #0d2d69;
+    }
+    .rating small {
+        color: #0d2d69;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+        .hero-section {
+            flex-direction: column;
+            text-align: center;
+        }
+        .btn-enquire {
+            justify-content: center;
+        }
+        .badge-google, .badge-woo, .badge-projects, .badge-shopify, .rating {
+            position: static;
+            transform: none;
+            margin: 10px auto;
+        }
+    }
+</style>
+
+<section class="hero-section">
+    <!-- Left Side -->
+    <div class="hero-left">
+        <!-- <h4>Welcome To <strong>Bubbles</strong></h4> -->
+         <h4>Welcome To&nbsp;&nbsp;<strong>Bubbles</strong></h4>
+
+        <h1>Custom Web Applications Tailored to Your Needs</h1>
+        <p style="color: #ff8c08;">GET UP TO 50% OFF – ENQUIRE NOW!</p>
+
+        <a href="#" class="btn-main">FREE WEBSITE HOSTING & EMAILS</a>
+        <div style="margin-top: 20px; display:flex; align-items:center; flex-wrap:wrap;">
+            <a href="#" class="btn-enquire">ENQUIRE NOW! ▼</a>
+            <!-- <div class="play-text">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M8 5v14l11-7z"></path>
+                </svg>
+                PLAY VIDEO
+            </div> -->
+        </div>
+    </div>
+
+    <!-- Right Side -->
+    <div class="hero-right">
+        <img src="./media/Techvizo-banner.webp" alt="Woman with laptop">
+
+        <!-- <div class="badge badge-google">Google Workspace</div> -->
+        <div class="badge badge-woo"><img src="https://via.placeholder.com/60" alt="WooCommerce"></div>
+        <!-- <div class="badge badge-projects">100+ Projects</div> -->
+        <!-- <div class="badge badge-shopify">Official Shopify Experts</div> -->
+        
+        <div class="rating">
+            ⭐⭐⭐⭐⭐
+            <span>4.5</span>
+            <small>rating based on Google Reviews</small>
+        </div>
+    </div>
+</section>
+
+
+ <section class="partners">
+  <div class="section-title">
+    <h4 style="color: #ff8c08;">Our Clients</h4>
+    <h2>Trusted by Clients Across All Major Platforms</h2>
+  </div>
+
+  <div class="carousel-container">
+    <div class="carousel-track">
+      <div style="background-color: #000;" class="carousel-item"><img src="./media/client/samhitha-logo.png" alt="samhitha"></div>
+      <div style="background-color: #000;" class="carousel-item"><img src="./media/client/maaspace-logo.png" alt="maaspace"></div>
+      <div style="background-color: #000;" class="carousel-item"><img src="./media/client/homezointeriors.png" alt="homezointeriors"></div>
+
+      <div style="background-color: #000;" class="carousel-item"><img src="./media/client/lotus-logo.png" alt="React.js"></div>
+      <div style="background-color: #000;" class="carousel-item"><img src="./media/client/chithra-decors-logo.png" alt="Node.js"></div>
+      <div style="background-color: #000;" class="carousel-item"><img src="./media/client/construction-logo.png" alt="construction"></div>
+        <!-- <img style="background-color: #000;" src="./media/client/smat-logoo.png" alt=""> -->
+      <div class="carousel-item"><img src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Cloudflare_Logo.svg" alt="Cloudflare"></div>
+        <!-- <img src="https://upload.wikimedia.org/wikipedia/commons/2/20/WordPress_logo.svg" alt="WordPress"> -->
+      <div class="carousel-item"><img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Shopify_logo_2018.svg" alt="Shopify"></div>
+      <div class="carousel-item"><img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/OpenAI_Logo.svg" alt="OpenAI"></div>
+
+
+      <!-- duplicate logos for smooth infinite scroll -->
+       <div style="background-color: #000;" class="carousel-item"><img src="./media/client/samhitha-logo.png" alt="samhitha"></div>
+      <div style="background-color: #000;" class="carousel-item"><img src="./media/client/maaspace-logo.png" alt="maaspace"></div>
+      <div style="background-color: #000;" class="carousel-item"><img src="./media/client/homezointeriors.png" alt="homezointeriors"></div>
+      <div style="background-color: #000;" class="carousel-item"><img src="./media/client/lotus-logo.png" alt="lotus"></div>
+      <div style="background-color: #000;" class="carousel-item"><img src="./media/client/chithra-decors-logo.png" alt="chithra"></div>
+      <div style="background-color: #000;" class="carousel-item"><img src="./media/client/construction-logo.png" alt="construction"></div>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/GoDaddy_logo.svg" alt="GoDaddy">
+      <div class="carousel-item"><img src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Cloudflare_Logo.svg" alt="Cloudflare"></div>
+
+      <div class="carousel-item"><img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Shopify_logo_2018.svg" alt="Shopify"></div>
+      <div class="carousel-item"><img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/OpenAI_Logo.svg" alt="OpenAI"></div>
+ 
+    </div>
+  </div>
+</section>
+
 
     <!-- Services Overview Section -->
     <section id="services-overview" class="section-padding">
@@ -177,6 +405,289 @@
             </div>
         </div>
     </section>
+
+ <section class="partners">
+  <div class="section-title">
+    <h4 style="color: #ff8c08;">Our Partners</h4>
+    <h2>Expertise in all Major Platforms</h2>
+  </div>
+
+  <div class="carousel-container">
+    <div class="carousel-track">
+        <div class="carousel-item"><img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="HTML5"></div>
+      <div class="carousel-item"><img src="https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg" alt="CSS3"></div>
+      <div class="carousel-item"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript"></div>
+      <div class="carousel-item"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React.js"></div>
+      <div class="carousel-item"><img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg" alt="Node.js"></div>
+      <div class="carousel-item"><img src="https://upload.wikimedia.org/wikipedia/commons/9/93/MongoDB_Logo.svg" alt="MongoDB"></div>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/GoDaddy_logo.svg" alt="GoDaddy">
+      <div class="carousel-item"><img src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Cloudflare_Logo.svg" alt="Cloudflare"></div>
+        <!-- <img src="https://upload.wikimedia.org/wikipedia/commons/2/20/WordPress_logo.svg" alt="WordPress"> -->
+      <div class="carousel-item"><img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Shopify_logo_2018.svg" alt="Shopify"></div>
+      <div class="carousel-item"><img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/OpenAI_Logo.svg" alt="OpenAI"></div>
+
+
+      <!-- duplicate logos for smooth infinite scroll -->
+       <div class="carousel-item"><img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="HTML5"></div>
+      <div class="carousel-item"><img src="https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg" alt="CSS3"></div>
+      <div class="carousel-item"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript"></div>
+      <div class="carousel-item"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React.js"></div>
+      <div class="carousel-item"><img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg" alt="Node.js"></div>
+      <div class="carousel-item"><img src="https://upload.wikimedia.org/wikipedia/commons/9/93/MongoDB_Logo.svg" alt="MongoDB"></div>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/GoDaddy_logo.svg" alt="GoDaddy">
+      <div class="carousel-item"><img src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Cloudflare_Logo.svg" alt="Cloudflare"></div>
+        <!-- <img src="https://upload.wikimedia.org/wikipedia/commons/2/20/WordPress_logo.svg" alt="WordPress"> -->
+      <div class="carousel-item"><img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Shopify_logo_2018.svg" alt="Shopify"></div>
+      <div class="carousel-item"><img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/OpenAI_Logo.svg" alt="OpenAI"></div>
+ 
+    </div>
+  </div>
+</section>
+
+<style>
+.partners {
+  background: #f5faff;
+  padding: 60px 20px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.section-title h4 {
+  color: #2c7a73;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0;
+  display: inline-block;
+  position: relative;
+}
+.section-title h4::after {
+  content: "";
+  display: inline-block;
+  width: 40px;
+  height: 2px;
+  background: #ff8c08;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+.section-title h2 {
+  margin-top: 12px;
+  font-size: 32px;
+  font-weight: 700;
+  color: #222;
+}
+
+.carousel-container {
+  max-width: 1100px;
+  margin: 40px auto 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-track {
+  display: flex;
+  width: max-content;
+  animation: scroll 20s linear infinite;
+}
+
+.carousel-item {
+  flex: 0 0 auto;
+  width: 220px;
+  margin: 0 12px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+}
+
+.carousel-item img {
+  max-width: 100%;
+  max-height: 70px;
+  object-fit: contain;
+}
+
+/* continuous scroll */
+@keyframes scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+/* responsive */
+@media (max-width: 768px) {
+  .carousel-item {
+    width: 160px;
+    padding: 20px;
+  }
+}
+</style>
+
+
+
+<style>
+/* Section base */
+.partners {
+  background: #f5faff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+/* Titles */
+.section-title h4 {
+  color: #2c7a73;
+  margin: 0;
+  font-size: 18px;
+  font-weight: 500;
+  position: relative;
+  display: inline-block;
+}
+.section-title h4::after {
+  content: "";
+  display: inline-block;
+  width: 40px;
+  height: 2px;
+  /* background: #2c7a73; */
+  margin-left: 10px;
+  vertical-align: middle;
+}
+.section-title h2 {
+  margin-top: 12px;
+  font-size: 32px;
+  font-weight: 700;
+  color: #222;
+}
+
+/* Carousel */
+.carousel-container {
+  position: relative;
+  max-width: 1100px;
+  margin: 40px auto 0;
+  overflow: hidden;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+  flex: 0 0 220px;
+  margin: 0 10px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+}
+
+.carousel-item img {
+  max-width: 100%;
+  max-height: 80px;
+  object-fit: contain;
+}
+
+/* Arrows */
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  border-radius: 50%;
+  padding: 10px 14px;
+  cursor: pointer;
+  font-size: 18px;
+  color: #333;
+  z-index: 2;
+  transition: background 0.3s;
+}
+.carousel-btn:hover {
+  background: #2c7a73;
+  color: #fff;
+}
+.carousel-btn.prev { left: -25px; }
+.carousel-btn.next { right: -25px; }
+
+/* Dots */
+.carousel-dots {
+  margin-top: 20px;
+}
+.carousel-dots span {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  background: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.carousel-dots .active {
+  background: #2c7a73;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .carousel-item {
+    flex: 0 0 160px;
+    padding: 20px;
+  }
+  .carousel-btn.prev { left: 5px; }
+  .carousel-btn.next { right: 5px; }
+}
+</style>
+
+<script>
+const track = document.querySelector('.carousel-track');
+const items = document.querySelectorAll('.carousel-item');
+const prevBtn = document.querySelector('.carousel-btn.prev');
+const nextBtn = document.querySelector('.carousel-btn.next');
+const dotsContainer = document.querySelector('.carousel-dots');
+let index = 0;
+
+// Create dots
+items.forEach((_, i) => {
+  const dot = document.createElement('span');
+  if (i === 0) dot.classList.add('active');
+  dot.addEventListener('click', () => goToSlide(i));
+  dotsContainer.appendChild(dot);
+});
+const dots = document.querySelectorAll('.carousel-dots span');
+
+function updateCarousel() {
+  const itemWidth = items[0].offsetWidth + 20; // item + margin
+  track.style.transform = `translateX(-${index * itemWidth}px)`;
+  dots.forEach(dot => dot.classList.remove('active'));
+  dots[index].classList.add('active');
+}
+
+function goToSlide(i) {
+  index = i;
+  updateCarousel();
+}
+
+nextBtn.addEventListener('click', () => {
+  index = (index + 1) % items.length;
+  updateCarousel();
+});
+prevBtn.addEventListener('click', () => {
+  index = (index - 1 + items.length) % items.length;
+  updateCarousel();
+});
+
+// Auto slide
+setInterval(() => {
+  index = (index + 1) % items.length;
+  updateCarousel();
+}, 3000);
+</script>
+
+
+    
 
     <!-- Testimonials Section -->
     <section id="testimonials" class="section-padding bg-light">
