@@ -266,6 +266,58 @@
             margin: 10px auto;
         }
     }
+
+
+
+    .pricing-header h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  .price {
+    font-size: 1.8rem;
+    margin: 10px 0;
+  }
+
+  .price .currency {
+    font-size: 1.2rem;
+    vertical-align: super;
+  }
+
+  .featured-tag {
+    background: #007bff;
+    color: #fff;
+    padding: 5px 12px;
+    font-size: 0.8rem;
+    border-radius: 50px;
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+
+  .pricing-features ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    text-align: left;
+  }
+
+  .pricing-features li {
+    margin: 8px 0;
+    font-size: 0.95rem;
+  }
+
+  .pricing-features i {
+    margin-right: 8px;
+    color: #28a745;
+  }
+
+  .pricing-features i.fa-times {
+    color: #dc3545;
+  }
+
+  .pricing-footer .btn {
+    margin-top: 15px;
+  }
 </style>
 
 <section class="hero-section">
@@ -291,7 +343,7 @@
 
     <!-- Right Side -->
     <div class="hero-right">
-        <img src="./media/Techvizo-banner.webp" alt="Woman with laptop">
+        <img src="./media/herobanner.png" alt="Woman with laptop">
 
         <!-- <div class="badge badge-google">Google Workspace</div> -->
         <!-- <div class="badge badge-woo"><img src="https://via.placeholder.com/60" alt="WooCommerce"></div> -->
@@ -401,6 +453,154 @@
                     </div>
                     <h3>Website Design</h3>
                     <p>User-friendly, responsive websites designed for conversion</p>
+                    <a href="services/website-design.html" class="btn btn-secondary">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Services Overview Section pri-->
+    <section id="services-overview" class="section-padding">
+        <div class="container">
+            <!-- <div class="section-header">
+                <h2>Our Services</h2>
+                <p>Comprehensive digital marketing solutions tailored to your business needs</p>
+            </div> -->
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>SEO Services Base Price</h3>
+                    <!-- <p>Boost your organic visibility and drive targeted traffic to your website</p> -->
+                     <div class="pricing-header">
+                        <h3>Starter</h3>
+                        <div class="price">₹9,000<span>/month</span></div>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Keyword Research (10 keywords)</li>
+                            <li><i class="fas fa-check"></i> On-Page SEO Optimization</li>
+                            <li><i class="fas fa-check"></i> Basic Technical SEO</li>
+                            <li><i class="fas fa-check"></i> Monthly Reporting</li>
+                            <li><i class="fas fa-check"></i> Google My Business Optimization</li>
+                            <li class="not-included"><i class="fas fa-times"></i> Content Creation</li>
+                            <li class="not-included"><i class="fas fa-times"></i> Link Building</li>
+                            <li class="not-included"><i class="fas fa-times"></i> Advanced Technical SEO</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-footer">
+                        <a href="../contact.html" class="btn btn-secondary">Get Started</a>
+                    </div>
+                     
+
+                    <a href="services/seo.html" class="btn btn-secondary">Learn More</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-ad"></i>
+                    </div>
+                    <h3>Meta Ads / Google Ads Base Price</h3>
+                    <!-- <p>Strategic paid campaigns that maximize ROI and drive qualified leads</p> -->
+                     <div class="pricing-header">
+                        <h3>Starter</h3>
+                        <div class="price">
+                            <span class="currency">₹</span>
+                            <span class="amount">3,999</span>
+                            <span class="period">/month</span>
+                        </div>
+                        <!-- <p>Perfect for small businesses new to Google Ads</p> -->
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Management of up to 2 campaigns</li>
+                            <li><i class="fas fa-check"></i> Up to 100 keywords</li>
+                            <li><i class="fas fa-check"></i> Basic ad copy (2 versions per ad group)</li>
+                            <li><i class="fas fa-check"></i> Standard ad extensions</li>
+                            <li><i class="fas fa-check"></i> Monthly performance reporting</li>
+                            <li><i class="fas fa-check"></i> Basic conversion tracking</li>
+                            <li><i class="fas fa-check"></i> Bi-weekly optimizations</li>
+                            <li><i class="fas fa-times"></i> Remarketing campaigns</li>
+                            <li><i class="fas fa-times"></i> Landing page optimization</li>
+                            <li><i class="fas fa-times"></i> Competitor analysis</li>
+                        </ul>
+                        <p class="pricing-note">* Ad spend budget is additional</p>
+                    </div>
+                    <div class="pricing-footer">
+                        <a href="../contact.html" class="btn btn-outline">Get Started</a>
+                    </div>
+                    <a href="services/sem.html" class="btn btn-secondary">Learn More</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-share-alt"></i>
+                    </div>
+                    <h3>Social Media Marketing Base Price</h3>
+                    <!-- <p>Engage your audience and build brand awareness across social platforms</p> -->
+                     <div class="pricing-header">
+                        <h3>Starter</h3>
+                        <div class="price">
+                            <span class="currency">₹</span>
+                            <span class="amount">9,000</span>
+                            <span class="period">/month</span>
+                        </div>
+                        <p>Perfect for small businesses new to social media</p>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Management of 2 social platforms</li>
+                            <li><i class="fas fa-check"></i> 12 posts per month (3 per week)</li>
+                            <li><i class="fas fa-check"></i> Basic content creation</li>
+                            <li><i class="fas fa-check"></i> Community management (business hours)</li>
+                            <li><i class="fas fa-check"></i> Monthly performance reporting</li>
+                            <li><i class="fas fa-check"></i> Basic hashtag strategy</li>
+                            <li><i class="fas fa-times"></i> Paid social advertising</li>
+                            <li><i class="fas fa-times"></i> Influencer marketing</li>
+                            <li><i class="fas fa-times"></i> Video content creation</li>
+                            <li><i class="fas fa-times"></i> Social listening</li>
+                        </ul>
+                        <p class="pricing-note">* Ad spend budget is additional</p>
+                    </div>
+                    <div class="pricing-footer">
+                        <a href="../contact.html" class="btn btn-outline">Get Started</a>
+                    </div>
+                    <a href="services/social-media.html" class="btn btn-secondary">Learn More</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Website Design Base Price</h3>
+                    <!-- <p>User-friendly, responsive websites designed for conversion</p> -->
+                     <div class="pricing-header">
+                        <h3>Starter</h3>
+                        <div class="price">
+                            <span class="currency">₹</span>
+                            <span class="amount">9,999</span>
+                            <span class="period">starting at</span>
+                        </div>
+                        <p>Perfect for small businesses and startups</p>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Up to 5 pages</li>
+                            <li><i class="fas fa-check"></i> Responsive design</li>
+                            <li><i class="fas fa-check"></i> Basic SEO setup</li>
+                            <li><i class="fas fa-check"></i> Contact form</li>
+                            <li><i class="fas fa-check"></i> Social media integration</li>
+                            <li><i class="fas fa-check"></i> Google Analytics setup</li>
+                            <li><i class="fas fa-times"></i> Custom functionality</li>
+                            <li><i class="fas fa-times"></i> E-commerce capabilities</li>
+                            <li><i class="fas fa-times"></i> Content creation</li>
+                            <li><i class="fas fa-times"></i> Ongoing maintenance</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-footer">
+                        <a href="../contact.html" class="btn btn-outline">Get Started</a>
+                    </div>
+
                     <a href="services/website-design.html" class="btn btn-secondary">Learn More</a>
                 </div>
             </div>
@@ -796,16 +996,7 @@ setInterval(() => {
                     </div>
                 </div>
             </div>
-            <!-- <div class="client-logos">
-                <div class="logo-carousel">
-                    <div class="client-logo">Client 1</div>
-                    <div class="client-logo">Client 2</div>
-                    <div class="client-logo">Client 3</div>
-                    <div class="client-logo">Client 4</div>
-                    <div class="client-logo">Client 5</div>
-                    <div class="client-logo">Client 6</div>
-                </div>
-            </div> -->
+            
         </div>
     </section>
 

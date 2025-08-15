@@ -460,7 +460,7 @@ img {
 }
 
 .service-card {
-    background-color: var(--white);
+    background-color: #e1f5f1;
     border-radius: var(--border-radius-md);
     padding: 30px;
     text-align: center;
