@@ -71,6 +71,55 @@
 
 <<<<<<< HEAD
     <style>
+        .quote-form-container {
+    background: #e1f5f1;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    padding: 15px;
+    margin: -40px auto 40px auto; /* Moves it up under hero */
+    max-width: 1500px;
+    position: relative;
+    z-index: 10;
+}
+
+.quote-form {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.quote-form input {
+    flex: 1;
+    min-width: 220px;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    outline: none;
+}
+
+.btn-quote {
+    background: #ff8c08; /* Dark orange button */
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    min-width: 150px;
+}
+
+.btn-quote:hover {
+    background: #003580;
+}
+
+
+
+
+
+
     .hero-section {
         display: flex;
         flex-wrap: wrap;
@@ -245,7 +294,7 @@
         <img src="./media/Techvizo-banner.webp" alt="Woman with laptop">
 
         <!-- <div class="badge badge-google">Google Workspace</div> -->
-        <div class="badge badge-woo"><img src="https://via.placeholder.com/60" alt="WooCommerce"></div>
+        <!-- <div class="badge badge-woo"><img src="https://via.placeholder.com/60" alt="WooCommerce"></div> -->
         <!-- <div class="badge badge-projects">100+ Projects</div> -->
         <!-- <div class="badge badge-shopify">Official Shopify Experts</div> -->
         
@@ -256,6 +305,19 @@
         </div>
     </div>
 </section>
+
+
+<!-- Quote Form -->
+<div class="quote-form-container">
+    <form class="quote-form">
+        <input type="text" placeholder="Your Name *" required>
+        <input type="email" placeholder="Your Email *" required>
+        <input type="tel" placeholder="Your Phone *" required>
+        <button type="submit" class="btn-quote">QUICK QUOTE ▼</button>
+    </form>
+</div>
+
+
 
 
  <section class="partners">
@@ -531,7 +593,7 @@
 <style>
 /* Section base */
 .partners {
-  background: #f5faff;
+  background: #bcd4d0;
   padding: 60px 20px;
   text-align: center;
 }
