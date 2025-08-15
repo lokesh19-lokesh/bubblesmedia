@@ -12,6 +12,42 @@
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
+        .feature-card {
+    background: #fff; /* White background */
+    padding: 20px;
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08); /* Light shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+}
+
+.feature-icon {
+    font-size: 40px;
+    color: #ff6600; /* Change icon color */
+    margin-bottom: 15px;
+}
+
+.service-features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
         /* Spacing between navbar and body content */
         #header {
             margin-bottom: 1cm;
@@ -235,159 +271,18 @@
                     <h3>Local Campaign Management</h3>
                     <p>Drive foot traffic to your Hyderabad business location with locally targeted ads that appear when nearby customers search for relevant products or services.</p>
                 </div>
-                <div class="feature-card">
+                <!-- <div class="feature-card">
                     <div class="feature-icon">
                         <i class="fas fa-analytics"></i>
                     </div>
                     <h3>Advanced Analytics & Reporting</h3>
                     <p>Gain clear insights into campaign performance with comprehensive reporting that tracks key metrics, conversions, and ROI to continuously optimize your campaigns.</p>
                 </div>
-            </div>
+            </div> -->
         </div>
     </section>
 
-    <!-- Benefits Section -->
-    <!-- <section id="service-benefits" class="section-padding">
-        <div class="container">
-            <div class="section-header">
-                <h2>Why Choose Our SEM Services</h2>
-                <p>The Bubbles Media advantage for your paid search campaigns</p>
-            </div>
-            <div class="benefits-grid">
-                <div class="benefit-card">
-                    <div class="benefit-icon">
-                        <i class="fas fa-rocket"></i>
-                    </div>
-                    <div class="benefit-content">
-                        <h3>Immediate Results</h3>
-                        <p>Unlike SEO which takes time to build momentum, SEM delivers immediate visibility and traffic as soon as your campaigns go live, making it ideal for quick wins and time-sensitive promotions.</p>
-                    </div>
-                </div>
-                <div class="benefit-card">
-                    <div class="benefit-icon">
-                        <i class="fas fa-crosshairs"></i>
-                    </div>
-                    <div class="benefit-content">
-                        <h3>Precise Targeting</h3>
-                        <p>Reach exactly the right audience with multi-layered targeting options including keywords, demographics, interests, location, device type, and more to maximize campaign efficiency.</p>
-                    </div>
-                </div>
-                <div class="benefit-card">
-                    <div class="benefit-icon">
-                        <i class="fas fa-calculator"></i>
-                    </div>
-                    <div class="benefit-content">
-                        <h3>Controlled Budget</h3>
-                        <p>Maintain complete control over your advertising spend with flexible budgets, bid strategies, and the ability to adjust campaigns in real-time based on performance.</p>
-                    </div>
-                </div>
-                <div class="benefit-card">
-                    <div class="benefit-icon">
-                        <i class="fas fa-chart-pie"></i>
-                    </div>
-                    <div class="benefit-content">
-                        <h3>Measurable ROI</h3>
-                        <p>Track every aspect of your campaigns with precise metrics that show exactly how your investment translates into leads, sales, and revenue, allowing for data-driven optimization.</p>
-                    </div>
-                </div>
-                <div class="benefit-card">
-                    <div class="benefit-icon">
-                        <i class="fas fa-sliders-h"></i>
-                    </div>
-                    <div class="benefit-content">
-                        <h3>Agile Optimization</h3>
-                        <p>Our team continuously monitors and refines your campaigns, making real-time adjustments to keywords, ad copy, bids, and targeting to improve performance and reduce wasted spend.</p>
-                    </div>
-                </div>
-                <div class="benefit-card">
-                    <div class="benefit-icon">
-                        <i class="fas fa-users-cog"></i>
-                    </div>
-                    <div class="benefit-content">
-                        <h3>Expert Management</h3>
-                        <p>Work with Google Ads certified professionals who stay current with platform changes, industry trends, and best practices to ensure your campaigns leverage the latest features and strategies.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Process Section -->
-    <!-- <section id="service-process" class="section-padding bg-light">
-        <div class="container">
-            <div class="section-header">
-                <h2>Our SEM Management Process</h2>
-                <p>A systematic approach to creating successful paid search campaigns</p>
-            </div>
-            <div class="process-steps">
-                <div class="process-step">
-                    <div class="step-number">1</div>
-                    <div class="step-content">
-                        <h3>Audit & Analysis</h3>
-                        <p>We begin with a comprehensive audit of your existing campaigns (if any) and analyze your industry, competitors, and target audience to identify opportunities and challenges.</p>
-                        <ul class="step-details">
-                            <li>Keyword research and competitive analysis</li>
-                            <li>Historical performance review</li>
-                            <li>Audience and market assessment</li>
-                            <li>Conversion tracking verification</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="process-step">
-                    <div class="step-number">2</div>
-                    <div class="step-content">
-                        <h3>Strategy Development</h3>
-                        <p>Based on our findings and your business objectives, we create a customized SEM strategy that outlines campaign structure, targeting approach, budget allocation, and expected outcomes.</p>
-                        <ul class="step-details">
-                            <li>Campaign structure planning</li>
-                            <li>Budget and bidding strategy</li>
-                            <li>Ad copy and creative development</li>
-                            <li>Landing page optimization recommendations</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="process-step">
-                    <div class="step-number">3</div>
-                    <div class="step-content">
-                        <h3>Campaign Execution</h3>
-                        <p>We meticulously build out your campaigns following Google Ads best practices, implementing proper tracking, creating compelling ad copy, and setting up advanced targeting parameters.</p>
-                        <ul class="step-details">
-                            <li>Account and campaign setup</li>
-                            <li>Ad group organization</li>
-                            <li>Ad creation and extension implementation</li>
-                            <li>Conversion tracking deployment</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="process-step">
-                    <div class="step-number">4</div>
-                    <div class="step-content">
-                        <h3>Monitoring & Optimization</h3>
-                        <p>Once campaigns are live, we continuously monitor performance and make data-driven optimizations to improve results, including adjusting bids, refining targeting, and testing new ad variations.</p>
-                        <ul class="step-details">
-                            <li>Daily performance monitoring</li>
-                            <li>Bid and budget management</li>
-                            <li>A/B testing of ad copy and landing pages</li>
-                            <li>Negative keyword refinement</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="process-step">
-                    <div class="step-number">5</div>
-                    <div class="step-content">
-                        <h3>Reporting & Analysis</h3>
-                        <p>We provide transparent, comprehensive reporting that clearly communicates campaign performance, insights, and recommendations for ongoing improvement.</p>
-                        <ul class="step-details">
-                            <li>Regular performance reports</li>
-                            <li>ROI and conversion analysis</li>
-                            <li>Strategic recommendations</li>
-                            <li>Quarterly strategy reviews</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> --> 
+    
 
     <!-- Pricing Section -->
     <section id="service-pricing" class="section-padding">

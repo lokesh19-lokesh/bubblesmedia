@@ -12,6 +12,35 @@
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
+        .feature-card {
+    background: #fff; /* White background */
+    padding: 20px;
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08); /* Light shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+}
+
+.feature-icon {
+    font-size: 40px;
+    color: #ff6600; /* Change icon color */
+    margin-bottom: 15px;
+}
+
+.service-features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+
+
+
         /* Spacing between navbar and body content */
         #header {
             margin-bottom: 1cm;
@@ -115,6 +144,44 @@
   }
 
 
+  .platforms-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.platform-card {
+    background: #fff; /* White card background */
+    padding: 20px;
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08); /* Soft shadow */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.platform-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+}
+
+.platform-icon {
+    font-size: 40px;
+    color: #ff6600; /* Icon color */
+    margin-bottom: 15px;
+}
+
+.platform-card h3 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.platform-card p {
+    font-size: 0.95rem;
+    color: #555;
+}
+
+
+
     </style>
     <!-- Slick Carousel -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
@@ -177,23 +244,7 @@
         </div>
     </section>
 
-    <!-- Service Overview Section -->
-    <!-- <section id="service-overview" class="section-padding">
-        <div class="container">
-            <div class="service-overview-content">
-                <div class="service-overview-text">
-                    <h2>Elevate Your Brand's Social Presence</h2>
-                    <p>In today's digital landscape, a strong social media presence is essential for businesses looking to connect with their audience, build brand loyalty, and drive meaningful engagement that converts to business results.</p>
-                    <p>At Bubbles Media, we develop tailored social media strategies that align with your business objectives, whether you're looking to increase brand awareness, generate leads, drive website traffic, or boost customer engagement.</p>
-                    <p>Our team of social media experts understands the nuances of each platform and how to leverage them effectively for businesses in Hyderabad and beyond, creating content that resonates with your target audience and drives measurable results.</p>
-                    <a href="../contact.html" class="btn btn-primary">Get a Free Social Media Audit</a>
-                </div>
-                <div class="service-overview-image">
-                    <img src="../images/social-media-overview.jpg" alt="Social Media Marketing Services">
-                </div>
-            </div>
-        </div>
-    </section> -->
+    
 
     <!-- Platforms Section -->
     <section id="social-platforms" class="section-padding bg-light">
