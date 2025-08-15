@@ -102,7 +102,7 @@ img {
 }
 
 .bg-light {
-    background-color: var(--light-color);
+    background-color: #bcd4d0;
 }
 
 .container {
@@ -1322,7 +1322,7 @@ img {
 
 .service-hero-content p {
     font-size: 1.2rem;
-    color: var(--gray);
+    color: #000000;
     margin-bottom: 30px;
     line-height: 1.6;
 }
