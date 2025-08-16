@@ -120,9 +120,11 @@ img {
 .section-header h2 {
     position: relative;
     display: inline-block;
-    margin-bottom: 20px;
-    padding-bottom: 15px;
+    margin: 15px;
+    
+    
 }
+
 
 .section-header h2::after {
     content: '';
@@ -1589,48 +1591,7 @@ img {
 }
 
 /* ===== BLOG PAGE ===== */
-.blog-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 30px;
-}
 
-.blog-card {
-    background-color: var(--white);
-    border-radius: var(--border-radius-lg);
-    overflow: hidden;
-    box-shadow: var(--box-shadow);
-    transition: all 0.3s ease;
-}
-
-.blog-card:hover {
-    transform: translateY(-10px);
-    box-shadow: var(--box-shadow-hover);
-}
-
-.blog-card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-}
-
-.blog-card-content {
-    padding: 20px;
-}
-
-.blog-card h3 {
-    margin-bottom: 10px;
-    color: var(--dark-color);
-}
-
-.blog-card p {
-    color: var(--gray);
-    margin-bottom: 15px;
-}
-
-.blog-card .btn {
-    margin-top: 10px;
-}
 
 /* ===== HEADER DOTS ANIMATION ===== */
 #header .dots {
@@ -1879,4 +1840,340 @@ img {
 
 .filter-buttons{
     padding: 30px;
+}
+
+
+#team {
+  padding: 60px 20px;
+  text-align: center;
+  background: #bcd4d0;
+}
+
+#team h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+#team p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.team-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.team-member {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  width: 220px;
+  transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+  transform: translateY(-8px);
+}
+
+.team-member img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.member-info {
+  padding: 15px;
+}
+
+.member-info h3 {
+  margin: 0;
+  font-size: 20px;
+  color: #333;
+}
+
+.member-info p {
+  margin: 5px 0 0;
+  font-size: 14px;
+  color: #777;
+}
+
+
+/* CTA Section */
+#cta {
+  padding: 60px 20px;
+  background: #bcd4d0;
+}
+
+.cta-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.cta-content {
+  flex: 1;
+  min-width: 280px;
+}
+
+.cta-content h2 {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.cta-content p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cta-buttons .btn {
+  padding: 12px 25px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background 0.3s ease;
+}
+
+.btn-primary {
+  background: #ff8c08;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: #e67600;
+}
+
+.btn-secondary {
+  background: #25d366;
+  color: #fff;
+}
+
+.btn-secondary:hover {
+  background: #1eb954;
+}
+
+/* Images */
+.cta-image img {
+  max-width: 300px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .cta-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .cta-buttons {
+    justify-content: center;
+  }
+}
+
+
+/* ===== Recent Articles Section ===== */
+#recent-posts {
+  padding: 60px 0;
+  background: #f9f9f9;
+}
+
+#recent-posts .section-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+#recent-posts .section-header h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+#recent-posts .section-header p {
+  font-size: 16px;
+  color: #666;
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 25px;
+}
+
+.blog-card {
+  background: ;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.blog-card:hover {
+  transform: translateY(-8px);
+}
+
+.blog-image img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.blog-content {
+  padding: 20px;
+}
+
+.post-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #999;
+  margin-bottom: 10px;
+}
+
+.blog-content h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 12px;
+}
+
+.blog-content p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.read-more {
+  font-size: 14px;
+  font-weight: 500;
+  color: #ff6600;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.read-more:hover {
+  color: #cc5200;
+}
+
+/* ===== Newsletter Section ===== */
+#blog-newsletter {
+  padding: 60px 0;
+  background: #f4f7fc; /* light background */
+}
+
+#blog-newsletter .newsletter-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px;
+}
+
+#blog-newsletter .newsletter-text {
+  flex: 1 1 50%;
+}
+
+#blog-newsletter .newsletter-text h2 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 15px;
+}
+
+#blog-newsletter .newsletter-text p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+#blog-newsletter .newsletter-benefits {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#blog-newsletter .newsletter-benefits li {
+  font-size: 15px;
+  color: #444;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+#blog-newsletter .newsletter-benefits i {
+  color: #28a745;
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+#blog-newsletter .newsletter-form {
+  flex: 1 1 45%;
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+#blog-newsletter .form-group {
+  margin-bottom: 15px;
+}
+
+#blog-newsletter input,
+#blog-newsletter select {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 15px;
+  transition: border 0.3s ease;
+}
+
+#blog-newsletter input:focus,
+#blog-newsletter select:focus {
+  border-color: #ff6600;
+  outline: none;
+}
+
+#blog-newsletter button.btn {
+  display: inline-block;
+  padding: 12px 20px;
+  font-size: 15px;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  background: #ff6600;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  width: 100%;
+}
+
+#blog-newsletter button.btn:hover {
+  background: #cc5200;
+}
+
+#blog-newsletter .form-disclaimer {
+  font-size: 13px;
+  color: #777;
+  margin-top: 12px;
+  line-height: 1.4;
 }
