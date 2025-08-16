@@ -755,14 +755,15 @@ img {
 #footer {
     background-color: var(--dark-color);
     color: var(--light-gray);
-    padding-top: 70px;
+    padding-top: 40px;
+
 }
 
 .footer-content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 30px;
-    margin-bottom: 50px;
+    margin-bottom:10px;
 }
 
 .footer-logo h3 {
@@ -1875,6 +1876,11 @@ img {
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   width: 220px;
   transition: transform 0.3s ease;
+  object-fit: cover;
+  
+
+
+  height: 100%;
 }
 
 .team-member:hover {
@@ -1961,7 +1967,7 @@ img {
 }
 
 .btn-secondary {
-  background: #25d366;
+  background: #ff8c08;
   color: #fff;
 }
 
