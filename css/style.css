@@ -140,7 +140,7 @@ img {
 .section-header p {
     max-width: 700px;
     margin: 0 auto;
-    color: var(--gray);
+    color: #222;
 }
 
 /* ===== BUTTONS ===== */
@@ -1511,7 +1511,7 @@ img {
 
 .story-text p {
     margin-bottom: 20px;
-    color: var(--gray);
+    color: #222;
     line-height: 1.6;
 }
 
