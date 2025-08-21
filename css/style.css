@@ -273,7 +273,7 @@ img {
     top: 100%;
     left: 0;
     width: 220px;
-    background-color: var(--white);
+    background-color: #fa6419;
     box-shadow: var(--box-shadow);
     border-radius: var(--border-radius-sm);
     padding: 10px 0;
