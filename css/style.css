@@ -242,9 +242,77 @@ img {
 
 #header .container {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    position: relative;
+    /* Required for absolute positioning of actions */
+    justify-content: center;
+    /* Centers the .nav-center-wrapper */
+}
 
+.nav-center-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    /* Closer gap between Logo and Nav as requested */
+}
+
+/* Header Actions (Call/Search) */
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    position: absolute;
+    right: 0;
+    margin-left: 0;
+}
+
+/* Nav Container */
+#header nav {
+    margin: 0;
+    /* Wrapper handles positioning */
+}
+
+.btn-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 18px;
+}
+
+.btn-icon.call-icon {
+    background-color: #ffffff;
+    color: #4CAF50;
+    /* Green phone icon often standard, or use brand orange text if prefer */
+    /* Reference image 2 shows white phone on dark bg, or similar. 
+       Wait, current nav is Orange. 
+       Image 2 has dark nav. 
+       User said "like the second image". Second image has CALL icon.
+       If nav is orange, white icon or white button with orange icon looks good. 
+       Let's go with White Icon on Transparent or White Button with Orange Icon. 
+       User said "put call button like the second image". 
+       Image 2: Phone icon is white inside a green circle? No, it looks like a white phone icon. 
+       Let's make it a white icon. */
+    background-color: transparent;
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.btn-icon.call-icon:hover {
+    background-color: #ffffff;
+    color: #fa6419;
+}
+
+.btn-icon.search-icon {
+    color: #ffffff;
+}
+
+.btn-icon.search-icon:hover {
+    transform: scale(1.1);
 }
 
 .logo a {
@@ -264,7 +332,7 @@ img {
 
 .nav-menu li {
     position: relative;
-    margin-left: 30px;
+    margin-left: 20px;
 }
 
 .nav-menu li a {
@@ -630,7 +698,31 @@ img {
     gap: 10px;
 }
 
-@media(max-width:992px) {}
+@media (max-width: 992px) {
+    #header .container {
+        justify-content: flex-start;
+    }
+
+    .nav-center-wrapper {
+        gap: 0;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+
+    .header-actions {
+        position: static;
+        margin-left: auto;
+        transform: none;
+    }
+
+    .mobile-menu-toggle {
+        display: block;
+        margin-left: 15px;
+        color: var(--white);
+    }
+}
 
 /* ===== WHY CHOOSE US ===== */
 .why-us-grid {
