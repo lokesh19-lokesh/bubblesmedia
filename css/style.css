@@ -2526,3 +2526,107 @@ img {
     margin-top: 12px;
     line-height: 1.4;
 }
+/* ===== HERO TEXT STYLES (NEW) ===== */
+.hero-left .hero-bubbles-text {
+    font-family: 'Tenor Sans', sans-serif;
+    font-size: 3rem;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-bottom: 0px;
+    font-weight: normal;
+    display: block;
+    width: 100%;
+}
+
+.hero-left .hero-team-text {
+    font-family: 'Fraunces', serif;
+    font-size: 5rem;
+    line-height: 0.9;
+    color: #ff6600;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin: 10px 0 20px 0;
+    letter-spacing: -1px;
+}
+
+.hero-left .hero-freelance-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    color: #000;
+    font-weight: 700;
+    font-style: italic;
+    line-height: 1.4;
+    text-transform: uppercase;
+    max-width: 600px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero-left .hero-bubbles-text {
+        font-size: 2rem;
+    }
+    .hero-left .hero-team-text {
+        font-size: 3rem;
+    }
+    .hero-left .hero-freelance-text {
+        font-size: 1rem;
+    }
+}
+
+
+/* CURVED TEXT STYLES */
+.hero-bubbles-svg {
+    display: block;
+    margin: 0; /* Left align to match other text */
+    margin-bottom: -30px;
+    overflow: visible;
+    max-width: 100%;
+}
+
+.hero-bubbles-text-curve {
+    font-family: 'Tenor Sans', sans-serif;
+    font-size: 50px;
+    fill: #000;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .hero-bubbles-svg {
+        margin: 0 auto;
+    }
+}
+
+
+/* ===== HERO TEXT ANIMATIONS ===== */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero-left .hero-bubbles-text {
+    opacity: 0;
+    animation: fadeInUp 0.8s ease-out forwards;
+    animation-delay: 0s;
+}
+
+.hero-left .hero-team-text {
+    opacity: 0;
+    animation: fadeInUp 0.8s ease-out forwards;
+    animation-delay: 0.2s;
+}
+
+.hero-left .hero-freelance-text {
+    opacity: 0;
+    animation: fadeInUp 0.8s ease-out forwards;
+    animation-delay: 0.4s;
+}
+
