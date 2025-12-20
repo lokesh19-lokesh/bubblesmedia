@@ -524,6 +524,103 @@ img {
     color: var(--gray);
 }
 
+/* ===== SERVICES FEATURES (ORANGE) SECTION ===== */
+#services-features {
+    background-color: #ffffff;
+}
+
+#services-features .service-card {
+    background-color: #ff6600;
+    color: #ffffff;
+}
+
+#services-features .service-card h3 {
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+#services-features .service-card p {
+    color: #ffffff;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+#services-features .service-icon {
+    background-color: #ffffff;
+    color: #ff8c08;
+    width: 90px;
+    height: 90px;
+    font-size: 32px;
+}
+
+/* Maintain icon style on hover */
+#services-features .service-card:hover .service-icon {
+    background-color: #ffffff;
+    color: #ff8c08;
+}
+
+#services-features .btn-secondary {
+    background-color: #ffffff;
+    color: #000000;
+    font-weight: 700;
+    border-radius: 6px;
+    padding: 12px 30px;
+    border: none;
+    margin-top: 15px;
+    display: inline-block;
+}
+
+#services-features .btn-secondary:hover {
+    background-color: #f0f0f0;
+    color: #000000;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Specific override for White Cards (SEO, Meta Ads) */
+#services-features .service-card.card-white {
+    background-color: #ffffff;
+    color: #ff8c08;
+    border: 1px solid #ff8c08;
+    box-shadow: 0 5px 15px rgba(255, 140, 8, 0.15);
+}
+
+#services-features .service-card.card-white h3 {
+    color: #ff6600;
+}
+
+#services-features .service-card.card-white p {
+    color: #fa6419;
+}
+
+#services-features .service-card.card-white .service-icon {
+    /* Icon is already orange, just ensure bg is white/transparent */
+    background-color: transparent;
+    color: #ff8c08;
+    font-size: 40px;
+}
+
+#services-features .service-card.card-white .btn-secondary {
+    background-color: #ff6600;
+    color: #ffffff;
+    padding: 12px 30px;
+    border-radius: 6px;
+    margin-top: 20px;
+    font-weight: 700;
+    display: inline-block;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+}
+
+#services-features .service-card.card-white .btn-secondary:hover {
+    background-color: #e65c00;
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+
 .pricing-footer {
     margin-top: auto;
     padding-top: 20px;
