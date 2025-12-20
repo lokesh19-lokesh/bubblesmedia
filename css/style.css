@@ -245,7 +245,7 @@ img {
     align-items: center;
     position: relative;
     /* Required for absolute positioning of actions */
-    justify-content: center;
+    justify-content: space-between;
     /* Centers the .nav-center-wrapper */
 }
 
@@ -319,6 +319,10 @@ img {
     color: var(--dark-color);
     font-weight: 700;
     display: block;
+    margin-left: 0px;
+    margin-right: 250px;
+    float: left;
+    /* Moves logo slightly to the right */
 }
 
 .logo img {
