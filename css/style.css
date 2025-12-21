@@ -143,8 +143,38 @@ img {
     left: 50%;
     transform: translateX(-50%);
     width: 70px;
-    height: 3px;
-    background: var(--primary-color);
+}
+
+/* Call Button Animation */
+@keyframes pulse-call {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(255, 102, 0, 0.7);
+    }
+
+    70% {
+        transform: scale(1.1);
+        box-shadow: 0 0 0 10px rgba(255, 102, 0, 0);
+    }
+
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(255, 102, 0, 0);
+    }
+}
+
+.call-icon {
+    margin-right: 20px;
+    /* Move slightly left on desktop */
+    animation: pulse-call 2s infinite;
+    background-color: var(--primary-color) !important;
+    /* Ensure visibility */
+    border-radius: 50%;
+    /* Make it round if not already */
+}
+
+height: 3px;
+background: var(--primary-color);
 }
 
 .section-header p {
@@ -715,16 +745,28 @@ img {
         display: none;
     }
 
+    .logo a {
+        margin-right: 0;
+        /* Remove large desktop margin */
+    }
+
     .header-actions {
-        position: static;
+        display: flex;
+        /* Ensure it stays flex */
         margin-left: auto;
-        transform: none;
+        /* Push to right */
+        margin-right: 20px;
+        /* Shift slightly left */
+        gap: 15px;
+        /* Add space between call icon and hamburger */
     }
 
     .mobile-menu-toggle {
         display: block;
-        margin-left: 15px;
-        color: var(--white);
+        color: #ffffff;
+        /* Explicit white */
+        font-size: 24px;
+        cursor: pointer;
     }
 }
 
@@ -2526,6 +2568,7 @@ img {
     margin-top: 12px;
     line-height: 1.4;
 }
+
 /* ===== HERO TEXT STYLES (NEW) ===== */
 .hero-left .hero-bubbles-text {
     font-family: 'Tenor Sans', sans-serif;
@@ -2541,7 +2584,7 @@ img {
 
 .hero-left .hero-team-text {
     font-family: 'Fraunces', serif;
-    font-size: 5rem;
+    font-size: 3rem;
     line-height: 0.9;
     color: #ff6600;
     text-transform: uppercase;
@@ -2566,9 +2609,11 @@ img {
     .hero-left .hero-bubbles-text {
         font-size: 2rem;
     }
+
     .hero-left .hero-team-text {
         font-size: 3rem;
     }
+
     .hero-left .hero-freelance-text {
         font-size: 1rem;
     }
@@ -2578,7 +2623,8 @@ img {
 /* CURVED TEXT STYLES */
 .hero-bubbles-svg {
     display: block;
-    margin: 0; /* Left align to match other text */
+    margin: 0;
+    /* Left align to match other text */
     margin-bottom: -30px;
     overflow: visible;
     max-width: 100%;
@@ -2600,33 +2646,74 @@ img {
 }
 
 
-/* ===== HERO TEXT ANIMATIONS ===== */
-@keyframes fadeInUp {
-    from {
+/* ===== HERO TEXT ANIMATIONS (REALISTIC) ===== */
+@keyframes revealText {
+    0% {
         opacity: 0;
-        transform: translateY(20px);
+        transform: translateY(40px) scale(1.05);
+        filter: blur(10px);
     }
-    to {
+
+    100% {
         opacity: 1;
-        transform: translateY(0);
+        transform: translateY(0) scale(1);
+        filter: blur(0);
     }
 }
 
-.hero-left .hero-bubbles-text {
+.hero-left .hero-bubbles-container {
+    width: 100%;
+    max-width: 400px;
+    height: 120px;
+    margin-bottom: -10px;
+    /* Adjusted spacing */
     opacity: 0;
-    animation: fadeInUp 0.8s ease-out forwards;
-    animation-delay: 0s;
+    animation: revealText 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+    animation-delay: 0.1s;
+}
+
+.hero-left .hero-bubbles-container svg {
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+}
+
+.hero-left .hero-bubbles-container text {
+    font-family: 'Tenor Sans', sans-serif;
+    font-size: 55px;
+    /* Slightly smaller for elegance */
+    fill: #000;
+    text-transform: uppercase;
+    letter-spacing: 12px;
+    /* Wide spacing like image */
+    font-weight: 400;
 }
 
 .hero-left .hero-team-text {
-    opacity: 0;
-    animation: fadeInUp 0.8s ease-out forwards;
-    animation-delay: 0.2s;
+    font-family: 'Anton', sans-serif;
+    font-size: 4.5rem;
+    color: #ff6600;
+    /* Brand Orange */
+    text-transform: uppercase;
+
+    animation: revealText 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+    animation-delay: 0.3s;
+    /* transform-origin: left; */
+    -webkit-text-stroke-width: 6px;
 }
 
 .hero-left .hero-freelance-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    /* Bold */
+    font-style: italic;
+    /* Italic */
+    line-height: 1.4;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
     opacity: 0;
-    animation: fadeInUp 0.8s ease-out forwards;
-    animation-delay: 0.4s;
+    animation: revealText 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+    animation-delay: 0.6s;
 }
-

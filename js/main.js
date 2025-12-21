@@ -1,16 +1,16 @@
 // Main JavaScript for Bubbles Media Website
 
-$(document).ready(function() {
+$(document).ready(function () {
     // Hero Form Validation
     function initHeroFormValidation() {
-        $('#hero-form').on('submit', function(e) {
+        $('#hero-form').on('submit', function (e) {
             e.preventDefault();
-            
+
             let isValid = true;
             const nameField = $('#hero-name');
             const emailField = $('#hero-email');
             const phoneField = $('#hero-phone');
-            
+
             // Simple validation
             if (nameField.val().trim() === '') {
                 nameField.addClass('error');
@@ -18,7 +18,7 @@ $(document).ready(function() {
             } else {
                 nameField.removeClass('error');
             }
-            
+
             // Email validation
             const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
             if (!emailRegex.test(emailField.val().trim())) {
@@ -27,7 +27,7 @@ $(document).ready(function() {
             } else {
                 emailField.removeClass('error');
             }
-            
+
             // Phone validation (optional)
             if (phoneField.val().trim() !== '' && !/^\d{10,15}$/.test(phoneField.val().trim().replace(/[\s-()]/g, ''))) {
                 phoneField.addClass('error');
@@ -35,54 +35,54 @@ $(document).ready(function() {
             } else {
                 phoneField.removeClass('error');
             }
-            
+
             if (isValid) {
                 // Show success message
                 $('.form-container').html('<div class="success-message"><i class="fas fa-check-circle"></i><h3>Thank You!</h3><p>We\'ve received your request and will contact you shortly.</p></div>');
-                
+
                 // You can add AJAX form submission here
                 // $.ajax({ ... });
             }
         });
-        
+
         // Remove error class on input
-        $('#hero-form input, #hero-form select').on('focus', function() {
+        $('#hero-form input, #hero-form select').on('focus', function () {
             $(this).removeClass('error');
         });
     }
-    
+
     // Initialize hero form validation
     initHeroFormValidation();
     // WhatsApp Integration
     function initWhatsAppIntegration() {
         // Add click tracking for WhatsApp links
-        $('a[href*="wa.me"]').on('click', function() {
+        $('a[href*="wa.me"]').on('click', function () {
             // Track WhatsApp clicks (you can add analytics here)
             console.log('WhatsApp link clicked');
-            
+
             // Optional: Add a small delay to show user feedback
             $(this).addClass('clicked');
             setTimeout(() => {
                 $(this).removeClass('clicked');
             }, 200);
         });
-        
+
         // Add hover effects for WhatsApp buttons
         $('.whatsapp-btn').hover(
-            function() {
+            function () {
                 $(this).css('transform', 'scale(1.05)');
             },
-            function() {
+            function () {
                 $(this).css('transform', 'scale(1)');
             }
         );
-        
+
         // Show WhatsApp button after page load for better UX
         setTimeout(() => {
             $('.whatsapp-float').fadeIn(500);
         }, 1000);
     }
-    
+
     // Initialize WhatsApp integration
     initWhatsAppIntegration();
     // Check if chatbot elements exist
@@ -105,14 +105,14 @@ $(document).ready(function() {
     } else {
         console.log('Chatbot elements not found');
     }
-    
+
     // Mobile Menu Toggle
-    $('.mobile-menu-toggle').on('click', function() {
+    $('.mobile-menu-toggle').on('click', function () {
         $('.nav-menu').toggleClass('active');
     });
 
     // Dropdown Menu for Mobile
-    $('.dropdown > a').on('click', function(e) {
+    $('.dropdown > a').on('click', function (e) {
         if ($(window).width() < 992) {
             e.preventDefault();
             $(this).siblings('.dropdown-menu').toggleClass('active');
@@ -120,7 +120,7 @@ $(document).ready(function() {
     });
 
     // Sticky Header
-    $(window).on('scroll', function() {
+    $(window).on('scroll', function () {
         if ($(this).scrollTop() > 100) {
             $('#header').addClass('sticky');
         } else {
@@ -129,7 +129,7 @@ $(document).ready(function() {
     });
 
     // Smooth Scrolling for Anchor Links
-    $('a[href*="#"]:not([href="#"])').on('click', function() {
+    $('a[href*="#"]:not([href="#"])').on('click', function () {
         if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname === this.hostname) {
             var target = $(this.hash);
             target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
@@ -199,7 +199,7 @@ $(document).ready(function() {
     // Live Chat Widget Toggle
     if ($('.chat-toggle').length > 0) {
         console.log('Attaching chat toggle event');
-        $('.chat-toggle').on('click', function() {
+        $('.chat-toggle').on('click', function () {
             console.log('Chat toggle clicked');
             $('.chat-container').fadeToggle().addClass('show');
             $('.chat-badge').hide(); // Hide badge when chat is opened
@@ -210,7 +210,7 @@ $(document).ready(function() {
 
     if ($('.chat-close').length > 0) {
         console.log('Attaching chat close event');
-        $('.chat-close').on('click', function() {
+        $('.chat-close').on('click', function () {
             console.log('Chat close clicked');
             $('.chat-container').fadeOut().removeClass('show');
         });
@@ -221,7 +221,7 @@ $(document).ready(function() {
     // Quick Response Buttons
     if ($('.quick-response-btn').length > 0) {
         console.log('Attaching quick response events');
-        $('.quick-response-btn').on('click', function() {
+        $('.quick-response-btn').on('click', function () {
             console.log('Quick response clicked:', $(this).data('message'));
             var message = $(this).data('message');
             $('.chat-input input').val(message);
@@ -234,7 +234,7 @@ $(document).ready(function() {
     // Chat Input Functionality
     if ($('.send-btn').length > 0) {
         console.log('Attaching send button event');
-        $('.send-btn').on('click', function() {
+        $('.send-btn').on('click', function () {
             console.log('Send button clicked');
             sendMessage();
         });
@@ -244,7 +244,7 @@ $(document).ready(function() {
 
     if ($('.chat-input input').length > 0) {
         console.log('Attaching chat input event');
-        $('.chat-input input').on('keypress', function(e) {
+        $('.chat-input input').on('keypress', function (e) {
             if (e.which === 13) {
                 console.log('Enter key pressed');
                 sendMessage();
@@ -273,12 +273,12 @@ $(document).ready(function() {
             `;
             $('.chat-messages').append(userMessage);
             $('.chat-input input').val('');
-            
+
             // Scroll to bottom of chat
             $('.chat-messages').scrollTop($('.chat-messages')[0].scrollHeight);
-            
+
             // Simulate agent response based on message content
-            setTimeout(function() {
+            setTimeout(function () {
                 var agentResponse = getAgentResponse(message);
                 var agentMessage = `
                     <div class="message agent">
@@ -310,7 +310,7 @@ $(document).ready(function() {
 
     function getAgentResponse(message) {
         message = message.toLowerCase();
-        
+
         if (message.includes('seo') || message.includes('search') || message.includes('optimization')) {
             return "Great! Our SEO services include keyword research, on-page optimization, technical SEO, and content strategy. We've helped businesses increase organic traffic by 200%+ on average. Would you like to schedule a free consultation?";
         } else if (message.includes('pricing') || message.includes('cost') || message.includes('price')) {
@@ -329,43 +329,43 @@ $(document).ready(function() {
     }
 
     // Form Validation and Submission
-    $('#home-contact-form').on('submit', function(e) {
+    $('#home-contact-form').on('submit', function (e) {
         e.preventDefault();
-        
+
         // Basic validation
         var name = $('#name').val().trim();
         var email = $('#email').val().trim();
         var message = $('#message').val().trim();
         var isValid = true;
-        
+
         if (name === '') {
             isValid = false;
             $('#name').addClass('error');
         } else {
             $('#name').removeClass('error');
         }
-        
+
         if (email === '' || !isValidEmail(email)) {
             isValid = false;
             $('#email').addClass('error');
         } else {
             $('#email').removeClass('error');
         }
-        
+
         if (message === '') {
             isValid = false;
             $('#message').addClass('error');
         } else {
             $('#message').removeClass('error');
         }
-        
+
         if (isValid) {
             // In a real application, you would send this data to your server
             // For demo purposes, we'll just show a success message
             $(this).html('<div class="success-message"><i class="fas fa-check-circle"></i><p>Thank you for your message! We will get back to you soon.</p></div>');
-            
+
             // Reset form after 5 seconds
-            setTimeout(function() {
+            setTimeout(function () {
                 $('#home-contact-form').trigger('reset');
                 $('#home-contact-form').html(`
                     <div class="form-group">
@@ -397,13 +397,13 @@ $(document).ready(function() {
             }, 5000);
         }
     });
-    
+
     // Newsletter Form Submission
-    $('#newsletter-form').on('submit', function(e) {
+    $('#newsletter-form').on('submit', function (e) {
         e.preventDefault();
-        
+
         var email = $('#newsletter-email').val().trim();
-        
+
         if (email === '' || !isValidEmail(email)) {
             $('#newsletter-email').addClass('error');
         } else {
@@ -411,9 +411,9 @@ $(document).ready(function() {
             // In a real application, you would send this data to your server
             // For demo purposes, we'll just show a success message
             $(this).html('<p class="success-message"><i class="fas fa-check-circle"></i> Thank you for subscribing!</p>');
-            
+
             // Reset form after 3 seconds
-            setTimeout(function() {
+            setTimeout(function () {
                 $('#newsletter-form').trigger('reset');
                 $('#newsletter-form').html(`
                     <div class="form-group">
@@ -424,7 +424,7 @@ $(document).ready(function() {
             }, 3000);
         }
     });
-    
+
     // Helper function to validate email
     function isValidEmail(email) {
         var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -435,13 +435,13 @@ $(document).ready(function() {
     $('<style>.error { border-color: #FF6584 !important; box-shadow: 0 0 0 3px rgba(255, 101, 132, 0.1) !important; } .success-message { text-align: center; color: #4CAF50; padding: 20px; } .success-message i { font-size: 48px; margin-bottom: 15px; }</style>').appendTo('head');
 
     // Case Studies Filter Functionality
-    $('.filter-btn').on('click', function() {
+    $('.filter-btn').on('click', function () {
         var filter = $(this).data('filter');
-        
+
         // Update active button
         $('.filter-btn').removeClass('active');
         $(this).addClass('active');
-        
+
         // Filter case studies
         if (filter === 'all') {
             $('.case-study-card').fadeIn();
@@ -452,20 +452,20 @@ $(document).ready(function() {
     });
 
     // Case Study Modal Functionality
-    $('.view-case-study').on('click', function(e) {
+    $('.view-case-study').on('click', function (e) {
         e.preventDefault();
         var modalId = $(this).attr('href');
         $(modalId).fadeIn();
         $('body').addClass('modal-open');
     });
 
-    $('.modal-close').on('click', function() {
+    $('.modal-close').on('click', function () {
         $('.case-study-modal').fadeOut();
         $('body').removeClass('modal-open');
     });
 
     // Close modal when clicking outside
-    $('.case-study-modal').on('click', function(e) {
+    $('.case-study-modal').on('click', function (e) {
         if (e.target === this) {
             $(this).fadeOut();
             $('body').removeClass('modal-open');
@@ -473,7 +473,7 @@ $(document).ready(function() {
     });
 
     // Close modal with Escape key
-    $(document).on('keydown', function(e) {
+    $(document).on('keydown', function (e) {
         if (e.key === 'Escape' && $('.case-study-modal').is(':visible')) {
             $('.case-study-modal').fadeOut();
             $('body').removeClass('modal-open');
@@ -482,6 +482,44 @@ $(document).ready(function() {
 
     // Add modal-open class styling
     $('<style>.modal-open { overflow: hidden; }</style>').appendTo('head');
+
+    // Hero Mouse Movement Animation
+    function initHeroAnimation() {
+        // Disable on mobile devices
+        if (window.innerWidth < 992) return;
+
+        const heroSection = document.querySelector('.hero-section');
+        if (!heroSection) return;
+
+        heroSection.addEventListener('mousemove', (e) => {
+            const { clientX, clientY } = e;
+            const { innerWidth, innerHeight } = window;
+
+            // Calculate mouse position relative to center (range -1 to 1)
+            const xPos = (clientX / innerWidth - 0.5) * 2;
+            const yPos = (clientY / innerHeight - 0.5) * 2;
+
+            // Elements to animate with different speeds
+            const bubbles = document.querySelector('.hero-bubbles-container');
+            const teamText = document.querySelector('.hero-team-text');
+            const freelanceText = document.querySelector('.hero-freelance-text');
+
+            // Apply transforms (translateX, translateY)
+            if (bubbles) bubbles.style.transform = `translate(${xPos * 20}px, ${yPos * 20}px)`;
+            if (teamText) teamText.style.transform = `translate(${xPos * 10}px, ${yPos * 10}px)`;
+            if (freelanceText) freelanceText.style.transform = `translate(${xPos * 15}px, ${yPos * 15}px)`;
+        });
+
+        // Reset on mouse leave
+        heroSection.addEventListener('mouseleave', () => {
+            const elements = document.querySelectorAll('.hero-bubbles-container, .hero-team-text, .hero-freelance-text');
+            elements.forEach(el => {
+                el.style.transform = 'translate(0, 0)';
+            });
+        });
+    }
+
+    initHeroAnimation();
 
     // Google Analytics Integration (Replace UA-XXXXX-Y with your actual tracking ID)
     // In a real application, you would add your Google Analytics tracking code here
