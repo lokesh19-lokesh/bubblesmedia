@@ -167,12 +167,9 @@ img {
 
 .call-icon {
     margin-right: 20px;
-    /* Move slightly left on desktop */
     animation: pulse-call 2s infinite;
     background-color: var(--primary-color) !important;
-    /* Ensure visibility */
     border-radius: 50%;
-    /* Make it round if not already */
 }
 
 
