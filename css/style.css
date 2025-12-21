@@ -143,6 +143,8 @@ img {
     left: 50%;
     transform: translateX(-50%);
     width: 70px;
+    height: 3px;
+    background: var(--primary-color);
 }
 
 /* Call Button Animation */
@@ -173,9 +175,7 @@ img {
     /* Make it round if not already */
 }
 
-height: 3px;
-background: var(--primary-color);
-}
+
 
 .section-header p {
     max-width: 700px;
@@ -789,6 +789,110 @@ background: var(--primary-color);
 .why-us-card:hover {
     transform: translateY(-10px);
     box-shadow: var(--box-shadow-hover);
+}
+
+transform: translateY(-10px);
+box-shadow: var(--box-shadow-hover);
+}
+
+/* ===== ABOUT OUR COMPANY SECTION ===== */
+#about-company {
+    background-color: #fa6419;
+    /* Brand Orange */
+    color: #ffffff;
+    padding: 60px 0;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: start;
+}
+
+.about-text h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+    line-height: 1.2;
+}
+
+.about-block {
+    margin-bottom: 30px;
+}
+
+.about-block h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.about-block p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #ffffff;
+    opacity: 0.95;
+}
+
+.about-visuals {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.about-image img {
+    width: 100%;
+    max-height: 280px;
+    /* Limit height on desktop */
+    object-fit: cover;
+    /* Maintain aspect ratio */
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.info-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.info-card {
+    background-color: #ffffff;
+    padding: 15px;
+    text-align: center;
+    border-radius: 4px;
+    /* Slightly squarish as per design */
+    color: #000;
+    font-weight: 500;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.info-card:hover {
+    transform: translateY(-2px);
+}
+
+/* Responsive Styles for About Section */
+@media (max-width: 991px) {
+    .about-grid {
+        grid-template-columns: 1fr;
+        /* Stack vertically */
+        text-align: left;
+        /* Keep left alignment for readability, or center if preferred */
+    }
+
+    .about-text h2 {
+        font-size: 2.2rem;
+        margin-bottom: 30px;
+    }
+
+    .about-visuals {
+        order: -1;
+        /* Optional: Put image on top on mobile? Design usually keeps flow. Let's keep flow. */
+        margin-top: 30px;
+    }
 }
 
 .why-us-icon {
