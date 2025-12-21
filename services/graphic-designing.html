@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Bubbles Media offers creative graphic design services, creating visually stunning branding, logos, and marketing materials that captivate your audience.">
+  <title>Graphic Designing Services | Bubbles Media - Digital Marketing Agency</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="../media/logo8.png">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    /* Spacing between navbar and body content */
+    #header {
+      margin-bottom: 1cm;
+    }
+
+    /* Ensure proper spacing for the first section */
+    #page-banner {
+      margin-top: 1cm;
+    }
+
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    /* Pricing Card Styling */
+    .pricing-card {
+      background-color: #fff;
+      border: 1px solid #e0e0e0;
+      border-radius: 12px;
+      padding: 25px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .pricing-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    }
+
+    .pricing-card.featured {
+      border: 2px solid #007bff;
+      box-shadow: 0 6px 18px rgba(0, 123, 255, 0.1);
+    }
+
+    .pricing-header h3 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    .price {
+      font-size: 1.8rem;
+      margin: 10px 0;
+    }
+
+    .price .currency {
+      font-size: 1.2rem;
+      vertical-align: super;
+    }
+
+    .featured-tag {
+      background: #007bff;
+      color: #fff;
+      padding: 5px 12px;
+      font-size: 0.8rem;
+      border-radius: 50px;
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+
+    .pricing-features ul {
+      list-style: none;
+      padding: 0;
+      margin: 20px 0;
+      text-align: left;
+    }
+
+    .pricing-features li {
+      margin: 8px 0;
+      font-size: 0.95rem;
+    }
+
+    .pricing-features i {
+      margin-right: 8px;
+      color: #28a745;
+    }
+
+    .pricing-features i.fa-times {
+      color: #dc3545;
+    }
+
+    .pricing-footer .btn {
+      margin-top: 15px;
+    }
+
+    .custom-package {
+      margin-top: 60px;
+      text-align: center;
+    }
+
+    .custom-package h3 {
+      margin-bottom: 10px;
+    }
+
+    .custom-package p {
+      max-width: 600px;
+      margin: 0 auto 20px;
+    }
+  </style>
+  <!-- Slick Carousel -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+</head>
+
+<body>
+  <!-- Header Section -->
+  <header id="header">
+    <div class="container">
+      <div class="dots">
+        <div class="dot"></div>
+        <!-- ... dots ... -->
+      </div>
+      <div class="logo">
+        <a href="../index.html"><img src="../media/logo8.png" alt="Bubbles Media Logo"></a>
+      </div>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="../index.html">Home</a></li>
+          <li class="dropdown">
+            <a href="#" class="active">Services</a>
+            <ul class="dropdown-menu">
+              <li><a href="seo.html">SEO Services</a></li>
+              <li><a href="sem.html">Meta Ads / Google Ads</a></li>
+              <li><a href="social-media.html">Social Media Marketing</a></li>
+              <li><a href="website-design.html">Website Design</a></li>
+              <li><a href="graphic-designing.html">Graphic Designing</a></li>
+              <li><a href="ai-marketing.html">AI Marketing</a></li>
+              <li><a href="shopify-ecommerce.html">Shopify/Ecommerce</a></li>
+            </ul>
+          </li>
+          <li><a href="../about.html">About Us</a></li>
+          <li><a href="../gallery.html">Gallery</a></li>
+          <li><a href="../career.html">Career</a></li>
+          <li><a href="../blog.html">Blog</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="mobile-menu-toggle">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Banner -->
+  <section id="page-banner" class="section-padding">
+    <div class="container">
+      <div class="service-hero-content">
+        <h1>Graphic Designing Services</h1>
+        <p>Bringing your brand's vision to life with creative and impactful designs</p>
+        <div class="hero-buttons">
+          <a href="#service-pricing" class="btn btn-secondary">View Pricing</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+
+</html>

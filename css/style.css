@@ -770,7 +770,337 @@ img {
     }
 }
 
-/* ===== WHY CHOOSE US ===== */
+/* ===== NEW SERVICES SECTION STYLE ===== */
+/* ===== NEW SERVICES SECTION STYLE ===== */
+.services-header-new {
+    text-align: center;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.services-outline-title {
+    font-size: 5rem;
+    font-weight: 900;
+    color: transparent;
+    -webkit-text-stroke: 2px #ff8c08;
+    text-transform: uppercase;
+    margin: 0;
+    line-height: 1;
+    letter-spacing: 2px;
+}
+
+.services-underline {
+    width: 100%;
+    height: 8px;
+    background-color: #ff8c08;
+    margin: 10px 0 20px;
+}
+
+.services-description {
+    font-weight: 700;
+    max-width: 800px;
+    margin: 0 auto 30px;
+    font-size: 0.95rem;
+    color: #000;
+    line-height: 1.4;
+    text-align: center;
+}
+
+/* Scroll Icon */
+.scroll-down-icon {
+    display: flex;
+    justify-content: flex-start;
+    max-width: 1200px;
+    margin: 0 auto 10px;
+    padding-left: 0;
+}
+
+.scroll-down-icon i {
+    font-size: 1.2rem;
+    color: #003366;
+    /* Navy */
+    border: 2px solid #003366;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Grid Layout */
+.new-services-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 200px);
+    /* Reduced height to 200px */
+    gap: 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Service Boxes */
+.service-box {
+    position: relative;
+    padding: 25px;
+    text-decoration: none !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: transform 0.3s ease;
+    overflow: hidden;
+}
+
+.service-box:hover {
+    transform: translateY(-5px);
+}
+
+/* --- Web Designing Card (Tall) --- */
+.service-box.tall.web-design-card {
+    grid-row: span 2;
+    background-color: #f26522;
+    /* Vivid Orange */
+    color: #fff;
+    padding: 0;
+    justify-content: flex-start;
+}
+
+.web-design-strip {
+    height: 30px;
+    /* Fixed height strip */
+    width: 100%;
+    background-color: #003366;
+    /* Navy Blue */
+    flex-shrink: 0;
+}
+
+.web-design-card .service-content-new {
+    padding: 30px;
+    margin-top: 50px;
+    /* Adjusted spacing */
+}
+
+.web-design-card h3 {
+    font-size: 2.8rem;
+    font-weight: 500;
+    line-height: 1;
+    color: #fff;
+    text-align: left;
+}
+
+/* --- Light Gray Cards --- */
+.service-box.light-gray {
+    background-color: #eff1f5;
+    color: #f26522;
+    align-items: flex-start;
+    padding-top: 40px;
+}
+
+.service-box.light-gray h3 {
+    font-size: 1.4rem;
+    color: #f26522;
+    font-weight: 500;
+    line-height: 1.2;
+    text-align: left;
+    margin: 0;
+}
+
+/* --- Orange Cards --- */
+.service-box.orange {
+    background-color: #f26522;
+    color: #fff;
+    align-items: flex-start;
+    padding-top: 40px;
+}
+
+.service-box.orange h3 {
+    font-size: 1.4rem;
+    color: #fff;
+    font-weight: 500;
+    line-height: 1.2;
+    text-align: left;
+    margin: 0;
+}
+
+/* --- Icons --- */
+.plus-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+
+.blue-plus {
+    background-color: #003366;
+    color: #fff;
+    top: 45px;
+}
+
+.orange-plus {
+    background-color: #f26522;
+    color: #fff;
+}
+
+.white-plus {
+    background-color: #fff;
+    color: #f26522;
+}
+
+.service-arrow-icon {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    border: 1.5px solid #fff;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+/* Common Text Styles */
+.service-content-new h3 {
+    text-transform: none;
+    letter-spacing: -0.5px;
+}
+
+/* Responsive Grid */
+@media (max-width: 991px) {
+    .new-services-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .service-box.tall.web-design-card {
+        grid-row: span 1;
+        min-height: 300px;
+    }
+
+    .new-services-grid {
+        grid-template-rows: repeat(7, 200px);
+    }
+
+    .services-outline-title {
+        font-size: 3.5rem;
+    }
+
+    .scroll-down-icon {
+        justify-content: center;
+    }
+}
+
+.service-box.orange h3 {
+    font-size: 1.6rem;
+    color: #fff;
+    font-weight: 600;
+}
+
+
+/* Icons */
+.plus-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 1.2rem;
+}
+
+.blue-plus {
+    top: 18%;
+    /* Position below the strip */
+    right: 20px;
+    color: #fff;
+    background-color: #003366;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.orange-plus {
+    color: #fff;
+    background-color: #ff8c08;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.white-plus {
+    color: #ff8c08;
+    background-color: #fff;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service-arrow-icon {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+
+/* Common Text Styles */
+.service-content-new h3 {
+    text-transform: none;
+    /* Inherit casing from HTML */
+}
+
+/* Responsive Grid */
+@media (max-width: 991px) {
+    .new-services-grid {
+        grid-template-columns: 1fr;
+        /* Stack vertically */
+        grid-template-rows: auto;
+    }
+
+    .service-box.tall.web-design-card {
+        grid-row: span 1;
+        min-height: 300px;
+    }
+
+    .web-design-strip {
+        height: 60px;
+    }
+
+    .new-services-grid {
+        grid-template-rows: repeat(7, 200px);
+        /* Fixed height per card on mobile */
+    }
+
+    .services-outline-title {
+        font-size: 3rem;
+    }
+
+    .scroll-down-icon {
+        justify-content: center;
+        padding-left: 0;
+    }
+}
+
 .why-us-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
