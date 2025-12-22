@@ -20,6 +20,32 @@
       margin-bottom: 1cm;
     }
 
+    .feature-card {
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-align: center;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+    }
+
+    .feature-icon {
+      font-size: 40px;
+      color: #ff6600;
+      margin-bottom: 15px;
+    }
+
+    .service-features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
     /* Ensure proper spacing for the first section */
     #page-banner {
       margin-top: 1cm;
@@ -184,6 +210,197 @@
       </div>
     </div>
   </section>
+
+  <!-- Service Features Section -->
+  <section id="service-features" class="section-padding bg-light">
+    <div class="container">
+      <div class="section-header">
+        <h2>Our AI Marketing Services</h2>
+        <p>Intelligent solutions to automate and optimize your marketing</p>
+      </div>
+      <div class="service-features-grid">
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-robot"></i></div>
+          <h3>Marketing Automation</h3>
+          <p>Streamline repetitive tasks and nurture leads with smart, automated workflows tailored to user behavior.
+          </p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-comments"></i></div>
+          <h3>Smart Chatbots</h3>
+          <p>Deploy AI-powered chatbots to provide 24/7 customer support and qualify leads instantly.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-chart-line"></i></div>
+          <h3>Predictive Analytics</h3>
+          <p>Use data-driven insights to forecast trends and make smarter marketing decisions.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-user-cog"></i></div>
+          <h3>Personalized Journeys</h3>
+          <p>Deliver hyper-personalized experiences to your customers based on their preferences and history.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-pen-nib"></i></div>
+          <h3>AI Content Generation</h3>
+          <p>Leverage AI tools to generate high-quality, engaging content for your blog and social media at scale.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section id="service-pricing" class="section-padding">
+    <div class="container">
+      <div class="section-header">
+        <h2>AI Marketing Packages</h2>
+        <p>Scalable solutions for businesses of all sizes</p>
+      </div>
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3>Starter</h3>
+            <div class="price">
+              <span class="currency">₹</span><span class="amount">10,000</span>
+            </div>
+            <p>Automation basics</p>
+          </div>
+          <div class="pricing-features">
+            <ul>
+              <li><i class="fas fa-check"></i> Basic Email Automation</li>
+              <li><i class="fas fa-check"></i> 1 AI Chatbot Setup</li>
+              <li><i class="fas fa-check"></i> Monthly Analytics</li>
+              <li><i class="fas fa-check"></i> Lead Scoring</li>
+            </ul>
+          </div>
+          <div class="pricing-footer">
+            <a href="../contact.html" class="btn btn-outline">Get Started</a>
+          </div>
+        </div>
+        <div class="pricing-card featured">
+          <div class="pricing-header">
+            <div class="featured-tag">Most Popular</div>
+            <h3>Growth</h3>
+            <div class="price">
+              <span class="currency">₹</span><span class="amount">25,000</span>
+            </div>
+            <p>Advanced AI integration</p>
+          </div>
+          <div class="pricing-features">
+            <ul>
+              <li><i class="fas fa-check"></i> Advanced Automation Workflows</li>
+              <li><i class="fas fa-check"></i> 3 AI Chatbots</li>
+              <li><i class="fas fa-check"></i> Predictive Analytics Report</li>
+              <li><i class="fas fa-check"></i> AI Content Strategy</li>
+            </ul>
+          </div>
+          <div class="pricing-footer">
+            <a href="../contact.html" class="btn btn-primary">Get Started</a>
+          </div>
+        </div>
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3>Premium</h3>
+            <div class="price">
+              <span class="currency">₹</span><span class="amount">50,000</span>
+            </div>
+            <p>Complete AI transformation</p>
+          </div>
+          <div class="pricing-features">
+            <ul>
+              <li><i class="fas fa-check"></i> Full AI Suite Implementation</li>
+              <li><i class="fas fa-check"></i> Custom Integration</li>
+              <li><i class="fas fa-check"></i> Real-time Personalization</li>
+              <li><i class="fas fa-check"></i> Dedicated Account Manager</li>
+            </ul>
+          </div>
+          <div class="pricing-footer">
+            <a href="../contact.html" class="btn btn-outline">Get Started</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-column">
+          <div class="footer-logo">
+            <h3>Bubbles Media</h3>
+          </div>
+          <p>Your trusted digital marketing partner in Hyderabad, helping businesses grow their online presence and
+            achieve measurable results.</p>
+          <div class="social-links">
+            <a href="https://www.facebook.com/thebubblesmedia" target="_blank" title="Follow us on Facebook"><i
+                class="fab fa-facebook-f"></i></a>
+            <a href="#" target="_blank" title="Follow us on Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/thebubblesmedia/?hl=en" target="_blank" title="Follow us on Instagram"><i
+                class="fab fa-instagram"></i></a>
+            <a href="#" target="_blank" title="Connect with us on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" target="_blank" title="Read our blog on Medium"><i class="fab fa-medium-m"></i></a>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../about.html">About Us</a></li>
+            <li><a href="../blog.html">Blog</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Our Services</h4>
+          <ul class="footer-links">
+            <li><a href="seo.html">SEO Services</a></li>
+            <li><a href="sem.html">Meta Ads / Google Ads</a></li>
+            <li><a href="social-media.html">Social Media Marketing</a></li>
+            <li><a href="website-design.html">Website Design</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Contact Info</h4>
+          <ul class="contact-info">
+            <li><i class="fas fa-map-marker-alt"></i> Hyderabad, Telangana, India</li>
+            <li><i class="fas fa-phone"></i> <a href="tel:+919390314113"
+                style="color: inherit; text-decoration: none;">+91 9390314113</a></li>
+            <li><i class="fab fa-whatsapp"></i> <a href="https://wa.me/919390314113" target="_blank"
+                style="color: inherit; text-decoration: none;">WhatsApp</a></li>
+            <li><i class="fas fa-envelope"></i> info@bubblesmedia.com</li>
+          </ul>
+          <div class="newsletter">
+            <h4>Subscribe to Newsletter</h4>
+            <form id="newsletter-form">
+              <div class="form-group">
+                <input type="email" id="newsletter-email" placeholder="Your Email" required>
+                <button type="submit" class="btn btn-primary">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="copyright">
+          <p>&copy; 2023 Bubbles Media. All Rights Reserved.</p>
+        </div>
+        <div class="legal-links">
+          <a href="../privacy-policy.html">Privacy Policy</a>
+          <a href="../terms-of-service.html">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Floating Button -->
+  <div id="whatsapp-float" class="whatsapp-float">
+    <a href="https://wa.me/919390314113?text=Hi%20Bubbles%20Media!%20I%20would%20like%20to%20know%20more%20about%20your%20AI%20marketing%20services."
+      target="_blank" class="whatsapp-btn">
+      <i class="fab fa-whatsapp"></i>
+      <span class="whatsapp-text">Chat on WhatsApp</span>
+    </a>
+  </div>
 
   <!-- JavaScript -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
