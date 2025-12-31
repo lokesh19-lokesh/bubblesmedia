@@ -425,6 +425,24 @@ $(document).ready(function () {
         }
     });
 
+    // Services Read More Toggle
+    $('.read-more-btn').on('click', function () {
+        var card = $(this).closest('.service-card');
+        var details = card.find('.service-details');
+        var btn = $(this);
+
+        if (details.is(':visible')) {
+            details.slideUp(function () {
+                btn.text('Read More');
+                // Scroll back to card top if needed, or leave as is
+            });
+        } else {
+            details.slideDown(function () {
+                btn.text('Read Less');
+            });
+        }
+    });
+
     // Helper function to validate email
     function isValidEmail(email) {
         var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
