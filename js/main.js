@@ -539,6 +539,46 @@ $(document).ready(function () {
 
     initHeroAnimation();
 
+    // Stats Animation
+    const observerOptions = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.5
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const counters = entry.target.querySelectorAll('.stat-number');
+                counters.forEach(counter => {
+                    const originalText = counter.innerText;
+                    const target = parseInt(originalText.replace(/\D/g, '')); // Extract number
+                    const suffix = originalText.replace(/[0-9]/g, ''); // Extract suffix (%, +)
+                    const duration = 2000; // 2 seconds
+
+                    let startTimestamp = null;
+                    const step = (timestamp) => {
+                        if (!startTimestamp) startTimestamp = timestamp;
+                        const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+                        counter.innerText = Math.ceil(progress * target) + suffix;
+                        if (progress < 1) {
+                            window.requestAnimationFrame(step);
+                        } else {
+                            counter.innerText = target + suffix;
+                        }
+                    };
+                    window.requestAnimationFrame(step);
+                });
+                observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+
+    const statsSection = document.querySelector('#stats');
+    if (statsSection) {
+        observer.observe(statsSection);
+    }
+
     // Google Analytics Integration (Replace UA-XXXXX-Y with your actual tracking ID)
     // In a real application, you would add your Google Analytics tracking code here
     /*
