@@ -168,7 +168,6 @@ img {
 .call-icon {
     margin-right: 20px;
     animation: pulse-call 2s infinite;
-    background-color: var(--primary-color) !important;
     border-radius: 50%;
 }
 
@@ -313,25 +312,14 @@ img {
 
 .btn-icon.call-icon {
     background-color: #ffffff;
-    color: #4CAF50;
-    /* Green phone icon often standard, or use brand orange text if prefer */
-    /* Reference image 2 shows white phone on dark bg, or similar. 
-       Wait, current nav is Orange. 
-       Image 2 has dark nav. 
-       User said "like the second image". Second image has CALL icon.
-       If nav is orange, white icon or white button with orange icon looks good. 
-       Let's go with White Icon on Transparent or White Button with Orange Icon. 
-       User said "put call button like the second image". 
-       Image 2: Phone icon is white inside a green circle? No, it looks like a white phone icon. 
-       Let's make it a white icon. */
-    background-color: transparent;
-    color: #ffffff;
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #fa6419;
+    border: 1px solid #ffffff;
 }
 
 .btn-icon.call-icon:hover {
-    background-color: #ffffff;
-    color: #fa6419;
+    background-color: transparent;
+    color: #ffffff;
+    border: 1px solid #ffffff;
 }
 
 .btn-icon.search-icon {
@@ -1118,9 +1106,7 @@ img {
     box-shadow: var(--box-shadow-hover);
 }
 
-transform: translateY(-10px);
-box-shadow: var(--box-shadow-hover);
-}
+
 
 /* ===== ABOUT OUR COMPANY SECTION ===== */
 #about-company {
