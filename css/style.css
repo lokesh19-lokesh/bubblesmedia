@@ -3142,7 +3142,7 @@ img {
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     margin-top: 30px;
-    align-items: start;
+    /* align-items: start; Removed to allow equal height */
 }
 
 @media (max-width: 1200px) {
@@ -3292,8 +3292,13 @@ img {
     flex-direction: column;
     background: #fff;
     /* Ensure text background is white */
+    text-align: center;
 }
 
 .service-body h3 {
     margin-top: 0;
+}
+
+.pricing-footer {
+    margin-top: auto;
 }
