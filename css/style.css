@@ -2295,6 +2295,7 @@ img {
     height: 100%;
     pointer-events: none;
     z-index: 1;
+    display: none;
 }
 
 #header .dots .dot {
@@ -3261,4 +3262,38 @@ img {
     margin-top: 10px;
     border-radius: 5px;
     font-weight: 600;
+}
+
+/* Service Card New Layout */
+.service-card {
+    padding: 0 !important;
+    /* Overwrite previous padding */
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    /* Ensure image corners respect border-radius */
+    background: #fff;
+    border: 1px solid #eee;
+    /* Light border definition */
+}
+
+.service-header-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid #eee;
+}
+
+.service-body {
+    padding: 30px 20px;
+    flex-grow: 1;
+    /* Allow body to fill remaining space */
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    /* Ensure text background is white */
+}
+
+.service-body h3 {
+    margin-top: 0;
 }
