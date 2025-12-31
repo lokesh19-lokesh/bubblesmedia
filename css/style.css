@@ -1110,9 +1110,9 @@ img {
 
 /* ===== ABOUT OUR COMPANY SECTION ===== */
 #about-company {
-    background-color: #fa6419;
+    background-color: #ffffff;
     /* Brand Orange */
-    color: #ffffff;
+    color: #fa6419;
     padding: 60px 0;
 }
 
@@ -1145,7 +1145,7 @@ img {
 .about-block p {
     font-size: 1.1rem;
     line-height: 1.6;
-    color: #ffffff;
+    color: #fa6419;
     opacity: 0.95;
 }
 
@@ -1172,7 +1172,7 @@ img {
 }
 
 .info-card {
-    background-color: #ffffff;
+    background-color: #fa6419;
     padding: 15px;
     text-align: center;
     border-radius: 4px;
