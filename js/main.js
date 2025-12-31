@@ -1,4 +1,4 @@
-// Main JavaScript for Bubbles Media Website
+﻿// Main JavaScript for Bubbles Media Website
 
 $(document).ready(function () {
     // Hero Form Validation
@@ -314,17 +314,17 @@ $(document).ready(function () {
         if (message.includes('seo') || message.includes('search') || message.includes('optimization')) {
             return "Great! Our SEO services include keyword research, on-page optimization, technical SEO, and content strategy. We've helped businesses increase organic traffic by 200%+ on average. Would you like to schedule a free consultation?";
         } else if (message.includes('pricing') || message.includes('cost') || message.includes('price')) {
-            return "Our pricing varies based on your specific needs and goals. We offer flexible packages starting from ₹15,000/month. Would you like to discuss your requirements? You can call us at +91 9390314113 for a detailed quote.";
+            return "Our pricing varies based on your specific needs and goals. We offer flexible packages starting from â‚¹15,000/month. Would you like to discuss your requirements? You can call us at +91 9849869055 for a detailed quote.";
         } else if (message.includes('schedule') || message.includes('call') || message.includes('meeting')) {
-            return "Perfect! I can help you schedule a call. Our team is available Mon-Fri, 9AM-6PM. You can call us directly at +91 9390314113 or email us at info@bubblesmedia.com. What time works best for you?";
+            return "Perfect! I can help you schedule a call. Our team is available Mon-Fri, 9AM-6PM. You can call us directly at +91 9849869055 or email us at info@bubblesmedia.com. What time works best for you?";
         } else if (message.includes('social media') || message.includes('facebook') || message.includes('instagram')) {
             return "Our social media marketing services include content creation, community management, paid advertising, and analytics. We help brands build meaningful connections with their audience. Would you like to see some case studies?";
         } else if (message.includes('website') || message.includes('design') || message.includes('development')) {
             return "We create stunning, responsive websites that convert visitors into customers. Our designs are modern, user-friendly, and optimized for performance. Would you like to see our portfolio?";
         } else if (message.includes('contact') || message.includes('phone') || message.includes('email')) {
-            return "You can reach us at:\n📞 Phone: +91 9390314113\n📧 Email: info@bubblesmedia.com\n📍 Location: Hyderabad, Telangana\n⏰ Hours: Mon-Fri, 9AM-6PM";
+            return "You can reach us at:\nðŸ“ž Phone: +91 9849869055\nðŸ“§ Email: info@bubblesmedia.com\nðŸ“ Location: Hyderabad, Telangana\nâ° Hours: Mon-Fri, 9AM-6PM";
         } else {
-            return "Thank you for your message! Our team will get back to you shortly. In the meantime, feel free to call us at +91 9390314113 or email us at info@bubblesmedia.com for immediate assistance.";
+            return "Thank you for your message! Our team will get back to you shortly. In the meantime, feel free to call us at +91 9849869055 or email us at info@bubblesmedia.com for immediate assistance.";
         }
     }
 
