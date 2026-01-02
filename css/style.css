@@ -2295,7 +2295,7 @@ img {
     height: 100%;
     pointer-events: none;
     z-index: 1;
-    display: none;
+    /* display: none; Removed to enable animation */
 }
 
 #header .dots .dot {
@@ -2716,6 +2716,9 @@ img {
     color: #f1f1f1;
 }
 
+.bg-light1 {
+    background-color: #fa6419;
+}
 
 /* CTA Section */
 #cta {
