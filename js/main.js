@@ -314,7 +314,7 @@ $(document).ready(function () {
         if (message.includes('seo') || message.includes('search') || message.includes('optimization')) {
             return "Great! Our SEO services include keyword research, on-page optimization, technical SEO, and content strategy. We've helped businesses increase organic traffic by 200%+ on average. Would you like to schedule a free consultation?";
         } else if (message.includes('pricing') || message.includes('cost') || message.includes('price')) {
-            return "Our pricing varies based on your specific needs and goals. We offer flexible packages starting from â‚¹15,000/month. Would you like to discuss your requirements? You can call us at +91 9849869055 for a detailed quote.";
+            return "Our pricing varies based on your specific needs and goals. We offer flexible packages starting from ₹15,000/month. Would you like to discuss your requirements? You can call us at +91 9849869055 for a detailed quote.";
         } else if (message.includes('schedule') || message.includes('call') || message.includes('meeting')) {
             return "Perfect! I can help you schedule a call. Our team is available Mon-Fri, 9AM-6PM. You can call us directly at +91 9849869055 or email us at info@bubblesmedia.com. What time works best for you?";
         } else if (message.includes('social media') || message.includes('facebook') || message.includes('instagram')) {
