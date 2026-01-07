@@ -322,7 +322,7 @@ $(document).ready(function () {
         } else if (message.includes('website') || message.includes('design') || message.includes('development')) {
             return "We create stunning, responsive websites that convert visitors into customers. Our designs are modern, user-friendly, and optimized for performance. Would you like to see our portfolio?";
         } else if (message.includes('contact') || message.includes('phone') || message.includes('email')) {
-            return "You can reach us at:\nðŸ“ž Phone: +91 9849869055\nðŸ“§ Email: info@bubblesmedia.com\nðŸ“ Location: Hyderabad, Telangana\nâ° Hours: Mon-Fri, 9AM-6PM";
+            return "You can reach us at:\n📞 Phone: +91 9849869055\n📧 Email: info@bubblesmedia.com\nðŸ“ Location: Hyderabad, Telangana\nâ° Hours: Mon-Fri, 9AM-6PM";
         } else {
             return "Thank you for your message! Our team will get back to you shortly. In the meantime, feel free to call us at +91 9849869055 or email us at info@bubblesmedia.com for immediate assistance.";
         }
