@@ -3030,7 +3030,7 @@ img {
 }
 
 .hero-left .hero-team-text {
-    font-family: 'Fraunces', serif;
+    /* font-family: 'Fraunces', serif; */
     font-size: 3rem;
     line-height: 0.9;
     color: #ff6600;
@@ -3127,27 +3127,26 @@ img {
 
 .hero-left .hero-bubbles-container text {
     font-family: 'Tenor Sans', sans-serif;
-    font-size: 35px;
-    /* Adjusted for better fit above headline */
+    font-size: 55px;
+    /* Slightly smaller for elegance */
     fill: #000;
     text-transform: uppercase;
-    letter-spacing: 15px;
-    /* Wide spacing */
+    letter-spacing: 12px;
+    /* Wide spacing like image */
     font-weight: 400;
 }
 
 .hero-left .hero-team-text {
-    font-family: 'Anton', sans-serif;
-    font-size: 6rem;
-    /* Significantly larger */
-    line-height: 0.85;
-    /* Tight spacing */
+    /* font-family: 'Anton', sans-serif; */
+    font-size: 4.5rem;
     color: #ff6600;
+    /* Brand Orange */
     text-transform: uppercase;
-    margin: 10px 0 20px 0;
-    letter-spacing: -1px;
+
     animation: revealText 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
     animation-delay: 0.3s;
+    /* transform-origin: left; */
+    -webkit-text-stroke-width: 6px;
 }
 
 .hero-left .hero-freelance-text {
@@ -3165,6 +3164,7 @@ img {
     animation: revealText 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
     animation-delay: 0.6s;
 }
+
 
 /* Services Grid Layout */
 .services-grid {
