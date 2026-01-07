@@ -3459,3 +3459,17 @@ img {
 .service-card:hover .service-icon-wrapper i {
     transform: scale(1.1);
 }
+
+.service-title-box {
+    background-color: #003366;
+    color: red;
+    padding: 10px 15px;
+    border-radius: var(--border-radius-md);
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    width: 100%;
+}
