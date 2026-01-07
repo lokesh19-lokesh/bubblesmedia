@@ -2727,14 +2727,14 @@ img {
 .member-info h3 {
     margin: 5px 0 0;
     font-size: 18px;
-    color: #fff;
+    color: #000000;
     font-weight: 600;
 }
 
 .member-info p {
     margin: 2px 0 0;
     font-size: 14px;
-    color: #f1f1f1;
+    color: #000000;
 }
 
 .bg-light1 {
@@ -3462,7 +3462,7 @@ img {
 
 .service-title-box {
     background-color: #003366;
-    color: red;
+    color: rgb(255, 255, 255);
     padding: 10px 15px;
     border-radius: var(--border-radius-md);
     margin-bottom: 20px;
