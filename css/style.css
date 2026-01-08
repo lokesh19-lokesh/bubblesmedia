@@ -579,10 +579,14 @@ img {
 }
 
 /* ===== NEW PRICING TYPOGRAPHY ===== */
+/* ===== NEW PRICING TYPOGRAPHY ===== */
 .pocket-pack-header {
     margin-bottom: 10px;
     margin-top: 10px;
-    /* Reduced from 50px */
+    text-align: left;
+    /* Aligns content to left */
+    width: 100%;
+    /* Ensures container takes full width */
 }
 
 .pp-starter {
