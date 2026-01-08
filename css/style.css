@@ -552,6 +552,60 @@ img {
     color: var(--gray);
 }
 
+/* ===== CUSTOM TYPOGRAPHY (SERVICES) ===== */
+.service-title-styled {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    padding-top: 20px;
+}
+
+/* .title-small style removed - replaced by SVG */
+
+.title-large {
+    font-family: 'Tan St. Canard', 'Impact', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 400;
+    color: #fa6419;
+    text-transform: uppercase;
+    line-height: 0.8;
+}
+
+/* Specific Adjustment for the Web Card to accommodate big text */
+.svc-web .service-title-styled {
+    margin-bottom: 20px;
+}
+
+/* Force White Background for all service cards to make colored text pop */
+.svc-web,
+.svc-seo,
+.svc-smm,
+.svc-google,
+.svc-meta,
+.svc-whatsapp,
+.svc-gmb,
+.svc-logo {
+    background: #ffffff !important;
+    border: 1px solid #eee;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* Ensure hover effect doesn't break legibility */
+.svc-web:hover,
+.svc-seo:hover,
+.svc-smm:hover,
+.svc-google:hover,
+.svc-meta:hover,
+.svc-whatsapp:hover,
+.svc-gmb:hover,
+.svc-logo:hover {
+    background: #ffffff !important;
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
 /* ===== SERVICES OVERVIEW SECTION ===== */
 #services-overview {
     background-color: #ffffff;
