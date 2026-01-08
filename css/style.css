@@ -3605,6 +3605,15 @@ img {
     font-size: 1.2rem;
     text-transform: uppercase;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    display: inline-block;
     width: 100%;
+}
+
+/* Reduce spacing for Pocket Pack Header */
+.pocket-pack-header {
+    margin-bottom: 5px;
+    padding-bottom: 0;
+}
+
+.service-body {
+    padding-top: 10px;
 }
