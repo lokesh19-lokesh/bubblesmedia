@@ -428,7 +428,7 @@ $(document).ready(function () {
     // Services Read More Toggle
     $('.read-more-btn').on('click', function () {
         var card = $(this).closest('.service-card');
-        var details = card.find('.service-details');
+        var details = card.find('.more-features');
         var btn = $(this);
 
         if (details.is(':visible')) {
