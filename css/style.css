@@ -568,7 +568,7 @@ img {
     font-family: 'Tan St. Canard', 'Impact', sans-serif;
     font-size: 3.5rem;
     font-weight: 400;
-    color: #fa6419;
+    color: #141313;
     text-transform: uppercase;
     line-height: 0.8;
 }
@@ -612,7 +612,7 @@ img {
 /* Service Variable Colors for Pricing Text */
 .svc-web .pp-starter,
 .svc-web .pp-subtitle {
-    color: #fa6419;
+    color: #191311;
 }
 
 /* Orange */
@@ -660,13 +660,48 @@ img {
 /* Purple */
 
 /* Force White Background for all service cards to make colored text pop */
-.svc-web,
-.svc-seo,
-.svc-smm,
-.svc-google,
-.svc-meta,
-.svc-whatsapp,
-.svc-gmb,
+.svc-web {
+    background: #fa6419 !important;
+    border: 1px solid #fa6419;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.svc-seo {
+    background: #ffffff !important;
+    border: 1px solid #eee;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.svc-smm {
+    background: #ffffff !important;
+    border: 1px solid #eee;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.svc-google {
+    background: #ffffff !important;
+    border: 1px solid #eee;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.svc-meta {
+    background: #ffffff !important;
+    border: 1px solid #eee;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.svc-whatsapp {
+    background: #ffffff !important;
+    border: 1px solid #eee;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.svc-gmb {
+    background: #ffffff !important;
+    border: 1px solid #eee;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
 .svc-logo {
     background: #ffffff !important;
     border: 1px solid #eee;
@@ -3456,6 +3491,17 @@ img {
     display: flex;
     flex-direction: column;
     background: #fff;
+    /* Ensure text background is white */
+    text-align: center;
+}
+
+.service-body1 {
+    padding: 30px 20px;
+    flex-grow: 1;
+    /* Allow body to fill remaining space */
+    display: flex;
+    flex-direction: column;
+    background: #fa6419;
     /* Ensure text background is white */
     text-align: center;
 }
