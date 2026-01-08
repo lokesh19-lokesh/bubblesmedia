@@ -581,8 +581,8 @@ img {
 /* ===== NEW PRICING TYPOGRAPHY ===== */
 .pocket-pack-header {
     margin-bottom: 10px;
-    margin-top: 50px;
-    /* Increased from 10px to match design gap */
+    margin-top: 10px;
+    /* Reduced from 50px */
 }
 
 .pp-starter {
