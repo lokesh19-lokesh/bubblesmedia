@@ -591,7 +591,7 @@ img {
 
 .pp-starter {
     font-family: 'Tan St. Canard', sans-serif;
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     font-weight: 700;
     line-height: 0.9;
     text-transform: capitalize;
@@ -600,7 +600,7 @@ img {
 .pp-subtitle {
     font-family: 'Sackers Gothic', sans-serif;
     /* Or Impact/Arial per user pref, using Sackers to match THE */
-    font-size: 1.2rem;
+    font-size: 1.0rem;
     font-weight: 400;
     font-style: italic;
     text-decoration: underline;
