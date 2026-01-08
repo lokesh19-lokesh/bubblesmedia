@@ -392,19 +392,86 @@
 
 
 
-        .pricing-header h3 {
-            font-size: 1.5rem;
-            margin-bottom: 10px;
+        .pricing-header {
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        .price-label {
+            font-family: 'Sackers Gothic', sans-serif;
+            font-size: 1.2rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: -5px;
+            line-height: 1;
+        }
+
+        .price-label-curve {
+            display: flex;
+            justify-content: center;
+            margin-bottom: -15px;
         }
 
         .price {
-            font-size: 1.8rem;
-            margin: 10px 0;
+            font-family: 'Tan St. Canard', sans-serif;
+            font-size: 3rem;
+            font-weight: 700;
+            margin: 5px 0;
+            line-height: 1;
         }
 
         .price .currency {
-            font-size: 1.2rem;
-            vertical-align: super;
+            font-size: 2rem;
+            vertical-align: text-top;
+            margin-right: 2px;
+        }
+
+        .price .period {
+            font-size: 1.5rem;
+            margin-left: 5px;
+            vertical-align: middle;
+        }
+
+        /* Color mappings */
+        .svc-web .price-label,
+        .svc-web .price {
+            color: #fa6419;
+        }
+
+        .svc-seo .price-label,
+        .svc-seo .price {
+            color: #00a86b;
+        }
+
+        .svc-smm .price-label,
+        .svc-smm .price {
+            color: #003366;
+        }
+
+        .svc-google .price-label,
+        .svc-google .price {
+            color: #ea4335;
+        }
+
+        .svc-meta .price-label,
+        .svc-meta .price {
+            color: #0668E1;
+        }
+
+        .svc-whatsapp .price-label,
+        .svc-whatsapp .price {
+            color: #25D366;
+        }
+
+        .svc-gmb .price-label,
+        .svc-gmb .price {
+            color: #4285F4;
+        }
+
+        .svc-logo .price-label,
+        .svc-logo .price {
+            color: #9b59b6;
         }
 
         .featured-tag {
@@ -733,8 +800,20 @@
                             </div>
                         </div>
                         <div class="pricing-header">
+                            <div class="price-label-curve">
+                                <svg width="120" height="40" viewBox="0 0 120 40">
+                                    <path id="curveNowWeb" d="M10,40 Q60,0 110,40" fill="transparent" />
+                                    <text width="120">
+                                        <textPath xlink:href="#curveNowWeb" startOffset="50%" text-anchor="middle"
+                                            fill="#fa6419"
+                                            style="font-family: 'Sackers Gothic', sans-serif; font-size: 14px; font-weight: 900; letter-spacing: 2px;">
+                                            NOW
+                                        </textPath>
+                                    </text>
+                                </svg>
+                            </div>
                             <div class="price">
-                                <span class="currency">₹</span><span class="amount">14,999</span>
+                                <span class="amount">₹14,999</span>
                                 <span class="period">starting at</span>
                             </div>
                             <!-- <p style="font-size: 0.8rem; margin-top: 5px;">Perfect for small businesses and startups</p> -->
@@ -789,8 +868,20 @@
                             </div>
                         </div>
                         <div class="pricing-header">
+                            <div class="price-label-curve">
+                                <svg width="120" height="40" viewBox="0 0 120 40">
+                                    <path id="curveNowSeo" d="M10,40 Q60,0 110,40" fill="transparent" />
+                                    <text width="120">
+                                        <textPath xlink:href="#curveNowSeo" startOffset="50%" text-anchor="middle"
+                                            fill="#00a86b"
+                                            style="font-family: 'Sackers Gothic', sans-serif; font-size: 14px; font-weight: 900; letter-spacing: 2px;">
+                                            NOW
+                                        </textPath>
+                                    </text>
+                                </svg>
+                            </div>
                             <div class="price">
-                                <span class="currency">₹</span><span class="amount">9,000</span>
+                                <span class="amount">₹9,000</span>
                                 <span class="period">/month</span>
                             </div>
                             <a href="services/seo.html#service-pricing" class="btn btn-sm btn-outline-primary btn-pulse"
@@ -848,11 +939,22 @@
                             </div>
                         </div>
                         <div class="pricing-header">
+                            <div class="price-label-curve">
+                                <svg width="120" height="40" viewBox="0 0 120 40">
+                                    <path id="curveNowSmm" d="M10,40 Q60,0 110,40" fill="transparent" />
+                                    <text width="120">
+                                        <textPath xlink:href="#curveNowSmm" startOffset="50%" text-anchor="middle"
+                                            fill="#003366"
+                                            style="font-family: 'Sackers Gothic', sans-serif; font-size: 14px; font-weight: 900; letter-spacing: 2px;">
+                                            NOW
+                                        </textPath>
+                                    </text>
+                                </svg>
+                            </div>
                             <div class="price">
-                                <span class="currency">₹</span><span class="amount">9,000</span>
+                                <span class="amount">₹9,000</span>
                                 <span class="period">/month</span>
                             </div>
-                            </p>
                             <a href="services/social-media.html#service-pricing"
                                 class="btn btn-sm btn-outline-primary btn-pulse"
                                 style="margin-top: 10px; font-size: 0.8rem; padding: 5px 10px;">Know more about SMM
@@ -909,14 +1011,26 @@
                             </div>
                         </div>
                         <div class="pricing-header">
+                            <div class="price-label-curve">
+                                <svg width="120" height="40" viewBox="0 0 120 40">
+                                    <path id="curveNowGoogle" d="M10,40 Q60,0 110,40" fill="transparent" />
+                                    <text width="120">
+                                        <textPath xlink:href="#curveNowGoogle" startOffset="50%" text-anchor="middle"
+                                            fill="#ea4335"
+                                            style="font-family: 'Sackers Gothic', sans-serif; font-size: 14px; font-weight: 900; letter-spacing: 2px;">
+                                            NOW
+                                        </textPath>
+                                    </text>
+                                </svg>
+                            </div>
                             <div class="price">
-                                <span class="currency">₹</span><span class="amount">3,999</span>
+                                <span class="amount">₹3,999</span>
                                 <span class="period">/month</span>
                             </div>
+                            <a href="services/sem.html#service-pricing" class="btn btn-sm btn-outline-primary btn-pulse"
+                                style="margin-top: 10px; font-size: 0.8rem; padding: 5px 10px;">Know more about Ads
+                                prices</a>
                         </div>
-                        <a href="services/sem.html#service-pricing" class="btn btn-sm btn-outline-primary btn-pulse"
-                            style="margin-top: 10px; font-size: 0.8rem; padding: 5px 10px;">Know more about Ads
-                            prices</a>
                         <div class="pricing-footer">
                             <button class="btn btn-primary read-more-btn">Read More</button>
                         </div>
@@ -963,8 +1077,20 @@
                             </div>
                         </div>
                         <div class="pricing-header">
+                            <div class="price-label-curve">
+                                <svg width="120" height="40" viewBox="0 0 120 40">
+                                    <path id="curveNowMeta" d="M10,40 Q60,0 110,40" fill="transparent" />
+                                    <text width="120">
+                                        <textPath xlink:href="#curveNowMeta" startOffset="50%" text-anchor="middle"
+                                            fill="#0668E1"
+                                            style="font-family: 'Sackers Gothic', sans-serif; font-size: 14px; font-weight: 900; letter-spacing: 2px;">
+                                            NOW
+                                        </textPath>
+                                    </text>
+                                </svg>
+                            </div>
                             <div class="price">
-                                <span class="currency">₹</span><span class="amount">5,999</span>
+                                <span class="amount">₹5,999</span>
                             </div>
                         </div>
                         <div class="pricing-footer">
@@ -1013,8 +1139,20 @@
                             </div>
                         </div>
                         <div class="pricing-header">
+                            <div class="price-label-curve">
+                                <svg width="120" height="40" viewBox="0 0 120 40">
+                                    <path id="curveNowWhatsapp" d="M10,40 Q60,0 110,40" fill="transparent" />
+                                    <text width="120">
+                                        <textPath xlink:href="#curveNowWhatsapp" startOffset="50%" text-anchor="middle"
+                                            fill="#25D366"
+                                            style="font-family: 'Sackers Gothic', sans-serif; font-size: 14px; font-weight: 900; letter-spacing: 2px;">
+                                            NOW
+                                        </textPath>
+                                    </text>
+                                </svg>
+                            </div>
                             <div class="price">
-                                <span class="currency">₹</span><span class="amount">4,999</span>
+                                <span class="amount">₹4,999</span>
                             </div>
                         </div>
                         <div class="pricing-footer">
@@ -1063,8 +1201,20 @@
                             </div>
                         </div>
                         <div class="pricing-header">
+                            <div class="price-label-curve">
+                                <svg width="120" height="40" viewBox="0 0 120 40">
+                                    <path id="curveNowGmb" d="M10,40 Q60,0 110,40" fill="transparent" />
+                                    <text width="120">
+                                        <textPath xlink:href="#curveNowGmb" startOffset="50%" text-anchor="middle"
+                                            fill="#4285F4"
+                                            style="font-family: 'Sackers Gothic', sans-serif; font-size: 14px; font-weight: 900; letter-spacing: 2px;">
+                                            NOW
+                                        </textPath>
+                                    </text>
+                                </svg>
+                            </div>
                             <div class="price">
-                                <span class="currency">₹</span><span class="amount">5,999</span>
+                                <span class="amount">₹5,999</span>
                             </div>
                         </div>
                         <div class="pricing-footer">
@@ -1113,8 +1263,20 @@
                             </div>
                         </div>
                         <div class="pricing-header">
+                            <div class="price-label-curve">
+                                <svg width="120" height="40" viewBox="0 0 120 40">
+                                    <path id="curveNowLogo" d="M10,40 Q60,0 110,40" fill="transparent" />
+                                    <text width="120">
+                                        <textPath xlink:href="#curveNowLogo" startOffset="50%" text-anchor="middle"
+                                            fill="#9b59b6"
+                                            style="font-family: 'Sackers Gothic', sans-serif; font-size: 14px; font-weight: 900; letter-spacing: 2px;">
+                                            NOW
+                                        </textPath>
+                                    </text>
+                                </svg>
+                            </div>
                             <div class="price">
-                                <span class="currency">₹</span><span class="amount">2,999</span>
+                                <span class="amount">₹2,999</span>
                             </div>
                         </div>
                         <div class="pricing-footer">
