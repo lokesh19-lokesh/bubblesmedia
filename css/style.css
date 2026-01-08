@@ -578,6 +578,83 @@ img {
     margin-bottom: 20px;
 }
 
+/* ===== NEW PRICING TYPOGRAPHY ===== */
+.pocket-pack-header {
+    margin-bottom: 10px;
+    margin-top: 50px;
+    /* Increased from 10px to match design gap */
+}
+
+.pp-starter {
+    font-family: 'Tan St. Canard', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 0.9;
+    text-transform: capitalize;
+}
+
+.pp-subtitle {
+    font-family: 'Sackers Gothic', sans-serif;
+    /* Or Impact/Arial per user pref, using Sackers to match THE */
+    font-size: 1.2rem;
+    font-weight: 400;
+    font-style: italic;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Service Variable Colors for Pricing Text */
+.svc-web .pp-starter,
+.svc-web .pp-subtitle {
+    color: #fa6419;
+}
+
+/* Orange */
+.svc-seo .pp-starter,
+.svc-seo .pp-subtitle {
+    color: #00a86b;
+}
+
+/* Green */
+.svc-smm .pp-starter,
+.svc-smm .pp-subtitle {
+    color: #003366;
+}
+
+/* Navy */
+.svc-google .pp-starter,
+.svc-google .pp-subtitle {
+    color: #ea4335;
+}
+
+/* Red */
+.svc-meta .pp-starter,
+.svc-meta .pp-subtitle {
+    color: #0668E1;
+}
+
+/* Blue */
+.svc-whatsapp .pp-starter,
+.svc-whatsapp .pp-subtitle {
+    color: #25D366;
+}
+
+/* Green */
+.svc-gmb .pp-starter,
+.svc-gmb .pp-subtitle {
+    color: #4285F4;
+}
+
+/* Blue */
+.svc-logo .pp-starter,
+.svc-logo .pp-subtitle {
+    color: #9b59b6;
+}
+
+/* Purple */
+
 /* Force White Background for all service cards to make colored text pop */
 .svc-web,
 .svc-seo,
