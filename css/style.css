@@ -568,7 +568,7 @@ img {
     font-family: 'Tan St. Canard', 'Impact', sans-serif;
     font-size: 3.5rem;
     font-weight: 400;
-    color: #ffffff;
+    color: #ffffff !important;
     text-transform: uppercase;
     line-height: 0.8;
 }
@@ -576,6 +576,11 @@ img {
 /* Specific Adjustment for the Web Card to accommodate big text */
 .svc-web .service-title-styled {
     margin-bottom: 20px;
+}
+
+/* Force all SVG text (THE, NOW) in service cards to be white */
+.service-card text textPath {
+    fill: #ffffff !important;
 }
 
 /* ===== NEW PRICING TYPOGRAPHY ===== */
@@ -618,43 +623,43 @@ img {
 /* Orange */
 .svc-seo .pp-starter,
 .svc-seo .pp-subtitle {
-    color: #00a86b;
+    color: #ffffff;
 }
 
 /* Green */
 .svc-smm .pp-starter,
 .svc-smm .pp-subtitle {
-    color: #003366;
+    color: #ffffff;
 }
 
 /* Navy */
 .svc-google .pp-starter,
 .svc-google .pp-subtitle {
-    color: #ea4335;
+    color: #ffffff;
 }
 
 /* Red */
 .svc-meta .pp-starter,
 .svc-meta .pp-subtitle {
-    color: #0668E1;
+    color: #ffffff;
 }
 
 /* Blue */
 .svc-whatsapp .pp-starter,
 .svc-whatsapp .pp-subtitle {
-    color: #25D366;
+    color: #ffffff;
 }
 
 /* Green */
 .svc-gmb .pp-starter,
 .svc-gmb .pp-subtitle {
-    color: #4285F4;
+    color: #ffffff;
 }
 
 /* Blue */
 .svc-logo .pp-starter,
 .svc-logo .pp-subtitle {
-    color: #9b59b6;
+    color: #ffffff;
 }
 
 /* Purple */
@@ -667,44 +672,44 @@ img {
 }
 
 .svc-seo {
-    background: #ffffff !important;
-    border: 1px solid #eee;
+    background: #00a86b !important;
+    border: 1px solid #00a86b;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
 }
 
 .svc-smm {
-    background: #ffffff !important;
-    border: 1px solid #eee;
+    background: #003366 !important;
+    border: 1px solid #003366;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
 }
 
 .svc-google {
-    background: #ffffff !important;
-    border: 1px solid #eee;
+    background: #ea4335 !important;
+    border: 1px solid #ea4335;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
 }
 
 .svc-meta {
-    background: #ffffff !important;
-    border: 1px solid #eee;
+    background: #0668E1 !important;
+    border: 1px solid #0668E1;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
 }
 
 .svc-whatsapp {
-    background: #ffffff !important;
-    border: 1px solid #eee;
+    background: #25D366 !important;
+    border: 1px solid #25D366;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
 }
 
 .svc-gmb {
-    background: #ffffff !important;
-    border: 1px solid #eee;
+    background: #4285F4 !important;
+    border: 1px solid #4285F4;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
 }
 
 .svc-logo {
-    background: #ffffff !important;
-    border: 1px solid #eee;
+    background: #9b59b6 !important;
+    border: 1px solid #9b59b6;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
 }
 
@@ -724,31 +729,31 @@ img {
 
 /* White background for most cards on hover */
 .svc-seo:hover {
-    background: #ffffff !important;
+    background: #00a86b !important;
 }
 
 .svc-smm:hover {
-    background: #ffffff !important;
+    background: #003366 !important;
 }
 
 .svc-google:hover {
-    background: #ffffff !important;
+    background: #ea4335 !important;
 }
 
 .svc-meta:hover {
-    background: #ffffff !important;
+    background: #0668E1 !important;
 }
 
 .svc-whatsapp:hover {
-    background: #ffffff !important;
+    background: #25D366 !important;
 }
 
 .svc-gmb:hover {
-    background: #ffffff !important;
+    background: #4285F4 !important;
 }
 
 .svc-logo:hover {
-    background: #ffffff !important;
+    background: #9b59b6 !important;
 }
 
 /* Specific hover color for Web card */
@@ -3443,49 +3448,49 @@ img {
 
 .svc-seo .pricing-header .price {
     font-size: 1.5rem;
-    color: #333;
+    color: #ffffff;
     margin-bottom: 20px;
     font-weight: 700;
 }
 
 .svc-smm .pricing-header .price {
     font-size: 1.5rem;
-    color: #333;
+    color: #ffffff;
     margin-bottom: 20px;
     font-weight: 700;
 }
 
 .svc-google .pricing-header .price {
     font-size: 1.5rem;
-    color: #333;
+    color: #ffffff;
     margin-bottom: 20px;
     font-weight: 700;
 }
 
 .svc-meta .pricing-header .price {
     font-size: 1.5rem;
-    color: #333;
+    color: #ffffff;
     margin-bottom: 20px;
     font-weight: 700;
 }
 
 .svc-whatsapp .pricing-header .price {
     font-size: 1.5rem;
-    color: #333;
+    color: #ffffff;
     margin-bottom: 20px;
     font-weight: 700;
 }
 
 .svc-gmb .pricing-header .price {
     font-size: 1.5rem;
-    color: #333;
+    color: #ffffff;
     margin-bottom: 20px;
     font-weight: 700;
 }
 
 .svc-logo .pricing-header .price {
     font-size: 1.5rem;
-    color: #333;
+    color: #ffffff;
     margin-bottom: 20px;
     font-weight: 700;
 }
@@ -3507,7 +3512,7 @@ img {
     margin: 5px 0;
     text-align: left;
     font-size: 0.95rem;
-    color: #555;
+    color: #ffffff;
     animation: fadeIn 0.4s ease-in-out;
 }
 
@@ -3515,7 +3520,7 @@ img {
     margin: 5px 0;
     text-align: left;
     font-size: 0.95rem;
-    color: #555;
+    color: #ffffff;
     animation: fadeIn 0.4s ease-in-out;
 }
 
@@ -3523,7 +3528,7 @@ img {
     margin: 5px 0;
     text-align: left;
     font-size: 0.95rem;
-    color: #555;
+    color: #ffffff;
     animation: fadeIn 0.4s ease-in-out;
 }
 
@@ -3531,7 +3536,7 @@ img {
     margin: 5px 0;
     text-align: left;
     font-size: 0.95rem;
-    color: #555;
+    color: #ffffff;
     animation: fadeIn 0.4s ease-in-out;
 }
 
@@ -3539,7 +3544,7 @@ img {
     margin: 5px 0;
     text-align: left;
     font-size: 0.95rem;
-    color: #555;
+    color: #ffffff;
     animation: fadeIn 0.4s ease-in-out;
 }
 
@@ -3547,7 +3552,7 @@ img {
     margin: 5px 0;
     text-align: left;
     font-size: 0.95rem;
-    color: #555;
+    color: #ffffff;
     animation: fadeIn 0.4s ease-in-out;
 }
 
@@ -3605,31 +3610,38 @@ img {
 }
 
 .svc-seo .service-details li.not-included {
-    color: #999;
+    color: #ffffff;
+    opacity: 0.8;
 }
 
 .svc-smm .service-details li.not-included {
-    color: #999;
+    color: #ffffff;
+    opacity: 0.8;
 }
 
 .svc-google .service-details li.not-included {
-    color: #999;
+    color: #ffffff;
+    opacity: 0.8;
 }
 
 .svc-meta .service-details li.not-included {
-    color: #999;
+    color: #ffffff;
+    opacity: 0.8;
 }
 
 .svc-whatsapp .service-details li.not-included {
-    color: #999;
+    color: #ffffff;
+    opacity: 0.8;
 }
 
 .svc-gmb .service-details li.not-included {
-    color: #999;
+    color: #ffffff;
+    opacity: 0.8;
 }
 
 .svc-logo .service-details li.not-included {
-    color: #999;
+    color: #ffffff;
+    opacity: 0.8;
 }
 
 .read-more-btn {
@@ -3665,7 +3677,7 @@ img {
     /* Allow body to fill remaining space */
     display: flex;
     flex-direction: column;
-    background: #fff;
+    background: transparent;
     /* Ensure text background is white */
     text-align: center;
 }
