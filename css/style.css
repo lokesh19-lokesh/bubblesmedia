@@ -3548,7 +3548,37 @@ img {
     /* Red cross */
 }
 
-.service-details li.not-included {
+/* Specific styling for not-included items */
+.svc-web .service-details li.not-included {
+    color: #ffffff;
+    opacity: 0.8;
+}
+
+.svc-seo .service-details li.not-included {
+    color: #999;
+}
+
+.svc-smm .service-details li.not-included {
+    color: #999;
+}
+
+.svc-google .service-details li.not-included {
+    color: #999;
+}
+
+.svc-meta .service-details li.not-included {
+    color: #999;
+}
+
+.svc-whatsapp .service-details li.not-included {
+    color: #999;
+}
+
+.svc-gmb .service-details li.not-included {
+    color: #999;
+}
+
+.svc-logo .service-details li.not-included {
     color: #999;
 }
 
