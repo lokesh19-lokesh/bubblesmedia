@@ -3433,9 +3433,59 @@ img {
     margin-top: 0;
 }
 
-.service-card .pricing-header .price {
+/* Specific pricing text styling */
+.svc-web .pricing-header .price {
     font-size: 1.5rem;
     color: #ffffff;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.svc-seo .pricing-header .price {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.svc-smm .pricing-header .price {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.svc-google .pricing-header .price {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.svc-meta .pricing-header .price {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.svc-whatsapp .pricing-header .price {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.svc-gmb .pricing-header .price {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.svc-logo .pricing-header .price {
+    font-size: 1.5rem;
+    color: #333;
     margin-bottom: 20px;
     font-weight: 700;
 }
