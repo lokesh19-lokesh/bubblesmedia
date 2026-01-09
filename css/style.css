@@ -3438,58 +3438,65 @@ img {
     margin-top: 0;
 }
 
+/* Global Pricing Font Style */
+.service-card .pricing-header .price,
+.service-card .pricing-header .price span {
+    font-family: 'Tan St. Canard', 'Impact', sans-serif !important;
+    font-weight: 400 !important;
+}
+
 /* Specific pricing text styling */
 .svc-web .pricing-header .price {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     color: #ffffff;
     margin-bottom: 20px;
     font-weight: 700;
 }
 
 .svc-seo .pricing-header .price {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     color: #ffffff;
     margin-bottom: 20px;
     font-weight: 700;
 }
 
 .svc-smm .pricing-header .price {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     color: #ffffff;
     margin-bottom: 20px;
     font-weight: 700;
 }
 
 .svc-google .pricing-header .price {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     color: #ffffff;
     margin-bottom: 20px;
     font-weight: 700;
 }
 
 .svc-meta .pricing-header .price {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     color: #ffffff;
     margin-bottom: 20px;
     font-weight: 700;
 }
 
 .svc-whatsapp .pricing-header .price {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     color: #ffffff;
     margin-bottom: 20px;
     font-weight: 700;
 }
 
 .svc-gmb .pricing-header .price {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     color: #ffffff;
     margin-bottom: 20px;
     font-weight: 700;
 }
 
 .svc-logo .pricing-header .price {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     color: #ffffff;
     margin-bottom: 20px;
     font-weight: 700;
