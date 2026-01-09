@@ -568,7 +568,7 @@ img {
     font-family: 'Tan St. Canard', 'Impact', sans-serif;
     font-size: 3.5rem;
     font-weight: 400;
-    color: #141313;
+    color: #ffffff;
     text-transform: uppercase;
     line-height: 0.8;
 }
@@ -581,7 +581,7 @@ img {
 /* ===== NEW PRICING TYPOGRAPHY ===== */
 /* ===== NEW PRICING TYPOGRAPHY ===== */
 .pocket-pack-header {
-    margin-bottom: 10px;
+    margin-bottom: 0px;
     margin-top: 10px;
     text-align: left;
     /* Aligns content to left */
@@ -612,7 +612,7 @@ img {
 /* Service Variable Colors for Pricing Text */
 .svc-web .pp-starter,
 .svc-web .pp-subtitle {
-    color: #191311;
+    color: #ffffff;
 }
 
 /* Orange */
@@ -709,6 +709,7 @@ img {
 }
 
 /* Ensure hover effect doesn't break legibility */
+/* Shared hover effects (transform/shadow) */
 .svc-web:hover,
 .svc-seo:hover,
 .svc-smm:hover,
@@ -717,9 +718,42 @@ img {
 .svc-whatsapp:hover,
 .svc-gmb:hover,
 .svc-logo:hover {
-    background: #ffffff !important;
     transform: translateY(-8px);
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* White background for most cards on hover */
+.svc-seo:hover {
+    background: #ffffff !important;
+}
+
+.svc-smm:hover {
+    background: #ffffff !important;
+}
+
+.svc-google:hover {
+    background: #ffffff !important;
+}
+
+.svc-meta:hover {
+    background: #ffffff !important;
+}
+
+.svc-whatsapp:hover {
+    background: #ffffff !important;
+}
+
+.svc-gmb:hover {
+    background: #ffffff !important;
+}
+
+.svc-logo:hover {
+    background: #ffffff !important;
+}
+
+/* Specific hover color for Web card */
+.svc-web:hover {
+    background: #fa6419 !important;
 }
 
 /* ===== SERVICES OVERVIEW SECTION ===== */
@@ -3395,9 +3429,13 @@ img {
     font-weight: 600;
 }
 
+.service-card .pricing-header {
+    margin-top: 0;
+}
+
 .service-card .pricing-header .price {
     font-size: 1.5rem;
-    color: #333;
+    color: #ffffff;
     margin-bottom: 20px;
     font-weight: 700;
 }
@@ -3406,8 +3444,65 @@ img {
     margin-top: auto;
 }
 
-.service-details {
-    margin: 20px 0;
+/* Specific service details styling */
+.svc-web .service-details {
+    margin: 5px 0;
+    text-align: left;
+    font-size: 0.95rem;
+    color: #ffffff;
+    animation: fadeIn 0.4s ease-in-out;
+}
+
+.svc-seo .service-details {
+    margin: 5px 0;
+    text-align: left;
+    font-size: 0.95rem;
+    color: #555;
+    animation: fadeIn 0.4s ease-in-out;
+}
+
+.svc-smm .service-details {
+    margin: 5px 0;
+    text-align: left;
+    font-size: 0.95rem;
+    color: #555;
+    animation: fadeIn 0.4s ease-in-out;
+}
+
+.svc-google .service-details {
+    margin: 5px 0;
+    text-align: left;
+    font-size: 0.95rem;
+    color: #555;
+    animation: fadeIn 0.4s ease-in-out;
+}
+
+.svc-meta .service-details {
+    margin: 5px 0;
+    text-align: left;
+    font-size: 0.95rem;
+    color: #555;
+    animation: fadeIn 0.4s ease-in-out;
+}
+
+.svc-whatsapp .service-details {
+    margin: 5px 0;
+    text-align: left;
+    font-size: 0.95rem;
+    color: #555;
+    animation: fadeIn 0.4s ease-in-out;
+}
+
+.svc-gmb .service-details {
+    margin: 5px 0;
+    text-align: left;
+    font-size: 0.95rem;
+    color: #555;
+    animation: fadeIn 0.4s ease-in-out;
+}
+
+.svc-logo .service-details {
+    margin: 5px 0;
     text-align: left;
     font-size: 0.95rem;
     color: #555;
@@ -3429,7 +3524,7 @@ img {
 .service-details ul {
     list-style: none;
     padding: 0;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
 
 .service-details li {
