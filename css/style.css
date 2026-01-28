@@ -267,29 +267,32 @@ img {
 }
 
 #header .container {
-    display: flex;
-    align-items: center;
+    /* display: flex; */
+    /* align-items: center;
     position: relative;
-    /* Required for absolute positioning of actions */
-    justify-content: space-between;
-    /* Centers the .nav-center-wrapper */
+    justify-content: space-between; */
 }
 
 .nav-center-wrapper {
     display: flex;
     align-items: center;
     gap: 30px;
+    justify-content: space-between;
     /* Closer gap between Logo and Nav as requested */
 }
-
+.nav-call{
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+        }
 /* Header Actions (Call/Search) */
 .header-actions {
-    display: flex;
+    /* display: flex;
     align-items: center;
-    gap: 15px;
-    position: absolute;
-    right: 0;
-    margin-left: 0;
+    gap: 15px; */
+    /* position: absolute;
+    right: 0; */
+    margin-left: 50px;
 }
 
 /* Nav Container */
