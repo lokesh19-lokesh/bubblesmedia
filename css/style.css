@@ -2882,11 +2882,24 @@ img {
 }
 
 .team-member {
-    background: transparent;
-    box-shadow: none;
+    background: #fff;
     text-align: center;
-    transition: transform 0.3s ease;
+    border-radius: 16px;
+    transition: all 0.35s ease;
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.14),
+        0 4px 10px rgba(0, 0, 0, 0.08);
+    position: relative;
 }
+
+/* Premium hover lift with brand color depth */
+.team-member:hover {
+    transform: translateY(-10px);
+    box-shadow:
+        0 18px 38px rgba(250, 100, 25, 0.35),
+        0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
 
 @media (max-width: 1200px) {
     .team-container {
