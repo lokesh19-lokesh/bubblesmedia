@@ -176,7 +176,7 @@ img {
 .section-header p {
     max-width: 700px;
     margin: 0 auto;
-    color: #222;
+    color: #fff;
 }
 
 /* ===== BUTTONS ===== */
@@ -2033,7 +2033,7 @@ img {
 
 .story-text p {
     margin-bottom: 20px;
-    color: #222;
+    color: #fff;
     line-height: 1.6;
 }
 
@@ -2783,13 +2783,13 @@ img {
 #recent-posts .section-header h2 {
     font-size: 32px;
     font-weight: 700;
-    color: #333;
+    color: #fff;
     margin-bottom: 10px;
 }
 
 #recent-posts .section-header p {
     font-size: 16px;
-    color: #666;
+    color: #fff;
 }
 
 .blog-grid {
@@ -2802,7 +2802,8 @@ img {
     /* background: ; */
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    border:1px solid #fff;
     transition: transform 0.3s ease;
 }
 
@@ -2824,21 +2825,21 @@ img {
     display: flex;
     justify-content: space-between;
     font-size: 14px;
-    color: #999;
+    color: #fff;
     margin-bottom: 10px;
 }
 
 .blog-content h3 {
     font-size: 20px;
     font-weight: 600;
-    color: #222;
+    color: #fff;
     margin-bottom: 12px;
 }
 
 .blog-content p {
     font-size: 15px;
     line-height: 1.6;
-    color: #555;
+    color: #fff;
     margin-bottom: 15px;
 }
 
