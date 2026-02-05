@@ -3,7 +3,7 @@
 /* ===== VARIABLES ===== */
 :root {
     /* Colors */
-    --primary-color: #ff8c08;
+    --primary-color: #f26522;
     /* Vibrant purple as primary brand color */
     --tertiary-color: #43CBFF;
     /* Blue accent color */
@@ -612,7 +612,7 @@ img {
     font-size: 5rem;
     font-weight: 900;
     color: transparent;
-    -webkit-text-stroke: 2px #ff8c08;
+    -webkit-text-stroke: 2px #f26522;
     text-transform: uppercase;
     margin: 0;
     line-height: 1;
@@ -622,7 +622,7 @@ img {
 .services-underline {
     width: 100%;
     height: 8px;
-    background-color: #ff8c08;
+    background-color: #f26522;
     margin: 10px 0 20px;
 }
 
@@ -859,7 +859,7 @@ img {
 
 .orange-plus {
     color: #fff;
-    background-color: #ff8c08;
+    background-color: #f26522;
     border-radius: 50%;
     width: 30px;
     height: 30px;
@@ -869,7 +869,7 @@ img {
 }
 
 .white-plus {
-    color: #ff8c08;
+    color: #f26522;
     background-color: #fff;
     border-radius: 50%;
     width: 30px;
@@ -1420,7 +1420,7 @@ img {
     display: flex;
     align-items: center;
     gap: 10px;
-    background: #ff8c08;
+    background: #f26522;
     color: white;
     padding: 15px 20px;
     border-radius: 50px;
@@ -1481,7 +1481,7 @@ img {
     height: 60px;
     border-radius: 50%;
     background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
-    color: #ff8c08;
+    color: #f26522;
     border: none;
     font-size: 24px;
     cursor: pointer;
@@ -2539,7 +2539,7 @@ img {
     border-radius: 16px;
     padding: 5px;
 
-    background: linear-gradient(to top, #ff930f, #ffcc33);
+    background: linear-gradient(to top,#f26522, #ff930f);
     background-blend-mode: multiply;
 
     overflow: hidden;
@@ -2664,14 +2664,14 @@ img {
 .member-info h3 {
     margin: 5px 0 0;
     font-size: 18px;
-    color: #000000;
+    color: #fff;
     font-weight: 600;
 }
 
 .member-info p {
     margin: 2px 0 0;
     font-size: 14px;
-    color: #000000;
+    color: #fff;
 }
 
 .bg-light1 {
@@ -2684,7 +2684,7 @@ img {
     /* background: #fa6419; */
 }
 #cta .cta-buttons a:first-child {
-    border:1px solid #ff8c08;
+    border:1px solid #f26522;
 
 }
 #cta .cta-buttons a:first-child:hover{
@@ -2732,7 +2732,7 @@ img {
 }
 
 .btn-primary {
-    background: #ff8c08;
+    background: #f26522;
     color: #fff;
 }
 
@@ -2741,7 +2741,7 @@ img {
 }
 
 .btn-secondary {
-    background: #ff8c08;
+    background: #f26522;
     color: #fff;
 }
 
@@ -3144,3 +3144,133 @@ img {
     border-bottom: 1px solid #eee;
 }
 
+/* ===== CARD ===== */
+  #services-overview .services-grid {
+  display: flex;
+  gap: 60px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#services-overview .service-card {
+  width: 300px;
+  background: #f3f3f3;
+  border-radius: 6px;
+  overflow: visible;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+  text-align: center;
+  padding-top: 70px; /* space for price tag */
+  position: relative;
+}
+
+/* ===== FLOATING PRICE TAG (TOP) ===== */
+#services-overview .pricing-header {
+  position: absolute;
+  top: -45px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  padding: 22px 15px;
+  border-radius: 6px;
+  color: #fff;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+  z-index: 10;
+}
+
+#services-overview .pricing-header .amount {
+  font-size: 32px;
+  font-weight: 900;
+}
+
+#services-overview .pricing-header .period {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* ===== PLAN NAME (WEB / SEO / SMM) ===== */
+.service-title-styled {
+  display: block;
+  margin-top: 70px;
+}
+
+.service-title-styled .title-large {
+  font-size: 26px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: #333;
+}
+
+/* remove curved THE text */
+.title-small-curve {
+  display: none;
+}
+
+/* ===== REMOVE POCKET PACK ===== */
+.pocket-pack-header {
+  display: none;
+}
+
+/* ===== BODY ===== */
+#services-overview .service-body,
+#services-overview .service-body1 {
+  padding: 20px;
+    margin-top:1rem;
+}
+
+/* ===== FEATURES ===== */
+#services-overview .service-details ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+  /* margin: 20px 0; */
+}
+
+#services-overview .service-details li {
+  font-size: 14px;
+  padding: 8px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+#services-overview .service-details i.fa-check {
+  color: #16a34a;
+}
+
+#services-overview .service-details .not-included {
+  color: #999;
+}
+
+#services-overview .service-details .not-included i {
+  color: #e11d48;
+}
+
+/* ===== BUTTON ===== */
+#services-overview .pricing-footer {
+  margin: 20px 0;
+}
+
+#services-overview .pricing-footer .btn {
+  background: #f26522;
+  color: #fff;
+  padding: 12px 28px;
+  font-weight: 700;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+/* ===== COLORS ===== */
+.svc-web .pricing-header { background: #5b3fa3; }
+.svc-seo .pricing-header { background: #6fa624; }
+.svc-smm .pricing-header { background: #1f6fb2; }
+.svc-google .pricing-header { background: #f26522; }
+.svc-meta .pricing-header { background: #0b5ed7; }
+.svc-whatsapp .pricing-header { background: #1faa59; }
+.svc-gmb .pricing-header { background: #4285f4; }
+.svc-logo .pricing-header { background: #8e44ad; }
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+  #services-overview .service-card {
+    width: 100%;
+    max-width: 420px;
+  }
+}
