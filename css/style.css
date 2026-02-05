@@ -3168,8 +3168,8 @@ img {
   top: -45px;
   left: 50%;
   transform: translateX(-50%);
-  width: 80%;
-  padding: 22px 15px;
+  width: 65%;
+  padding: 20px 15px;
   border-radius: 6px;
   color: #fff;
   box-shadow: 0 8px 20px rgba(0,0,0,0.25);
@@ -3177,7 +3177,7 @@ img {
 }
 
 #services-overview .pricing-header .amount {
-  font-size: 32px;
+  font-size: 22px;
   font-weight: 900;
 }
 
