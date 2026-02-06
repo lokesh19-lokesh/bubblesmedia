@@ -13,8 +13,7 @@
     <link rel="stylesheet" href="css/responsive.css">
 
     <!-- Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
         /* Spacing between navbar and body content */
         #header {
@@ -115,7 +114,8 @@
             gap: 40px;
         }
 
-        .mission-card, .vision-card {
+        .mission-card,
+        .vision-card {
             background: #ffffff;
             padding: 50px 40px;
             border-radius: 15px;
@@ -129,12 +129,14 @@
             border-top-color: #007bff;
         }
 
-        .mission-card:hover, .vision-card:hover {
+        .mission-card:hover,
+        .vision-card:hover {
             transform: translateY(-10px);
             box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
         }
 
-        .mission-icon, .vision-icon {
+        .mission-icon,
+        .vision-icon {
             font-size: 3.5rem;
             color: #ff8c08;
             margin-bottom: 20px;
@@ -144,14 +146,16 @@
             color: #007bff;
         }
 
-        .mission-card h2, .vision-card h2 {
+        .mission-card h2,
+        .vision-card h2 {
             font-size: 1.8rem;
             color: #333;
             margin-bottom: 20px;
             font-weight: 700;
         }
 
-        .mission-card p, .vision-card p {
+        .mission-card p,
+        .vision-card p {
             font-size: 1rem;
             color: #666;
             line-height: 1.8;
@@ -189,6 +193,7 @@
             font-size: 3rem;
             background: linear-gradient(135deg, #ff8c08 0%, #fa6419 100%);
             -webkit-background-clip: text;
+            background-clip: text;
             -webkit-text-fill-color: transparent;
             margin-bottom: 15px;
         }
@@ -288,6 +293,7 @@
                 opacity: 0;
                 transform: translateY(30px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
@@ -299,6 +305,7 @@
                 opacity: 0;
                 transform: translateX(-30px);
             }
+
             to {
                 opacity: 1;
                 transform: translateX(0);
@@ -342,53 +349,42 @@
     <!-- Header Section -->
     <header id="header">
         <div class="container">
-            <div class="dots">
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-            </div>
             <div class="nav-center-wrapper">
                 <div class="logo">
                     <a href="index.html"><img src="media/logo8.png" alt="Bubbles Media Logo"></a>
                 </div>
-<div class="nav-call">
-                <nav>
-                    <ul class="nav-menu">
-                        <li><a href="index.html">Home</a></li>
-                        <li class="dropdown">
-                            <a href="#">Services</a>
-                            <ul class="dropdown-menu">
-                                <li><a href="services/seo.html">SEO Services in Hyderabad</a></li>
-                                <li><a href="services/meta-google-ads.html">Meta Ads & Google Ads Management</a></li>
-                                <li><a href="services/social-media.html">Social Media Marketing Services</a></li>
-                                <li><a href="services/website-design.html">Website Design & Development</a></li>
-                                <li><a href="services/shopify-ecommerce.html">Shopify E-Commerce Solutions</a></li>
-                                <li><a href="services/graphic-designing.html">Graphic Design Services</a></li>
-                                <li><a href="services/ai-marketing.html">AI Marketing Solutions</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="about.html" class="active">About Us</a></li>
-                        <li><a href="gallery.html">Gallery</a></li>
-                        <li><a href="career.html">Career</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
-                  <div class="header-actions">
-                <a href="tel:+919849869055" class="btn-icon call-icon"><i class="fas fa-phone"></i></a>
-                <div class="mobile-menu-toggle">
-                    <i class="fas fa-bars"></i>
+                <div class="nav-call">
+                    <nav>
+                        <ul class="nav-menu">
+                            <li><a href="index.html">Home</a></li>
+                            <li class="dropdown">
+                                <a href="#">Services</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="services/seo.html">SEO Services</a></li>
+                                    <li><a href="services/meta-google-ads.html">Ads Management</a></li>
+                                    <li><a href="services/social-media.html">Social Media Marketing</a></li>
+                                    <li><a href="services/website-design.html">Website Design</a></li>
+                                    <li><a href="services/shopify-ecommerce.html">E-Commerce Solutions</a></li>
+                                    <li><a href="services/graphic-designing.html">Graphic Designing</a></li>
+                                    <li><a href="services/ai-marketing.html">AI Marketing</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="about.html" class="active">About Us</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                            <li><a href="career.html">Career</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </nav>
+                    <div class="header-actions">
+                        <a href="tel:+919849869055" class="btn-icon call-icon" title="Call Us"><i
+                                class="fas fa-phone"></i></a>
+                        <a href="contact.html" class="header-cta">Get a Quote</a>
+                        <div class="mobile-menu-toggle">
+                            <i class="fas fa-bars"></i>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            </div>
-          
             </div>
         </div>
     </header>
@@ -683,11 +679,11 @@
                         <h3>Bubbles Media</h3>
                     </div>
                     <p>Your trusted digital marketing partner in Hyderabad, helping businesses grow their online
-                        presence and achieve measurable results.</p>
+                        presence and achieve measurable results through data-driven strategies.</p>
                     <div class="social-links">
                         <a href="https://www.facebook.com/thebubblesmedia" target="_blank"
                             title="Follow us on Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" target="_blank" title="Follow us on Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" target="_blank" title="Follow us on X"><i class="fab fa-x-twitter"></i></a>
                         <a href="https://www.instagram.com/thebubblesmedia/?hl=en" target="_blank"
                             title="Follow us on Instagram"><i class="fab fa-instagram"></i></a>
                         <a href="#" target="_blank" title="Connect with us on LinkedIn"><i
@@ -701,16 +697,18 @@
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About Us</a></li>
                         <li><a href="blog.html">Blog</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="career.html">Career</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
                     <h4>Our Services</h4>
                     <ul class="footer-links">
                         <li><a href="services/seo.html">SEO Services</a></li>
-                        <li><a href="services/meta-google-ads.html">SEM / Google Ads</a></li>
+                        <li><a href="services/meta-google-ads.html">Ads Management</a></li>
                         <li><a href="services/social-media.html">Social Media Marketing</a></li>
                         <li><a href="services/website-design.html">Website Design</a></li>
+                        <li><a href="services/shopify-ecommerce.html">E-Commerce Solutions</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
@@ -719,16 +717,14 @@
                         <li><i class="fas fa-map-marker-alt"></i> Hyderabad, Telangana, India</li>
                         <li><i class="fas fa-phone"></i> <a href="tel:+919849869055"
                                 style="color: inherit; text-decoration: none;">+91 9849869055</a></li>
-                        <li><i class="fab fa-whatsapp"></i> <a href="https://wa.me/919849869055" target="_blank"
-                                style="color: inherit; text-decoration: none;">WhatsApp</a></li>
-                        <li><i class="fas fa-envelope"></i> info@bubblesmedia.com</li>
+                        <li><i class="fas fa-envelope"></i> <a href="mailto:info@bubblesmedia.com"
+                                style="color: inherit; text-decoration: none;">info@bubblesmedia.com</a></li>
                     </ul>
                     <div class="newsletter">
-                        <h4>Subscribe to Newsletter</h4>
                         <form id="newsletter-form">
                             <div class="form-group">
-                                <input type="email" id="newsletter-email" placeholder="Your Email" required>
-                                <button type="submit" class="btn btn-primary">Subscribe</button>
+                                <input type="email" id="newsletter-email" placeholder="Your Business Email" required>
+                                <button type="submit" class="btn">Subscribe</button>
                             </div>
                         </form>
                     </div>
@@ -736,7 +732,7 @@
             </div>
             <div class="footer-bottom">
                 <div class="copyright">
-                    <p>&copy; 2023 Bubbles Media. All Rights Reserved.</p>
+                    <p>&copy; 2024 Bubbles Media. All Rights Reserved.</p>
                 </div>
                 <div class="legal-links">
                     <a href="privacy-policy.html">Privacy Policy</a>

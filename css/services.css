@@ -1,0 +1,372 @@
+/* Premium Modern Styles for Service Pages */
+
+/* Section Spacing */
+#header {
+    margin-bottom: 1cm;
+}
+
+#page-banner {
+    margin-top: 1cm;
+    background-size: cover;
+    background-position: center;
+    border-radius: 0 0 2rem 2rem;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Glassmorphism Hero Content */
+.service-hero-content {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 1.5rem;
+    padding: 2.5rem 2rem;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.12);
+    text-align: center;
+    animation: slideInUp 1s cubic-bezier(.23, 1.01, .32, 1);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.service-hero-content h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    background: linear-gradient(90deg, #ff8c08, #fa6419, #ff6b35);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 0.5rem;
+}
+
+.service-hero-content p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+/* Professional Buttons */
+.hero-buttons .btn {
+    background: linear-gradient(90deg, #ff8c08, #fa6419, #ff6b35);
+    color: #fff;
+    border: none;
+    border-radius: 2rem;
+    padding: 0.75rem 2.5rem;
+    font-weight: 700;
+    font-size: 1.1rem;
+    box-shadow: 0 4px 16px rgba(250, 100, 25, 0.12);
+    transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.hero-buttons .btn:hover {
+    background: linear-gradient(90deg, #fa6419, #ff8c08, #ff6b35);
+    transform: translateY(-3px) scale(1.04);
+    box-shadow: 0 6px 20px rgba(250, 100, 25, 0.2);
+}
+
+/* Features Grid */
+.service-features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 2.2rem;
+    margin-top: 2.5rem;
+}
+
+.service-feature-card,
+.feature-card {
+    background: white;
+    border-radius: 1.5rem;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.10);
+    padding: 2.5rem 1.5rem;
+    text-align: center;
+    transition: transform 0.35s cubic-bezier(.23, 1.01, .32, 1), box-shadow 0.35s, border-color 0.3s;
+    border: 1.5px solid #ff8c08;
+    position: relative;
+    overflow: hidden;
+}
+
+.service-feature-card:hover,
+.feature-card:hover {
+    transform: translateY(-8px) scale(1.02) rotate(-1deg);
+    box-shadow: 0 16px 48px 0 rgba(250, 100, 25, 0.18);
+    border-color: #fa6419;
+}
+
+.feature-icon {
+    font-size: 3rem;
+    color: #fa6419;
+    margin-bottom: 1.5rem;
+    filter: drop-shadow(0 2px 8px #ff8c0840);
+}
+
+.service-feature-card h3,
+.feature-card h3 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #222;
+}
+
+.service-feature-card p,
+.feature-card p {
+    color: #555;
+    font-size: 1.05rem;
+    line-height: 1.6;
+}
+
+/* Section Header Enhancement */
+.section-header h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    background: linear-gradient(90deg, #ff8c08, #fa6419, #ff6b35);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 15px;
+}
+
+.section-header p {
+    color: #555;
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Pricing Grid */
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.2rem;
+    margin-top: 3rem;
+}
+
+.pricing-card {
+    background: white;
+    border-radius: 1.5rem;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.10);
+    padding: 3rem 2rem;
+    text-align: center;
+    border: 2px solid #ff8c08;
+    transition: transform 0.35s cubic-bezier(.23, 1.01, .32, 1), box-shadow 0.35s, border-color 0.3s;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.pricing-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 20px 50px 0 rgba(250, 100, 25, 0.15);
+    border-color: #fa6419;
+}
+
+.pricing-card.featured {
+    border: 3px solid #fa6419;
+    box-shadow: 0 12px 40px 0 rgba(250, 100, 25, 0.15);
+}
+
+.pricing-header h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #fa6419;
+}
+
+.price {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin: 1rem 0;
+    color: #ff8c08;
+}
+
+.price span,
+.price .period {
+    font-size: 1rem;
+    color: #777;
+    font-weight: 400;
+}
+
+.featured-tag {
+    background: linear-gradient(90deg, #ff8c08, #fa6419, #ff6b35);
+    color: #fff;
+    padding: 6px 15px;
+    font-size: 0.85rem;
+    border-radius: 50px;
+    display: inline-block;
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.pricing-features {
+    flex-grow: 1;
+}
+
+.pricing-features ul {
+    list-style: none;
+    padding: 0;
+    margin: 2rem 0;
+    text-align: left;
+}
+
+.pricing-features li {
+    margin: 12px 0;
+    font-size: 1.05rem;
+    color: #444;
+    display: flex;
+    align-items: center;
+}
+
+.pricing-features i {
+    margin-right: 12px;
+    width: 20px;
+}
+
+.pricing-features i.fa-check {
+    color: #28a745;
+}
+
+.pricing-features i.fa-times {
+    color: #dc3545;
+}
+
+.pricing-footer .btn {
+    width: 100%;
+    background: linear-gradient(90deg, #ff8c08, #fa6419, #ff6b35);
+    color: #fff;
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem;
+    font-weight: 700;
+    font-size: 1.1rem;
+    transition: transform 0.3s;
+}
+
+.pricing-footer .btn:hover {
+    transform: translateY(-2px);
+}
+
+/* Custom Package Section */
+.custom-package {
+    margin-top: 4rem;
+    text-align: center;
+    background: #f8f9fa;
+    padding: 3rem;
+    border-radius: 1.5rem;
+}
+
+/* Animations */
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .service-hero-content {
+        padding: 2rem 1rem;
+    }
+
+    .service-hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .section-header h2 {
+        font-size: 2rem;
+    }
+}
+
+/* Platforms Grid (Social Media Page) */
+.platforms-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.platform-card {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 2.5rem 2rem;
+    border-radius: 1.5rem;
+    text-align: center;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.platform-card:hover {
+    transform: translateY(-10px);
+    background: #fff;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.platform-icon {
+    font-size: 3rem;
+    background: linear-gradient(135deg, #ff8c08, #fa6419);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 1.5rem;
+    display: inline-block;
+}
+
+/* Button Variants */
+.btn-outline {
+    background: transparent;
+    border: 2px solid #ff8c08;
+    color: #ff8c08 !important;
+}
+
+.btn-outline:hover {
+    background: #ff8c08;
+    color: #fff !important;
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+}
+
+/* Four Column Grid for Website Design */
+.pricing-grid.four-col {
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+/* Benefit Cards (Website Design) */
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.benefit-card {
+    display: flex;
+    gap: 1.5rem;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.benefit-card:hover {
+    transform: translateX(10px);
+}
+
+.benefit-icon {
+    font-size: 2rem;
+    color: #ff8c08;
+    flex-shrink: 0;
+}
