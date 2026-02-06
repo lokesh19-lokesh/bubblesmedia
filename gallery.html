@@ -41,6 +41,35 @@
       }
     }
 
+    /* Professional Gallery Page Styles */
+    body {
+      background: #ffffff;
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    .section-header h2 {
+      font-size: 2.5rem;
+      color: #333;
+      margin-bottom: 15px;
+      font-weight: 700;
+    }
+
+    .section-header p {
+      font-size: 1.1rem;
+      color: #666;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    #gallery-section {
+      background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+      padding: 80px 0;
+    }
+
     .gallery-grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -51,22 +80,17 @@
     .gallery-item {
       position: relative;
       overflow: hidden;
-      border-radius: 50%;
-      /* Make it a circle */
+      border-radius: 15px;
       aspect-ratio: 1 / 1;
-      /* Ensure it stays circular */
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-      transition: transform 0.3s ease;
-      /* Combine entrance and floating animations */
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+      transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
       animation: floatIn 1s ease-out forwards, floating 4s ease-in-out infinite;
       opacity: 0;
-      /* Start invisible for animation */
       transform: scale(0);
       border: 4px solid rgba(255, 255, 255, 0.3);
-      /* Subtle border */
     }
 
-    /* Staggered Delay for Animation: [entrance-delay], [float-delay = entrance-delay + duration(1s)] */
+    /* Staggered Delay for Animation */
     .gallery-item:nth-child(1) {
       animation-delay: 0.2s, 1.2s;
     }
@@ -130,11 +154,10 @@
     }
 
     .gallery-item:hover {
-      /* Pause animation on hover to allow interaction without fighting the float */
       animation-play-state: paused;
-      transform: scale(1.05) translateY(-10px);
-      box-shadow: 0 15px 35px rgba(250, 100, 25, 0.3);
-      border-color: rgba(255, 255, 255, 0.6);
+      transform: scale(1.08) translateY(-10px);
+      box-shadow: 0 20px 50px rgba(255, 107, 53, 0.25);
+      border-color: rgba(255, 255, 255, 0.8);
     }
 
     .gallery-item img {
@@ -146,7 +169,7 @@
     }
 
     .gallery-item:hover img {
-      transform: scale(1.1);
+      transform: scale(1.12);
     }
 
     /* Floating Bubble In Animation (Entrance) */
@@ -181,6 +204,28 @@
         transform: translateY(0px);
       }
     }
+
+    /* Responsive Design */
+    @media (max-width: 992px) {
+      .gallery-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      }
+
+      .section-header h2 {
+        font-size: 2rem;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+      }
+
+      .gallery-item {
+        border-radius: 12px;
+      }
+    }
   </style>
 </head>
 
@@ -212,11 +257,13 @@
                         <li class="dropdown">
                             <a href="#">Services</a>
                             <ul class="dropdown-menu">
-                                <li><a href="services/seo.html">SEO Services</a></li>
-                                <li><a href="services/sem.html">Meta Ads / Google Ads</a></li>
-                                <li><a href="services/social-media.html">Social Media Marketing</a></li>
-                                <li><a href="services/website-design.html">Website Design</a></li>
-                                <li><a href="services/website-design.html">E-commerce</a></li>
+                                <li><a href="services/seo.html">SEO Services in Hyderabad</a></li>
+                                <li><a href="services/meta-google-ads.html">Meta Ads & Google Ads Management</a></li>
+                                <li><a href="services/social-media.html">Social Media Marketing Services</a></li>
+                                <li><a href="services/website-design.html">Website Design & Development</a></li>
+                                <li><a href="services/shopify-ecommerce.html">Shopify E-Commerce Solutions</a></li>
+                                <li><a href="services/graphic-designing.html">Graphic Design Services</a></li>
+                                <li><a href="services/ai-marketing.html">AI Marketing Solutions</a></li>
                             </ul>
                         </li>
                         <li><a href="about.html">About Us</a></li>
@@ -296,7 +343,7 @@
           <h4>Our Services</h4>
           <ul class="footer-links">
             <li><a href="services/seo.html">SEO Services</a></li>
-            <li><a href="services/sem.html">SEM / Google Ads</a></li>
+            <li><a href="services/meta-google-ads.html">SEM / Google Ads</a></li>
             <li><a href="services/social-media.html">Social Media Marketing</a></li>
             <li><a href="services/website-design.html">Website Design</a></li>
           </ul>

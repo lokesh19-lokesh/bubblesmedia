@@ -15,12 +15,16 @@
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
+        /* Professional Contact Page Styles */
+        body {
+            background: #ffffff;
+        }
+
         /* Contact Page Specific Styles */
         .contact-page {
-            background: #fa6419;
-            /* Lime green background */
+            background: linear-gradient(135deg, #ff8c08 0%, #fa6419 50%, #ff6b35 100%);
             min-height: 100vh;
-            padding: 40px 0;
+            padding: 60px 0;
         }
 
         /* Spacing between navbar and body content */
@@ -43,67 +47,89 @@
         }
 
         .contact-info-section {
-            background: rgb(246, 156, 13);
-            padding: 40px;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 50px;
             border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(10px);
         }
 
         .contact-form-section {
-            background: #e1f5f1;
-            padding: 40px;
+            background: rgba(255, 255, 255, 0.98);
+            padding: 50px;
             border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(10px);
         }
 
         .page-title {
             text-align: center;
-            font-family: serif;
             font-weight: bold;
-            font-size: 2.5rem;
-            color: black;
-            text-decoration: underline;
-            margin-bottom: 50px;
+            font-size: 2.8rem;
+            color: #ffffff;
+            margin-bottom: 60px;
+            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
         }
 
         .contact-item {
             display: flex;
             align-items: flex-start;
-            margin-bottom: 30px;
+            margin-bottom: 35px;
             gap: 20px;
+            animation: slideInLeft 0.6s ease-out;
+        }
+
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
         }
 
         .contact-icon {
-            width: 50px;
-            height: 50px;
-            background: white;
+            width: 55px;
+            height: 55px;
+            background: linear-gradient(135deg, #ff8c08 0%, #fa6419 100%);
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 8px 20px rgba(255, 140, 8, 0.3);
             flex-shrink: 0;
         }
 
         .contact-icon i {
-            color: black;
-            font-size: 20px;
+            color: #ffffff;
+            font-size: 22px;
         }
 
         .contact-details h3 {
-            color: #000000;
-            /* Light green */
-            font-weight: bold;
-            font-family: sans-serif;
+            color: #333;
+            font-weight: 700;
             margin-bottom: 8px;
             font-size: 1.2rem;
         }
 
         .contact-details p {
-            color: black;
-            font-family: sans-serif;
+            color: #666;
             margin: 0;
-            line-height: 1.5;
+            line-height: 1.6;
+            font-size: 0.95rem;
+        }
+
+        .contact-details a {
+            color: #ff8c08;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .contact-details a:hover {
+            color: #fa6419;
         }
 
         .contact-form {
@@ -118,32 +144,41 @@
         }
 
         .form-group label {
-            font-weight: bold;
+            font-weight: 700;
             margin-bottom: 8px;
-            color: black;
+            color: #333;
+            font-size: 0.95rem;
         }
 
         .form-group input,
         .form-group select,
         .form-group textarea {
-            padding: 15px;
-            border: none;
+            padding: 14px 15px;
+            border: 2px solid #f0f0f0;
             border-radius: 8px;
-            background: #2F2F2F;
-            /* Dark gray */
-            color: white;
-            font-size: 16px;
+            background: #ffffff;
+            color: #333;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+            font-family: inherit;
         }
 
         .form-group input::placeholder,
         .form-group textarea::placeholder {
-            color: #CCCCCC;
-            /* Light gray */
+            color: #999;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #ff8c08;
+            box-shadow: 0 0 0 4px rgba(255, 140, 8, 0.1);
         }
 
         .form-group textarea {
             resize: vertical;
-            min-height: 120px;
+            min-height: 130px;
         }
 
         .recaptcha-container {
@@ -157,32 +192,115 @@
             width: 20px;
             height: 20px;
             background: white;
-            border: 2px solid #ccc;
+            border: 2px solid #ddd;
             border-radius: 3px;
             cursor: pointer;
+            flex-shrink: 0;
         }
 
         .recaptcha-text {
-            font-size: 14px;
-            color: black;
+            font-size: 0.9rem;
+            color: #666;
         }
 
         .recaptcha-logo {
             display: flex;
             align-items: center;
             gap: 5px;
-            font-size: 12px;
-            color: #0066cc;
+            font-size: 11px;
+            color: #999;
+            margin-left: auto;
         }
 
-        @media (max-width: 768px) {
+        .contact-form .btn {
+            padding: 14px 20px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            margin-top: 10px;
+        }
+
+        .contact-form .btn-primary {
+            background: linear-gradient(135deg, #ff8c08 0%, #fa6419 100%);
+            border: none;
+        }
+
+        .contact-form .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(255, 140, 8, 0.3);
+        }
+
+        .contact-form .btn-secondary {
+            background: linear-gradient(135deg, #25D366 0%, #1fa85a 100%);
+            border: none;
+        }
+
+        .contact-form .btn-secondary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(37, 211, 102, 0.3);
+        }
+
+        /* Additional styles for contact direct link */
+        .contact-form > div:last-child {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .contact-form > div:last-child p {
+            margin-bottom: 15px;
+            color: #666;
+            font-size: 0.95rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 992px) {
             .contact-container {
                 grid-template-columns: 1fr;
-                gap: 30px;
+                gap: 40px;
             }
 
             .page-title {
-                font-size: 2rem;
+                font-size: 2.2rem;
+            }
+
+            .contact-info-section,
+            .contact-form-section {
+                padding: 35px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .contact-page {
+                padding: 40px 0;
+            }
+
+            .page-title {
+                font-size: 1.8rem;
+                margin-bottom: 40px;
+            }
+
+            .contact-info-section,
+            .contact-form-section {
+                padding: 25px;
+            }
+
+            .contact-item {
+                margin-bottom: 25px;
+            }
+
+            .contact-icon {
+                width: 50px;
+                height: 50px;
+            }
+
+            .contact-icon i {
+                font-size: 18px;
+            }
+
+            .form-group input,
+            .form-group select,
+            .form-group textarea {
+                padding: 12px 12px;
+                font-size: 16px;
             }
         }
     </style>
@@ -216,11 +334,13 @@
                         <li class="dropdown">
                             <a href="#">Services</a>
                             <ul class="dropdown-menu">
-                                <li><a href="services/seo.html">SEO Services</a></li>
-                                <li><a href="services/sem.html">Meta Ads / Google Ads</a></li>
-                                <li><a href="services/social-media.html">Social Media Marketing</a></li>
-                                <li><a href="services/website-design.html">Website Design</a></li>
-                                <li><a href="services/website-design.html">E-commerce</a></li>
+                                <li><a href="services/seo.html">SEO Services in Hyderabad</a></li>
+                                <li><a href="services/meta-google-ads.html">Meta Ads & Google Ads Management</a></li>
+                                <li><a href="services/social-media.html">Social Media Marketing Services</a></li>
+                                <li><a href="services/website-design.html">Website Design & Development</a></li>
+                                <li><a href="services/shopify-ecommerce.html">Shopify E-Commerce Solutions</a></li>
+                                <li><a href="services/graphic-designing.html">Graphic Design Services</a></li>
+                                <li><a href="services/ai-marketing.html">AI Marketing Solutions</a></li>
                             </ul>
                         </li>
                         <li><a href="about.html">About Us</a></li>
@@ -392,7 +512,7 @@
                     <h4>Our Services</h4>
                     <ul class="footer-links">
                         <li><a href="services/seo.html">SEO Services</a></li>
-                        <li><a href="services/sem.html">Meta Ads / Google Ads</a></li>
+                        <li><a href="services/meta-google-ads.html">Meta Ads / Google Ads</a></li>
                         <li><a href="services/social-media.html">Social Media Marketing</a></li>
                         <li><a href="services/website-design.html">Website Design</a></li>
                     </ul>

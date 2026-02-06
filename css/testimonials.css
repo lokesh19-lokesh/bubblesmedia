@@ -1,0 +1,115 @@
+/* ===== TESTIMONIALS ===== */
+#testimonials {
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+}
+
+#testimonials .section-header {
+    margin-bottom: 50px;
+}
+
+#testimonials .section-header h2 {
+    font-size: 2.8rem;
+    color: #222;
+    margin-bottom: 15px;
+}
+
+#testimonials .section-header p {
+    font-size: 1.1rem;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.testimonial-carousel {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.testimonial-item {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 40px 30px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    transition: all 0.4s ease;
+    position: relative;
+    border-left: 4px solid #ff8c08;
+}
+
+.testimonial-item::before {
+    content: '"';
+    position: absolute;
+    top: 15px;
+    left: 25px;
+    font-size: 4rem;
+    color: #ff8c08;
+    opacity: 0.15;
+    font-family: Georgia, serif;
+}
+
+.testimonial-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+    border-left-color: #0668E1;
+}
+
+.testimonial-content {
+    margin-bottom: 25px;
+}
+
+.testimonial-content p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #555;
+    font-style: italic;
+    margin: 0;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+.author-info {
+    margin-left: 0;
+}
+
+.author-info h4 {
+    margin: 0 0 5px 0;
+    font-size: 1.1rem;
+    color: #222;
+    font-weight: 700;
+}
+
+.author-info p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #999;
+}
+
+/* Star Rating (optional enhancement) */
+.testimonial-rating {
+    color: #ffc107;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    letter-spacing: 2px;
+}
+
+@media (max-width: 768px) {
+    .testimonial-carousel {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    #testimonials .section-header h2 {
+        font-size: 2rem;
+    }
+
+    .testimonial-item {
+        padding: 30px 20px;
+    }
+}

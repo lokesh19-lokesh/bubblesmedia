@@ -41,6 +41,299 @@
                 margin-top: 1cm;
             }
         }
+
+        /* Professional About Page Styles */
+        body {
+            background: #ffffff;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-header h2 {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .section-header p {
+            font-size: 1.1rem;
+            color: #666;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Our Story Section */
+        #our-story {
+            background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+            padding: 80px 0;
+        }
+
+        .story-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .story-image img {
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(255, 107, 53, 0.15);
+            animation: slideInUp 0.8s ease-out;
+        }
+
+        .story-text {
+            animation: slideInRight 0.8s ease-out;
+        }
+
+        .story-text p {
+            font-size: 1rem;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .story-text p:first-child {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #ff8c08;
+        }
+
+        /* Mission & Vision Section */
+        #mission-vision {
+            padding: 80px 0;
+            background: #ffffff;
+        }
+
+        .mission-vision-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+        }
+
+        .mission-card, .vision-card {
+            background: #ffffff;
+            padding: 50px 40px;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+            text-align: center;
+            transition: all 0.3s ease;
+            border-top: 5px solid #ff8c08;
+        }
+
+        .vision-card {
+            border-top-color: #007bff;
+        }
+
+        .mission-card:hover, .vision-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+        }
+
+        .mission-icon, .vision-icon {
+            font-size: 3.5rem;
+            color: #ff8c08;
+            margin-bottom: 20px;
+        }
+
+        .vision-icon {
+            color: #007bff;
+        }
+
+        .mission-card h2, .vision-card h2 {
+            font-size: 1.8rem;
+            color: #333;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .mission-card p, .vision-card p {
+            font-size: 1rem;
+            color: #666;
+            line-height: 1.8;
+            text-align: center;
+        }
+
+        /* Core Values Section */
+        .core-values-box-section {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #f0f4ff 0%, #fff5f0 100%);
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .value-card {
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+        }
+
+        .value-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 35px rgba(255, 107, 53, 0.15);
+        }
+
+        .value-icon {
+            font-size: 3rem;
+            background: linear-gradient(135deg, #ff8c08 0%, #fa6419 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 15px;
+        }
+
+        .value-card h3 {
+            font-size: 1.3rem;
+            color: #333;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .value-card p {
+            font-size: 0.95rem;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        /* Brand Voice Section */
+        #brand-voice {
+            padding: 80px 0;
+            background: #ffffff;
+        }
+
+        .brand-voice-content {
+            background: linear-gradient(135deg, #ffffff 0%, #f9f9f9 100%);
+            padding: 50px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .brand-voice-text p {
+            font-size: 1.05rem;
+            color: #555;
+            line-height: 1.8;
+            margin-bottom: 25px;
+        }
+
+        .brand-voice-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .brand-voice-list li {
+            font-size: 1rem;
+            color: #666;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            padding-left: 30px;
+            position: relative;
+        }
+
+        .brand-voice-list li:before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #ff8c08;
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+
+        .brand-voice-list strong {
+            color: #333;
+        }
+
+        /* CTA Section */
+        #about-cta {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #ff8c08 0%, #fa6419 50%, #ff6b35 100%);
+            text-align: center;
+        }
+
+        .cta-content h2 {
+            font-size: 2.2rem;
+            color: #ffffff;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .cta-content p {
+            font-size: 1.1rem;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 30px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        /* Animations */
+        @keyframes slideInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideInRight {
+            from {
+                opacity: 0;
+                transform: translateX(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .story-content {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .mission-vision-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .section-header h2 {
+                font-size: 2rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .story-text p {
+                text-align: left;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+            }
+
+            .cta-content h2 {
+                font-size: 1.8rem;
+            }
+        }
     </style>
 
 </head>
@@ -72,11 +365,13 @@
                         <li class="dropdown">
                             <a href="#">Services</a>
                             <ul class="dropdown-menu">
-                                <li><a href="services/seo.html">SEO Services</a></li>
-                                <li><a href="services/sem.html">Meta Ads / Google Ads</a></li>
-                                <li><a href="services/social-media.html">Social Media Marketing</a></li>
-                                <li><a href="services/website-design.html">Website Design</a></li>
-                                <li><a href="services/website-design.html">E-commerce</a></li>
+                                <li><a href="services/seo.html">SEO Services in Hyderabad</a></li>
+                                <li><a href="services/meta-google-ads.html">Meta Ads & Google Ads Management</a></li>
+                                <li><a href="services/social-media.html">Social Media Marketing Services</a></li>
+                                <li><a href="services/website-design.html">Website Design & Development</a></li>
+                                <li><a href="services/shopify-ecommerce.html">Shopify E-Commerce Solutions</a></li>
+                                <li><a href="services/graphic-designing.html">Graphic Design Services</a></li>
+                                <li><a href="services/ai-marketing.html">AI Marketing Solutions</a></li>
                             </ul>
                         </li>
                         <li><a href="about.html" class="active">About Us</a></li>
@@ -413,7 +708,7 @@
                     <h4>Our Services</h4>
                     <ul class="footer-links">
                         <li><a href="services/seo.html">SEO Services</a></li>
-                        <li><a href="services/sem.html">SEM / Google Ads</a></li>
+                        <li><a href="services/meta-google-ads.html">SEM / Google Ads</a></li>
                         <li><a href="services/social-media.html">Social Media Marketing</a></li>
                         <li><a href="services/website-design.html">Website Design</a></li>
                     </ul>
