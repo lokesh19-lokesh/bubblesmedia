@@ -378,6 +378,13 @@ img {
     /* transform: translateX(-50%) translateY(10px); */
 }
 
+@media(max-width:992px){
+.dropdown .fa-angle-down{
+ float: right;
+}
+}
+
+
 .dropdown-menu li {
     margin: 0;
     width: 100%;
