@@ -261,7 +261,7 @@ img {
     left: 0;
     width: 100%;
     z-index: 1000;
-    background-color: rgba(250, 100, 25, 0.95);
+    background-color: #ef6538;
     /* Semi-transparent Brand Orange */
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
@@ -3090,16 +3090,8 @@ img {
 }
 
 #page-banner {
-    background-image: url('../media/map-lying-wooden-table.jpg');
-    /* Change to your image path */
-    background-size: cover;
-    /* Makes image cover the entire section */
-    background-position: center;
-    /* Centers the image */
-    background-repeat: no-repeat;
-    /* Avoids repeating */
-    color: rgb(201, 30, 30);
-    /* Makes text visible on darker images */
+    /* background-image: url('../media/map-lying-wooden-table.jpg'); */
+
 }
 
 .filter-buttons {
@@ -3946,7 +3938,7 @@ img {
     }
 }
 .mobile-nav-trigger button {
-  background: rgba(250, 100, 25, 0.95);
+  background: #ef6538;
   color: #fff;
   border: none;
   border-radius: 50%;
@@ -3966,7 +3958,7 @@ overflow-y: scroll;
 }
 }
 .mobile-nav-trigger button:active {
-  background: rgba(250, 100, 25, 0.95);
+  background: #ef6538;
 }
 
 .mobile-nav {
@@ -3995,7 +3987,7 @@ overflow-y: scroll;
   font-weight: 700;
   font-size: 1.2rem;
   color: #fff;
-  background-color: rgba(250, 100, 25, 0.95);
+  background-color: #ef6538;
 }
 .mobile-nav-header img{
     width:100px;
@@ -4024,13 +4016,13 @@ overflow-y: scroll;
   transition: background 0.18s, color 0.18s;
 }
 .mobile-nav ul li a:hover {
-  background: rgba(250, 100, 25, 0.95);
+  background: #ef6538;
   color: #fff;
 }
 .mobile-nav ul .nav-services-title {
   padding: 13px 28px 7px 28px;
   font-size: 0.98rem;
-  color: rgba(250, 100, 25, 0.95);
+  color: #ef6538;
   font-weight: 600;
   background: #fff7f0;
   border-bottom: none;

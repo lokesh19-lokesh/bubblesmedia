@@ -6,15 +6,17 @@
 }
 
 #page-banner {
-    margin-top: 1cm;
-    background-size: cover;
+margin-top:100px;
+    /* background-size: cover; */
     background-position: center;
-    border-radius: 0 0 2rem 2rem;
+    /* border-radius: 0 0 2rem 2rem; */
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18);
     position: relative;
     overflow: hidden;
 }
-
+#page-banner img{
+    width:100%;
+}
 /* Glassmorphism Hero Content */
 .service-hero-content {
     background: rgba(255, 255, 255, 0.85);
