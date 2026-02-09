@@ -55,15 +55,48 @@
           <div class="header-actions">
             <a href="tel:+919849869055" class="btn-icon call-icon" title="Call Us"><i class="fas fa-phone"></i></a>
             <a href="../contact.html" class="header-cta">Get a Quote</a>
-            <div class="mobile-menu-toggle">
-              <i class="fas fa-bars"></i>
-            </div>
+             <div class="mobile-nav-trigger">
+                            <button id="openMobileNav" aria-label="Open Menu">
+                                <i class="fas fa-bars"></i>
+                            </button>
+                        </div>
           </div>
         </div>
       </div>
     </div>
   </header>
 
+
+   <!-- Slide-in Mobile Nav -->
+    <nav id="mobileNav" class="mobile-nav">
+        <div class="mobile-nav-header">
+            <a href="index.html"><img src="../media/logo8.png" alt="Bubbles Media Logo"></a>
+            <button id="closeMobileNav" aria-label="Close Menu">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <ul>
+              <li><a href="../index.html">Home</a></li>
+              <li class="dropdown">
+                <a href="#" class="active">Services</a>
+                <ul class="dropdown-menu">
+                  <li><a href="seo.html">SEO Services</a></li>
+                  <li><a href="meta-google-ads.html">Ads Management</a></li>
+                  <li><a href="social-media.html">Social Media Marketing</a></li>
+                  <li><a href="website-design.html">Website Design</a></li>
+                  <li><a href="shopify-ecommerce.html">E-Commerce Solutions</a></li>
+                  <li><a href="graphic-designing.html">Graphic Designing</a></li>
+                  <li><a href="ai-marketing.html">AI Marketing</a></li>
+                </ul>
+              </li>
+              <li><a href="../about.html">About Us</a></li>
+              <li><a href="../gallery.html">Gallery</a></li>
+              <li><a href="../career.html">Career</a></li>
+              <li><a href="../blog.html">Blog</a></li>
+              <li><a href="../contact.html">Contact Us</a></li>
+            </ul>
+    </nav>
+    <div id="mobileNavOverlay" class="mobile-nav-overlay"></div>
   <!-- Page Banner -->
   <section id="page-banner" class="section-padding" style="background-image: url('../media/s12.jpg');">
     <div class="container">

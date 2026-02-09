@@ -587,4 +587,21 @@ $(document).ready(function () {
     gtag('js', new Date());
     gtag('config', 'UA-XXXXX-Y');
     */
+
+      const openBtn = document.getElementById('openMobileNav');
+  const closeBtn = document.getElementById('closeMobileNav');
+  const mobileNav = document.getElementById('mobileNav');
+  const overlay = document.getElementById('mobileNavOverlay');
+
+  openBtn.onclick = function() {
+    mobileNav.classList.add('open');
+    overlay.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  };
+  closeBtn.onclick = function() {
+    mobileNav.classList.remove('open');
+    overlay.classList.remove('open');
+    document.body.style.overflow = '';
+  };
+  overlay.onclick = closeBtn.onclick;
 });
