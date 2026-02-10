@@ -272,7 +272,7 @@ img {
 
 #header.sticky {
     padding: 12px 0;
-    background-color: rgba(250, 100, 25, 0.98);
+    background-color: #ef6538;
     box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
 }
 
@@ -1065,7 +1065,7 @@ img {
     color: #000000;
     text-transform: uppercase;
     letter-spacing: -1px;
-    background: linear-gradient(135deg, #ff8c08 0%, #fa6419 100%);
+    background: #ef6538;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -1153,7 +1153,7 @@ img {
 }
 
 .info-card {
-    background: linear-gradient(135deg, #ff8c08 0%, #fa6419 100%);
+    background: #ef6538;
     padding: 22px;
     text-align: center;
     border-radius: 12px;
@@ -1361,7 +1361,7 @@ img {
     font-weight: 900;
     margin-bottom: 15px;
     line-height: 1;
-    background: linear-gradient(135deg, #ff8c08 0%, #fa6419 100%);
+    background: #ef6538;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -1454,7 +1454,7 @@ img {
 /* ===== QUOTE FORM SECTION ===== */
 
 .quote-form-container {
-    background: linear-gradient(135deg, #ff8c08 0%, #fa6419 50%, #ff6b35 100%);
+    background: #ef6538;
     border: none;
     border-radius: 16px;
     box-shadow: 0 15px 40px rgba(255, 140, 8, 0.25);
@@ -1597,7 +1597,7 @@ img {
 
 /* CTA Section */
 #cta {
-    background: linear-gradient(135deg, #ff8c08 0%, #fa6419 50%, #ff6b35 100%);
+    background: #ef6538;
     color: #ffffff;
     text-align: center;
     position: relative;
@@ -1834,7 +1834,7 @@ img {
     font-size: 2.2rem;
     font-weight: 800;
     margin-bottom: 1.5rem;
-    background: linear-gradient(90deg, #ff8c08, #fa6419);
+    background: #ef6538;
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -1985,7 +1985,7 @@ img {
 }
 
 .newsletter .btn {
-    background: linear-gradient(90deg, #ff8c08, #fa6419);
+    background: #ef6538;
     color: #ffffff;
     border: none;
     padding: 0 25px;
