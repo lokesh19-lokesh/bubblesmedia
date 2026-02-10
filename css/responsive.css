@@ -399,7 +399,6 @@
     .footer-content {
         grid-template-columns: 1fr;
         gap: 20px;
-        text-align: center;
     }
 
     .footer-column {
@@ -407,7 +406,7 @@
     }
 
     .social-links {
-        justify-content: center;
+        /* justify-content: center; */
     }
 
     .footer-bottom {
