@@ -316,15 +316,15 @@ $(document).ready(function () {
         } else if (message.includes('pricing') || message.includes('cost') || message.includes('price')) {
             return "Our pricing varies based on your specific needs and goals. We offer flexible packages starting from ₹15,000/month. Would you like to discuss your requirements? You can call us at +91 9849869055 for a detailed quote.";
         } else if (message.includes('schedule') || message.includes('call') || message.includes('meeting')) {
-            return "Perfect! I can help you schedule a call. Our team is available Mon-Fri, 9AM-6PM. You can call us directly at +91 9849869055 or email us at info@bubblesmedia.com. What time works best for you?";
+            return "Perfect! I can help you schedule a call. Our team is available Mon-Fri, 9AM-6PM. You can call us directly at +91 9849869055 or email us at info@thebubblesmedia.com. What time works best for you?";
         } else if (message.includes('social media') || message.includes('facebook') || message.includes('instagram')) {
             return "Our social media marketing services include content creation, community management, paid advertising, and analytics. We help brands build meaningful connections with their audience. Would you like to see some case studies?";
         } else if (message.includes('website') || message.includes('design') || message.includes('development')) {
             return "We create stunning, responsive websites that convert visitors into customers. Our designs are modern, user-friendly, and optimized for performance. Would you like to see our portfolio?";
         } else if (message.includes('contact') || message.includes('phone') || message.includes('email')) {
-            return "You can reach us at:\n📞 Phone: +91 9849869055\n📧 Email: info@bubblesmedia.com\nðŸ“ Location: Hyderabad, Telangana\nâ° Hours: Mon-Fri, 9AM-6PM";
+            return "You can reach us at:\n📞 Phone: +91 9849869055\n📧 Email: info@thebubblesmedia.com\nðŸ“ Location: Hyderabad, Telangana\nâ° Hours: Mon-Fri, 9AM-6PM";
         } else {
-            return "Thank you for your message! Our team will get back to you shortly. In the meantime, feel free to call us at +91 9849869055 or email us at info@bubblesmedia.com for immediate assistance.";
+            return "Thank you for your message! Our team will get back to you shortly. In the meantime, feel free to call us at +91 9849869055 or email us at info@thebubblesmedia.com for immediate assistance.";
         }
     }
 
