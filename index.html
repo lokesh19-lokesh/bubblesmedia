@@ -510,7 +510,7 @@
                     <!-- Right Column: Image & Info -->
                     <div class="about-visuals">
                         <div class="about-image">
-                            <img src="images/team.avif" alt="Our Team">
+                            <img src="./team/team-with-thumbs-up.jpg" alt="Our Team">
                         </div>
 
                         <div class="info-cards">
@@ -529,6 +529,9 @@
             </div>
         </section>
 
+
+
+       
 
 
 
@@ -611,6 +614,137 @@
             </div>
         </section>
 
+
+
+
+       <!-- Clients Section -->
+<section id="clients" class="section-padding clients-section">
+    <div class="container">
+
+        <div class="section-title text-center">
+            <h4 class="sub-title">OUR CLIENTS</h4>
+            <h2 class="main-title">
+                We're proud to work with a diverse range of clients, from small businesses to large corporations.
+            </h2>
+        </div>
+
+        <div class="clients-logos">
+            <div class="client-logo logo-style-1">
+                <img src="./media/client/construction-logo.png" alt="Client 1">
+            </div>
+            <div class="client-logo logo-style-2">
+                <img src="./media/client/chithra-decors-logo.png" alt="Client 2">
+            </div>
+            <div class="client-logo logo-style-3">
+                <img src="./media/client/homezointeriors.png" alt="Client 3">
+            </div>
+            <div class="client-logo logo-style-4">
+                <img src="./media/client/lotus-logo.png" alt="Client 4">
+            </div>
+            <div class="client-logo logo-style-5">
+                <img src="./media/client/maaspace-logo.png" alt="Client 5">
+            </div>
+            <div class="client-logo logo-style-5">
+                <img src="./media/client/samhitha-logo.png" alt="Client 5">
+            </div>
+            <div class="client-logo logo-style-5">
+                <img src="./media/client/smat-logoo.png" alt="Client 5">
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<style>
+    /* Section Background */
+.clients-section {
+    background: #f9fafc;
+    padding: 80px 0;
+
+}
+.clients-section .container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+}
+/* Titles */
+.sub-title {
+    color: #f26522;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.main-title {
+    max-width: 750px;
+    margin: 0 auto 30px;
+    font-weight: 600;
+    line-height: 1.5;
+    text-align: center;
+    font-size:1.5rem !important;
+}
+
+/* MAIN WHITE BOX AROUND ALL LOGOS */
+.clients-logos {
+    background: #ffffff;
+    padding: 50px 40px;
+    border-radius: 16px;
+    width:500px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Each Logo */
+.client-logo {
+    padding: 15px;
+    transition: all 0.3s ease;
+    filter: grayscale(100%);
+    opacity: 0.8;
+}
+
+/* Logo Image */
+.client-logo img {
+    max-width: 130px;
+    max-height: 70px;
+    object-fit: contain;
+}
+
+/* Hover Effect */
+.client-logo:hover {
+    transform: scale(1.1);
+    filter: grayscale(0%);
+    opacity: 1;
+    background:#f26522;
+    border-radius: 10px;
+}
+
+/* Remove old random transforms */
+.logo-style-1,
+.logo-style-2,
+.logo-style-3,
+.logo-style-4,
+.logo-style-5 {
+    transform: none !important;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .clients-logos {
+        padding: 30px 20px;
+        gap: 25px;
+    }
+
+    .client-logo img {
+        max-width: 100px;
+        max-height: 55px;
+    }
+}
+
+</style>
 
         <!-- Services Overview Section pri-->
         <section id="services-overview" class="section-padding">
