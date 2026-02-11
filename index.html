@@ -516,9 +516,10 @@
                             <div class="info-card">
                                 <span>Operating Hours: 9 AM to 7 PM (EST)</span>
                             </div>
-                            <div class="info-card">
-                                <span>Calendar Link</span>
-                            </div>
+                            <div class="info-card" onclick="openCalendar()">
+    <span>Calendar Link</span>
+</div>
+
                             <div class="info-card">
                                 <span>info@thebubblesmedia.com</span>
                             </div>
@@ -528,6 +529,93 @@
             </div>
         </section>
 
+<!-- Calendar Modal -->
+<div id="calendarModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeCalendar()">&times;</span>
+    <h2>Select a Date</h2>
+    <input type="date" id="bookingDate" min="">
+    <br><br>
+    <button onclick="goToForm()">Next</button>
+  </div>
+</div>
+<!-- Booking Form Modal -->
+<div id="formModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeForm()">&times;</span>
+    <h2>Booking Details</h2>
+
+    <form id="bookingForm">
+      <input type="hidden" id="selectedDate" name="date">
+
+      <label>Name</label>
+      <input type="text" name="name" required>
+
+      <label>Email</label>
+      <input type="email" name="email" required>
+
+      <label>Phone Number</label>
+      <input type="tel" name="phone" required>
+
+      <button type="submit">Confirm Booking</button>
+    </form>
+  </div>
+</div>
+
+
+
+
+
+<script>
+// Set minimum date to today
+document.addEventListener("DOMContentLoaded", function () {
+    let today = new Date().toISOString().split("T")[0];
+    document.getElementById("bookingDate").setAttribute("min", today);
+});
+
+function openCalendar() {
+    document.getElementById("calendarModal").style.display = "block";
+}
+
+function closeCalendar() {
+    document.getElementById("calendarModal").style.display = "none";
+}
+
+function goToForm() {
+    let date = document.getElementById("bookingDate").value;
+    if (!date) {
+        alert("Please select a date");
+        return;
+    }
+
+    document.getElementById("selectedDate").value = date;
+    closeCalendar();
+    document.getElementById("formModal").style.display = "block";
+}
+
+function closeForm() {
+    document.getElementById("formModal").style.display = "none";
+}
+
+// Form submit
+document.getElementById("bookingForm").addEventListener("submit", function(e){
+    e.preventDefault();
+
+    let formData = new FormData(this);
+
+    fetch("send-booking.php", {
+        method: "POST",
+        body: formData
+    })
+    .then(res => res.text())
+    .then(data => {
+        alert("Booking Confirmed!");
+        closeForm();
+        this.reset();
+    })
+    .catch(err => alert("Error submitting form"));
+});
+</script>
 
 
        

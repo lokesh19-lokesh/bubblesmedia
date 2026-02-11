@@ -1,4 +1,5 @@
 ﻿/* Main Stylesheet for Bubbles Media Website */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
 /* ===== VARIABLES ===== */
 :root {
@@ -1165,6 +1166,7 @@ img {
     border: 2px solid transparent;
     position: relative;
     overflow: hidden;
+    cursor:pointer;
 }
 
 .info-card::before {
@@ -4177,4 +4179,117 @@ width:100%;
         max-width: 40px;
         max-height: 20px;
     }
+}
+
+/* Overlay Background */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.65);
+  backdrop-filter: blur(6px);
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Modal Box */
+.modal-content {
+  background: #ffffff;
+  margin: 6% auto;
+  padding: 30px 25px;
+  width: 92%;
+  max-width: 420px;
+  border-radius: 16px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+  position: relative;
+  animation: slideUp 0.4s ease;
+}
+
+/* Heading */
+.modal-content h2 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #0f172a;
+}
+
+/* Close Button */
+.close {
+  position: absolute;
+  right: 18px;
+  top: 15px;
+  font-size: 20px;
+  color: #94a3b8;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.close:hover {
+  color: #ef4444;
+  transform: rotate(90deg);
+}
+
+/* Labels */
+label {
+  display: block;
+  text-align: left;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 12px;
+  color: #334155;
+}
+
+/* Inputs */
+input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 6px;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+input:focus {
+  border-color: #ef6538;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15);
+  outline: none;
+}
+
+/* Buttons */
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 18px;
+  border-radius: 10px;
+  border: none;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  background: linear-gradient(135deg, #ef6538, #ef6538);
+  color: #fff;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px #ef6538;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes slideUp {
+  from {transform: translateY(40px); opacity: 0;}
+  to {transform: translateY(0); opacity: 1;}
+}
+
+/* Mobile Tweaks */
+@media (max-width: 480px) {
+  .modal-content {
+    margin: 15% auto;
+    padding: 25px 18px;
+  }
 }
