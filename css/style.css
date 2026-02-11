@@ -2699,7 +2699,7 @@ img {
     background-color: var(--white);
     border-radius: var(--border-radius-lg);
     padding: 40px;
-    text-align: center;
+    /* text-align: center; */
     box-shadow: var(--box-shadow);
     transition: all 0.3s ease;
 }
@@ -2719,7 +2719,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 auto 25px;
+    /* margin: 0 auto 25px; */
     color: var(--primary-color);
     font-size: 32px;
     transition: all 0.3s ease;
