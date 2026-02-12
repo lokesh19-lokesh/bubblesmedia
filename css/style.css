@@ -1980,6 +1980,7 @@ img {
     color: #ffffff;
     flex: 1;
     font-size: 0.95rem;
+    width:auto;
 }
 
 .newsletter input:focus {
