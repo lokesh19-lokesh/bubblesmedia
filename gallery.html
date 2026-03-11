@@ -1,338 +1,439 @@
 ﻿<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Bubbles Media Gallery - View our latest work, events, and office culture."
-    />
-    <title>Gallery | Bubbles Media - Digital Marketing Agency</title>
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="media/logo.png" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/responsive.css" />
 
-    <!-- Font Awesome for icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    />
-    <style>
-      /* Spacing between navbar and body content */
-      #header {
-        margin-bottom: 4cm;
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="View the Bubbles Media gallery to see our latest work, agency events, and office culture in Madhapur, Hyderabad." />
+  <meta name="keywords"
+    content="Bubbles Media Gallery, Digital Marketing Agency Events, Office Culture Madhapur, Marketing Events Hyderabad, Agency Life Madhapur" />
+  <title>Gallery | Bubbles Media - Digital Marketing Agency in Hyderabad</title>
+
+  <link rel="canonical" href="https://thebubblesmedia.com/gallery.html" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Gallery | Bubbles Media - Digital Marketing Agency in Hyderabad" />
+  <meta property="og:description" content="Take a look inside Bubbles Media - our work and culture." />
+  <meta property="og:url" content="https://thebubblesmedia.com/gallery.html" />
+  <meta property="og:site_name" content="Bubbles Media" />
+  <meta property="og:image" content="https://thebubblesmedia.com/media/logo.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Gallery | Bubbles Media - Digital Marketing Agency in Hyderabad" />
+  <meta name="twitter:description" content="Take a look inside Bubbles Media - our work and culture." />
+  <meta name="twitter:image" content="https://thebubblesmedia.com/media/logo.png" />
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="media/logo.png" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <style>
+    /* Spacing between navbar and body content */
+    #header {
+      margin-bottom: 4cm;
+    }
+
+    /* Ensure proper spacing for the first section */
+    #gallery-section {
+      margin-top: 1cm;
+    }
+
+    /* Mobile view (max-width: 768px) */
+    @media (max-width: 768px) {
+      body {
+        padding-top: 2cm;
+        /* adds space below fixed navbar */
       }
 
-      /* Ensure proper spacing for the first section */
+      #header {
+        margin-bottom: 3cm;
+      }
+
       #gallery-section {
         margin-top: 1cm;
       }
+    }
 
-      /* Mobile view (max-width: 768px) */
-      @media (max-width: 768px) {
-        body {
-          padding-top: 2cm;
-          /* adds space below fixed navbar */
-        }
+    /* Professional Gallery Page Styles */
+    body {
+      background: #ffffff;
+    }
 
-        #header {
-          margin-bottom: 3cm;
-        }
+    .section-header {
+      text-align: center;
+      margin-bottom: 60px;
+    }
 
-        #gallery-section {
-          margin-top: 1cm;
-        }
+    .section-header h2 {
+      font-size: 2.5rem;
+      color: #333;
+      margin-bottom: 15px;
+      font-weight: 700;
+    }
+
+    .section-header p {
+      font-size: 1.1rem;
+      color: #666;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    #gallery-section {
+      background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+      padding: 80px 0;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 30px;
+      padding: 20px 0;
+    }
+
+    .gallery-item {
+      position: relative;
+      overflow: hidden;
+      border-radius: 15px;
+      aspect-ratio: 1 / 1;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+      transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      animation:
+        floatIn 1s ease-out forwards,
+        floating 4s ease-in-out infinite;
+      opacity: 0;
+      transform: scale(0);
+      border: 4px solid rgba(255, 255, 255, 0.3);
+    }
+
+    /* Staggered Delay for Animation */
+    .gallery-item:nth-child(1) {
+      animation-delay: 0.2s, 1.2s;
+    }
+
+    .gallery-item:nth-child(2) {
+      animation-delay: 0.6s, 1.6s;
+    }
+
+    .gallery-item:nth-child(3) {
+      animation-delay: 1s, 2s;
+    }
+
+    .gallery-item:nth-child(4) {
+      animation-delay: 1.4s, 2.4s;
+    }
+
+    .gallery-item:nth-child(5) {
+      animation-delay: 1.8s, 2.8s;
+    }
+
+    .gallery-item:nth-child(6) {
+      animation-delay: 2.2s, 3.2s;
+    }
+
+    .gallery-item:nth-child(7) {
+      animation-delay: 2.6s, 3.6s;
+    }
+
+    .gallery-item:nth-child(8) {
+      animation-delay: 3s, 4s;
+    }
+
+    /* Glass/Shine Effect Overlay */
+    .gallery-item::after {
+      content: "";
+      position: absolute;
+      top: 10%;
+      left: 15%;
+      width: 25%;
+      height: 15%;
+      border-radius: 50%;
+      background: radial-gradient(ellipse at center,
+          rgba(255, 255, 255, 0.8) 0%,
+          rgba(255, 255, 255, 0) 70%);
+      transform: rotate(-45deg);
+      pointer-events: none;
+      z-index: 2;
+    }
+
+    /* Second shine for depth */
+    .gallery-item::before {
+      content: "";
+      position: absolute;
+      bottom: 10%;
+      right: 15%;
+      width: 20%;
+      height: 10%;
+      border-radius: 50%;
+      background: radial-gradient(ellipse at center,
+          rgba(255, 255, 255, 0.4) 0%,
+          rgba(255, 255, 255, 0) 70%);
+      transform: rotate(-45deg);
+      pointer-events: none;
+      z-index: 2;
+    }
+
+    .gallery-item:hover {
+      animation-play-state: paused;
+      transform: scale(1.08) translateY(-10px);
+      box-shadow: 0 20px 50px rgba(255, 107, 53, 0.25);
+      border-color: rgba(255, 255, 255, 0.8);
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.5s ease;
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.12);
+    }
+
+    /* Floating Bubble In Animation (Entrance) */
+    @keyframes floatIn {
+      0% {
+        opacity: 0;
+        transform: scale(0) translateY(50px);
       }
 
-      /* Professional Gallery Page Styles */
-      body {
-        background: #ffffff;
+      60% {
+        opacity: 1;
+        transform: scale(1.1) translateY(-10px);
       }
 
-      .section-header {
-        text-align: center;
-        margin-bottom: 60px;
+      100% {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+      }
+    }
+
+    /* Continuous Floating Animation */
+    @keyframes floating {
+      0% {
+        transform: translateY(0px);
+      }
+
+      50% {
+        transform: translateY(-15px);
+      }
+
+      100% {
+        transform: translateY(0px);
+      }
+    }
+
+    /* Responsive Design */
+    @media (max-width: 992px) {
+      .gallery-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
       }
 
       .section-header h2 {
-        font-size: 2.5rem;
-        color: #333;
-        margin-bottom: 15px;
-        font-weight: 700;
+        font-size: 2rem;
       }
+    }
 
-      .section-header p {
-        font-size: 1.1rem;
-        color: #666;
-        max-width: 600px;
-        margin: 0 auto;
-      }
-
-      #gallery-section {
-        background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
-        padding: 80px 0;
-      }
-
+    @media (max-width: 768px) {
       .gallery-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-        gap: 30px;
-        padding: 20px 0;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
       }
 
       .gallery-item {
-        position: relative;
-        overflow: hidden;
-        border-radius: 15px;
-        aspect-ratio: 1 / 1;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-        transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-        animation:
-          floatIn 1s ease-out forwards,
-          floating 4s ease-in-out infinite;
-        opacity: 0;
-        transform: scale(0);
-        border: 4px solid rgba(255, 255, 255, 0.3);
+        border-radius: 12px;
       }
+    }
+  </style>
+</head>
 
-      /* Staggered Delay for Animation */
-      .gallery-item:nth-child(1) {
-        animation-delay: 0.2s, 1.2s;
-      }
+<body>
+  <!-- Header Section -->
+  <!-- Header Section -->
+  <header id="header">
+    <div class="container">
+      <div class="nav-center-wrapper">
+        <div class="logo">
+          <a href="index.html"><img src="media/logo8.png" alt="Bubbles Media Logo" /></a>
+        </div>
+        <div class="nav-call">
+          <nav>
+            <ul class="nav-menu">
+              <li><a href="index.html">Home</a></li>
+              <li class="dropdown">
+                <a href="#">Services <i class="fa fa-angle-down"></i></a>
+                <ul class="dropdown-menu">
+                  <li><a href="services/seo.html">SEO Services</a></li>
+                  <li><a href="services/meta-ads.html">Meta Ads</a></li>
+                  <li><a href="services/google-ads.html">Google Ads</a></li>
+                  <li>
+                    <a href="services/social-media.html">Social Media Marketing</a>
+                  </li>
+                  <li>
+                    <a href="services/website-design.html">Website Design</a>
+                  </li>
+                  <li>
+                    <a href="services/app-development.html">App Development</a>
+                  </li>
+                  <li>
+                    <a href="services/shopify-ecommerce.html">E-Commerce Solutions</a>
+                  </li>
+                  <li>
+                    <a href="services/graphic-designing.html">Graphic Designing</a>
+                  </li>
+                  <li>
+                    <a href="services/ai-marketing.html">AI Marketing</a>
+                  </li>
+                </ul>
+              </li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="gallery.html" class="active">Gallery</a></li>
+              <li><a href="career.html">Career</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </nav>
+          <div class="header-actions">
+            <a href="tel:+919849869055" class="btn-icon call-icon" title="Call Us"><i class="fas fa-phone"></i></a>
 
-      .gallery-item:nth-child(2) {
-        animation-delay: 0.6s, 1.6s;
-      }
-
-      .gallery-item:nth-child(3) {
-        animation-delay: 1s, 2s;
-      }
-
-      .gallery-item:nth-child(4) {
-        animation-delay: 1.4s, 2.4s;
-      }
-
-      .gallery-item:nth-child(5) {
-        animation-delay: 1.8s, 2.8s;
-      }
-
-      .gallery-item:nth-child(6) {
-        animation-delay: 2.2s, 3.2s;
-      }
-
-      .gallery-item:nth-child(7) {
-        animation-delay: 2.6s, 3.6s;
-      }
-
-      .gallery-item:nth-child(8) {
-        animation-delay: 3s, 4s;
-      }
-
-      /* Glass/Shine Effect Overlay */
-      .gallery-item::after {
-        content: "";
-        position: absolute;
-        top: 10%;
-        left: 15%;
-        width: 25%;
-        height: 15%;
-        border-radius: 50%;
-        background: radial-gradient(
-          ellipse at center,
-          rgba(255, 255, 255, 0.8) 0%,
-          rgba(255, 255, 255, 0) 70%
-        );
-        transform: rotate(-45deg);
-        pointer-events: none;
-        z-index: 2;
-      }
-
-      /* Second shine for depth */
-      .gallery-item::before {
-        content: "";
-        position: absolute;
-        bottom: 10%;
-        right: 15%;
-        width: 20%;
-        height: 10%;
-        border-radius: 50%;
-        background: radial-gradient(
-          ellipse at center,
-          rgba(255, 255, 255, 0.4) 0%,
-          rgba(255, 255, 255, 0) 70%
-        );
-        transform: rotate(-45deg);
-        pointer-events: none;
-        z-index: 2;
-      }
-
-      .gallery-item:hover {
-        animation-play-state: paused;
-        transform: scale(1.08) translateY(-10px);
-        box-shadow: 0 20px 50px rgba(255, 107, 53, 0.25);
-        border-color: rgba(255, 255, 255, 0.8);
-      }
-
-      .gallery-item img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        display: block;
-        transition: transform 0.5s ease;
-      }
-
-      .gallery-item:hover img {
-        transform: scale(1.12);
-      }
-
-      /* Floating Bubble In Animation (Entrance) */
-      @keyframes floatIn {
-        0% {
-          opacity: 0;
-          transform: scale(0) translateY(50px);
-        }
-
-        60% {
-          opacity: 1;
-          transform: scale(1.1) translateY(-10px);
-        }
-
-        100% {
-          opacity: 1;
-          transform: scale(1) translateY(0);
-        }
-      }
-
-      /* Continuous Floating Animation */
-      @keyframes floating {
-        0% {
-          transform: translateY(0px);
-        }
-
-        50% {
-          transform: translateY(-15px);
-        }
-
-        100% {
-          transform: translateY(0px);
-        }
-      }
-
-      /* Responsive Design */
-      @media (max-width: 992px) {
-        .gallery-grid {
-          grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-        }
-
-        .section-header h2 {
-          font-size: 2rem;
-        }
-      }
-
-      @media (max-width: 768px) {
-        .gallery-grid {
-          grid-template-columns: repeat(2, 1fr);
-          gap: 20px;
-        }
-
-        .gallery-item {
-          border-radius: 12px;
-        }
-      }
-    </style>
-  </head>
-
-  <body>
-    <!-- Header Section -->
-    <!-- Header Section -->
-    <header id="header">
-      <div class="container">
-        <div class="nav-center-wrapper">
-          <div class="logo">
-            <a href="index.html"
-              ><img src="media/logo8.png" alt="Bubbles Media Logo"
-            /></a>
-          </div>
-          <div class="nav-call">
-            <nav>
-              <ul class="nav-menu">
-                <li><a href="index.html">Home</a></li>
-                <li class="dropdown">
-                  <a href="#">Services <i class="fa fa-angle-down"></i></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="services/seo.html">SEO Services</a></li>
-                    <li><a href="services/meta-ads.html">Meta Ads</a></li>
-                    <li><a href="services/google-ads.html">Google Ads</a></li>
-                    <li>
-                      <a href="services/social-media.html"
-                        >Social Media Marketing</a
-                      >
-                    </li>
-                    <li>
-                      <a href="services/website-design.html">Website Design</a>
-                    </li>
-                    <li>
-                      <a href="services/app-development.html"
-                        >App Development</a
-                      >
-                    </li>
-                    <li>
-                      <a href="services/shopify-ecommerce.html"
-                        >E-Commerce Solutions</a
-                      >
-                    </li>
-                    <li>
-                      <a href="services/graphic-designing.html"
-                        >Graphic Designing</a
-                      >
-                    </li>
-                    <li>
-                      <a href="services/ai-marketing.html">AI Marketing</a>
-                    </li>
-                  </ul>
-                </li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="gallery.html" class="active">Gallery</a></li>
-                <li><a href="career.html">Career</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-              </ul>
-            </nav>
-            <div class="header-actions">
-              <a
-                href="tel:+919849869055"
-                class="btn-icon call-icon"
-                title="Call Us"
-                ><i class="fas fa-phone"></i
-              ></a>
-
-              <div class="mobile-nav-trigger">
-                <button id="openMobileNav" aria-label="Open Menu">
-                  <i class="fas fa-bars"></i>
-                </button>
-              </div>
+            <div class="mobile-nav-trigger">
+              <button id="openMobileNav" aria-label="Open Menu">
+                <i class="fas fa-bars"></i>
+              </button>
             </div>
           </div>
         </div>
       </div>
-    </header>
+    </div>
+  </header>
 
-    <!-- Slide-in Mobile Nav -->
-    <nav id="mobileNav" class="mobile-nav">
-      <div class="mobile-nav-header">
-        <a href="index.html"
-          ><img src="media/logo8.png" alt="Bubbles Media Logo"
-        /></a>
-        <button id="closeMobileNav" aria-label="Close Menu">
-          <i class="fas fa-times"></i>
-        </button>
+  <!-- Slide-in Mobile Nav -->
+  <nav id="mobileNav" class="mobile-nav">
+    <div class="mobile-nav-header">
+      <a href="index.html"><img src="media/logo8.png" alt="Bubbles Media Logo" /></a>
+      <button id="closeMobileNav" aria-label="Close Menu">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+    <ul>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li class="dropdown">
+        <a href="#">Services <i class="fa fa-angle-down"></i></a>
+        <ul class="dropdown-menu">
+          <li><a href="services/seo.html">SEO Services</a></li>
+          <li><a href="services/meta-ads.html">Meta Ads</a></li>
+          <li><a href="services/google-ads.html">Google Ads</a></li>
+          <li>
+            <a href="services/social-media.html">Social Media Marketing</a>
+          </li>
+          <li><a href="services/website-design.html">Website Design</a></li>
+          <li><a href="services/app-development.html">App Development</a></li>
+          <li>
+            <a href="services/shopify-ecommerce.html">E-Commerce Solutions</a>
+          </li>
+          <li>
+            <a href="services/graphic-designing.html">Graphic Designing</a>
+          </li>
+          <li><a href="services/ai-marketing.html">AI Marketing</a></li>
+        </ul>
+      </li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="career.html">Career</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+  <div id="mobileNavOverlay" class="mobile-nav-overlay"></div>
+
+  <!-- Gallery Section -->
+  <section id="gallery-section" class="section-padding">
+    <div class="container">
+      <div class="section-header">
+        <h2>Our Gallery</h2>
+        <p>A glimpse into our world, our work, and our team.</p>
       </div>
-      <ul>
-        <li><a href="index.html" class="active">Home</a></li>
-        <li class="dropdown">
-          <a href="#">Services <i class="fa fa-angle-down"></i></a>
-          <ul class="dropdown-menu">
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <video width="100%" height="100%" controls>
+            <source src="media/1.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="gallery-item">
+          <video width="100%" height="100%" controls>
+            <source src="media/2.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="gallery-item">
+          <video width="100%" height="100%" controls>
+            <source src="media/3.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="gallery-item">
+          <video width="100%" height="100%" controls>
+            <source src="media/4.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="gallery-item">
+          <video width="100%" height="100%" controls>
+            <source src="media/5.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="gallery-item">
+          <img src="media/ddd.webp" alt="Gallery Image 6" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-column">
+          <div class="footer-logo">
+            <img src="./media/logo.png" alt="Bubbles Media Logo" />
+          </div>
+          <p>
+            Your trusted digital marketing partner in Hyderabad, helping
+            businesses grow their online presence and achieve measurable
+            results through data-driven strategies.
+          </p>
+          <div class="social-links">
+            <a href="https://www.facebook.com/thebubblesmedia" target="_blank" title="Follow us on Facebook"><i
+                class="fab fa-facebook-f"></i></a>
+
+            <a href="#" target="_blank" title="Follow us on Twitter"><i class="fab fa-x-twitter"></i></a>
+            <a href="#" target="_blank" title="Follow us on Pinterest"><i class="fab fa-pinterest"></i></a>
+            <a href="https://www.instagram.com/thebubblesmedia" target="_blank" title="Follow us on Instagram"><i
+                class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/the-bubbles-media/" target="_blank"
+              title="Connect with us on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://share.google/zBdG7tGCscYQftUMC" target="_blank" title="Google"><i
+                class="fab fa-google"></i></a>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="career.html">Career</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Our Services</h4>
+          <ul class="footer-links">
             <li><a href="services/seo.html">SEO Services</a></li>
             <li><a href="services/meta-ads.html">Meta Ads</a></li>
             <li><a href="services/google-ads.html">Google Ads</a></li>
@@ -340,201 +441,66 @@
               <a href="services/social-media.html">Social Media Marketing</a>
             </li>
             <li><a href="services/website-design.html">Website Design</a></li>
-            <li><a href="services/app-development.html">App Development</a></li>
             <li>
-              <a href="services/shopify-ecommerce.html">E-Commerce Solutions</a>
+              <a href="services/app-development.html">App Development</a>
             </li>
-            <li>
-              <a href="services/graphic-designing.html">Graphic Designing</a>
-            </li>
-            <li><a href="services/ai-marketing.html">AI Marketing</a></li>
           </ul>
-        </li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="career.html">Career</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-      </ul>
-    </nav>
-    <div id="mobileNavOverlay" class="mobile-nav-overlay"></div>
-
-    <!-- Gallery Section -->
-    <section id="gallery-section" class="section-padding">
-      <div class="container">
-        <div class="section-header">
-          <h2>Our Gallery</h2>
-          <p>A glimpse into our world, our work, and our team.</p>
         </div>
-        <div class="gallery-grid">
-          <div class="gallery-item">
-            <video width="100%" height="100%" controls>
-              <source src="media/1.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          </div>
-          <div class="gallery-item">
-            <video width="100%" height="100%" controls>
-              <source src="media/2.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          </div>
-          <div class="gallery-item">
-            <video width="100%" height="100%" controls>
-              <source src="media/3.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          </div>
-          <div class="gallery-item">
-            <video width="100%" height="100%" controls>
-              <source src="media/4.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          </div>
-          <div class="gallery-item">
-            <video width="100%" height="100%" controls>
-              <source src="media/5.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          </div>
-          <div class="gallery-item">
-            <img src="media/ddd.webp" alt="Gallery Image 6" />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer id="footer">
-      <div class="container">
-        <div class="footer-content">
-          <div class="footer-column">
-            <div class="footer-logo">
-              <img src="./media/logo.png" alt="Bubbles Media Logo" />
-            </div>
-            <p>
-              Your trusted digital marketing partner in Hyderabad, helping
-              businesses grow their online presence and achieve measurable
-              results through data-driven strategies.
-            </p>
-            <div class="social-links">
-              <a
-                href="https://www.facebook.com/thebubblesmedia"
-                target="_blank"
-                title="Follow us on Facebook"
-                ><i class="fab fa-facebook-f"></i
-              ></a>
-              <a href="#" target="_blank" title="Follow us on X"
-                ><i class="fab fa-x-twitter"></i
-              ></a>
-              <a
-                href="https://www.instagram.com/thebubblesmedia/?hl=en"
-                target="_blank"
-                title="Follow us on Instagram"
-                ><i class="fab fa-instagram"></i
-              ></a>
-              <a href="#" target="_blank" title="Connect with us on LinkedIn"
-                ><i class="fab fa-linkedin-in"></i
-              ></a>
-              <a href="#" target="_blank" title="Read our blog on Medium"
-                ><i class="fab fa-medium-m"></i
-              ></a>
-            </div>
-          </div>
-          <div class="footer-column">
-            <h4>Quick Links</h4>
-            <ul class="footer-links">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="about.html">About Us</a></li>
-              <li><a href="blog.html">Blog</a></li>
-              <li><a href="career.html">Career</a></li>
-              <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-          </div>
-          <div class="footer-column">
-            <h4>Our Services</h4>
-            <ul class="footer-links">
-              <li><a href="services/seo.html">SEO Services</a></li>
-              <li><a href="services/meta-ads.html">Meta Ads</a></li>
-              <li><a href="services/google-ads.html">Google Ads</a></li>
-              <li>
-                <a href="services/social-media.html">Social Media Marketing</a>
-              </li>
-              <li><a href="services/website-design.html">Website Design</a></li>
-              <li>
-                <a href="services/app-development.html">App Development</a>
-              </li>
-            </ul>
-          </div>
-          <div class="footer-column">
-            <h4>Contact Info</h4>
-            <ul class="contact-info">
-              <li>
-                <i class="fas fa-map-marker-alt"></i> Hyderabad, Telangana,
-                India
-              </li>
-              <li>
-                <i class="fas fa-phone"></i>
-                <a
-                  href="tel:+919849869055"
-                  style="color: inherit; text-decoration: none"
-                  >+91 9849869055</a
-                >
-              </li>
-              <li>
-                <i class="fas fa-envelope"></i>
-                <a
-                  href="mailto:info@thebubblesmedia.com"
-                  style="color: inherit; text-decoration: none"
-                  >info@thebubblesmedia.com</a
-                >
-              </li>
-            </ul>
-            <div class="newsletter">
-              <form id="newsletter-form">
-                <div class="form-group">
-                  <input
-                    type="email"
-                    id="newsletter-email"
-                    placeholder="Your Business Email"
-                    required
-                  />
-                  <button type="submit" class="btn">Subscribe</button>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <div class="container-fluid copy-right">
-      <div class="container">
-        <div class="footer-bottom">
-          <div class="copyright">
-            <p>&copy; 2024 Bubbles Media. All Rights Reserved.</p>
-          </div>
-          <div class="legal-links">
-            <a href="privacy-policy.html">Privacy Policy</a>
-            <a href="terms-of-service.html">Terms of Service</a>
+        <div class="footer-column">
+          <h4>Contact Info</h4>
+          <ul class="contact-info">
+            <li>
+              <i class="fas fa-map-marker-alt"></i> Hyderabad, Telangana,
+              India
+            </li>
+            <li>
+              <i class="fas fa-phone"></i>
+              <a href="tel:+919849869055" style="color: inherit; text-decoration: none">+91 9849869055</a>
+            </li>
+            <li>
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:info@thebubblesmedia.com"
+                style="color: inherit; text-decoration: none">info@thebubblesmedia.com</a>
+            </li>
+          </ul>
+          <div class="newsletter">
+            <form id="newsletter-form">
+              <div class="form-group">
+                <input type="email" id="newsletter-email" placeholder="Your Business Email" required />
+                <button type="submit" class="btn">Subscribe</button>
+              </div>
+            </form>
           </div>
         </div>
       </div>
     </div>
-
-    <!-- WhatsApp Floating Button -->
-    <div id="whatsapp-float" class="whatsapp-float">
-      <a
-        href="https://wa.me/919849869055?text=Hi%20Bubbles%20Media!%20I%20would%20like%20to%20know%20more%20about%20your%20digital%20marketing%20services."
-        target="_blank"
-        class="whatsapp-btn"
-      >
-        <i class="fab fa-whatsapp"></i>
-        <span class="whatsapp-text">Chat on WhatsApp</span>
-      </a>
+  </footer>
+  <div class="container-fluid copy-right">
+    <div class="container">
+      <div class="footer-bottom">
+        <div class="copyright">
+          <p>&copy; 2024 Bubbles Media. All Rights Reserved.</p>
+        </div>
+        <div class="legal-links">
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="terms-of-service.html">Terms of Service</a>
+        </div>
+      </div>
     </div>
+  </div>
 
-    <!-- JavaScript -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="js/main.js"></script>
-  </body>
+  <!-- WhatsApp Floating Button -->
+  <div id="whatsapp-float" class="whatsapp-float">
+    <a href="https://wa.me/919849869055?text=Hi%20Bubbles%20Media!%20I%20would%20like%20to%20know%20more%20about%20your%20digital%20marketing%20services."
+      target="_blank" class="whatsapp-btn">
+      <i class="fab fa-whatsapp"></i>
+      <span class="whatsapp-text">Chat on WhatsApp</span>
+    </a>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
 </html>

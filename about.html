@@ -1,457 +1,774 @@
 ﻿<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="About Bubbles Media - A leading digital marketing agency in Hyderabad with expertise in SEO, SEM, Social Media and Website Design"
-    />
-    <title>About Us | Bubbles Media - Digital Marketing Agency</title>
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="media/logo.png" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/responsive.css" />
 
-    <!-- Font Awesome for icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    />
-    <style>
-      /* Spacing between navbar and body content */
-      #header {
-        margin-bottom: 4cm;
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="About Bubbles Media - A leading digital marketing agency in Hyderabad & Madhapur. Experts in SEO, Google Ads, Social Media, and Website Design." />
+  <meta name="keywords"
+    content="About Bubbles Media, Digital Marketing Agency Hyderabad, Digital Marketing Agency Madhapur, SEO Experts Hyderabad, Web Design Team Madhapur, Marketing Agency Madhapur" />
+  <title>About Us | Bubbles Media - Digital Marketing Agency in Hyderabad & Madhapur</title>
+
+  <link rel="canonical" href="https://thebubblesmedia.com/about.html" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="About Us | Bubbles Media - Digital Marketing Agency in Hyderabad & Madhapur" />
+  <meta property="og:description"
+    content="Learn more about Hyderabad's top digital marketing agency specializing in growth." />
+  <meta property="og:url" content="https://thebubblesmedia.com/about.html" />
+  <meta property="og:site_name" content="Bubbles Media" />
+  <meta property="og:image" content="https://thebubblesmedia.com/media/logo.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="About Us | Bubbles Media - Digital Marketing Agency in Hyderabad & Madhapur" />
+  <meta name="twitter:description"
+    content="Learn more about Hyderabad's top digital marketing agency specializing in growth." />
+  <meta name="twitter:image" content="https://thebubblesmedia.com/media/logo.png" />
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="media/logo.png" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <style>
+    /* Spacing between navbar and body content */
+    #header {
+      margin-bottom: 4cm;
+    }
+
+    /* Ensure proper spacing for the first section */
+    #our-story {
+      margin-top: 1cm;
+    }
+
+    /* Mobile view (max-width: 768px) */
+    @media (max-width: 768px) {
+      body {
+        padding-top: 2cm;
+        /* adds space below fixed navbar */
       }
 
-      /* Ensure proper spacing for the first section */
+      #header {
+        margin-bottom: 3cm;
+      }
+
       #our-story {
         margin-top: 1cm;
       }
+    }
 
-      /* Mobile view (max-width: 768px) */
-      @media (max-width: 768px) {
-        body {
-          padding-top: 2cm;
-          /* adds space below fixed navbar */
-        }
+    /* Professional About Page Styles */
+    body {
+      background: #ffffff;
+    }
 
-        #header {
-          margin-bottom: 3cm;
-        }
+    .section-header {
+      text-align: center;
+      margin-bottom: 60px;
+    }
 
-        #our-story {
-          margin-top: 1cm;
-        }
+    .section-header h2 {
+      font-size: 2.5rem;
+      color: #333;
+      margin-bottom: 15px;
+      font-weight: 700;
+    }
+
+    .section-header p {
+      font-size: 1.1rem;
+      color: #666;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    /* Our Story Section */
+    #our-story {
+      background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+      padding: 80px 0;
+    }
+
+    .story-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .story-image img {
+      border-radius: 15px;
+      box-shadow: 0 20px 40px rgba(255, 107, 53, 0.15);
+      animation: slideInUp 0.8s ease-out;
+    }
+
+    .story-text {
+      animation: slideInRight 0.8s ease-out;
+    }
+
+    .story-text p {
+      font-size: 1rem;
+      line-height: 1.8;
+      color: #555;
+      margin-bottom: 20px;
+      text-align: justify;
+    }
+
+    .story-text p:first-child {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #ff8c08;
+    }
+
+    /* Mission & Vision Section */
+    #mission-vision {
+      padding: 80px 0;
+      background: #ffffff;
+    }
+
+    .mission-vision-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 40px;
+    }
+
+    .mission-card,
+    .vision-card {
+      background: #ffffff;
+      padding: 50px 40px;
+      border-radius: 15px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+      /* text-align: center; */
+      transition: all 0.3s ease;
+      border-top: 5px solid #ff8c08;
+    }
+
+    .vision-card {
+      border-top-color: #007bff;
+    }
+
+    .mission-card:hover,
+    .vision-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+    }
+
+    .mission-icon,
+    .vision-icon {
+      font-size: 3.5rem;
+      color: #ff8c08;
+      margin-bottom: 20px;
+    }
+
+    .vision-icon {
+      color: #007bff;
+    }
+
+    .mission-card h2,
+    .vision-card h2 {
+      font-size: 1.8rem;
+      color: #333;
+      margin-bottom: 20px;
+      font-weight: 700;
+    }
+
+    .mission-card p,
+    .vision-card p {
+      font-size: 1rem;
+      color: #666;
+      line-height: 1.8;
+      /* text-align: center; */
+    }
+
+    /* Core Values Section */
+    .core-values-box-section {
+      padding: 80px 0;
+      background: linear-gradient(135deg, #f0f4ff 0%, #fff5f0 100%);
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    .value-card {
+      background: #ffffff;
+      padding: 40px;
+      border-radius: 15px;
+      text-align: center;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+      transition: all 0.3s ease;
+    }
+
+    .value-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 15px 35px rgba(255, 107, 53, 0.15);
+    }
+
+    .value-icon {
+      font-size: 3rem;
+      background: #ef6538;
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 15px;
+    }
+
+    .value-card h3 {
+      font-size: 1.3rem;
+      color: #333;
+      margin-bottom: 15px;
+      font-weight: 700;
+    }
+
+    .value-card p {
+      font-size: 0.95rem;
+      color: #666;
+      line-height: 1.6;
+    }
+
+    /* Brand Voice Section */
+    #brand-voice {
+      padding: 80px 0;
+      background: #ffffff;
+    }
+
+    .brand-voice-content {
+      background: linear-gradient(135deg, #ffffff 0%, #f9f9f9 100%);
+      padding: 50px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    }
+
+    .brand-voice-text p {
+      font-size: 1.05rem;
+      color: #555;
+      line-height: 1.8;
+      margin-bottom: 25px;
+    }
+
+    .brand-voice-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .brand-voice-list li {
+      font-size: 1rem;
+      color: #666;
+      line-height: 1.8;
+      margin-bottom: 20px;
+      padding-left: 30px;
+      position: relative;
+    }
+
+    .brand-voice-list li:before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #ff8c08;
+      font-weight: 700;
+      font-size: 1.2rem;
+    }
+
+    .brand-voice-list strong {
+      color: #333;
+    }
+
+    #our-story ul li,
+    .year ul li {
+      list-style-type: disc;
+    }
+
+    .year ul {
+      padding-left: 40px;
+    }
+
+    .year {
+      width: 70%;
+      margin: 0 auto;
+    }
+
+    /* CTA Section */
+    #about-cta {
+      padding: 80px 0;
+      background: #ef6538;
+      text-align: center;
+    }
+
+    .cta-content h2 {
+      font-size: 2.2rem;
+      color: #ffffff;
+      margin-bottom: 20px;
+      font-weight: 700;
+    }
+
+    .cta-content p {
+      font-size: 1.1rem;
+      color: rgba(255, 255, 255, 0.9);
+      margin-bottom: 30px;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .cta-buttons {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    /* Animations */
+    @keyframes slideInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
       }
 
-      /* Professional About Page Styles */
-      body {
-        background: #ffffff;
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes slideInRight {
+      from {
+        opacity: 0;
+        transform: translateX(-30px);
       }
 
-      .section-header {
-        text-align: center;
-        margin-bottom: 60px;
+      to {
+        opacity: 1;
+        transform: translateX(0);
       }
+    }
 
-      .section-header h2 {
-        font-size: 2.5rem;
-        color: #333;
-        margin-bottom: 15px;
-        font-weight: 700;
-      }
-
-      .section-header p {
-        font-size: 1.1rem;
-        color: #666;
-        max-width: 600px;
-        margin: 0 auto;
-      }
-
-      /* Our Story Section */
-      #our-story {
-        background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
-        padding: 80px 0;
-      }
-
+    /* Responsive Design */
+    @media (max-width: 992px) {
       .story-content {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 60px;
-        align-items: center;
-      }
-
-      .story-image img {
-        border-radius: 15px;
-        box-shadow: 0 20px 40px rgba(255, 107, 53, 0.15);
-        animation: slideInUp 0.8s ease-out;
-      }
-
-      .story-text {
-        animation: slideInRight 0.8s ease-out;
-      }
-
-      .story-text p {
-        font-size: 1rem;
-        line-height: 1.8;
-        color: #555;
-        margin-bottom: 20px;
-        text-align: justify;
-      }
-
-      .story-text p:first-child {
-        font-size: 1.1rem;
-        font-weight: 600;
-        color: #ff8c08;
-      }
-
-      /* Mission & Vision Section */
-      #mission-vision {
-        padding: 80px 0;
-        background: #ffffff;
-      }
-
-      .mission-vision-grid {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr;
         gap: 40px;
       }
 
-      .mission-card,
-      .vision-card {
-        background: #ffffff;
-        padding: 50px 40px;
-        border-radius: 15px;
-        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
-        /* text-align: center; */
-        transition: all 0.3s ease;
-        border-top: 5px solid #ff8c08;
-      }
-
-      .vision-card {
-        border-top-color: #007bff;
-      }
-
-      .mission-card:hover,
-      .vision-card:hover {
-        transform: translateY(-10px);
-        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
-      }
-
-      .mission-icon,
-      .vision-icon {
-        font-size: 3.5rem;
-        color: #ff8c08;
-        margin-bottom: 20px;
-      }
-
-      .vision-icon {
-        color: #007bff;
-      }
-
-      .mission-card h2,
-      .vision-card h2 {
-        font-size: 1.8rem;
-        color: #333;
-        margin-bottom: 20px;
-        font-weight: 700;
-      }
-
-      .mission-card p,
-      .vision-card p {
-        font-size: 1rem;
-        color: #666;
-        line-height: 1.8;
-        /* text-align: center; */
-      }
-
-      /* Core Values Section */
-      .core-values-box-section {
-        padding: 80px 0;
-        background: linear-gradient(135deg, #f0f4ff 0%, #fff5f0 100%);
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 30px;
-        max-width: 1200px;
-        margin: 0 auto;
-        padding-left: 20px;
-        padding-right: 20px;
-      }
-
-      .value-card {
-        background: #ffffff;
-        padding: 40px;
-        border-radius: 15px;
-        text-align: center;
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
-        transition: all 0.3s ease;
-      }
-
-      .value-card:hover {
-        transform: translateY(-8px);
-        box-shadow: 0 15px 35px rgba(255, 107, 53, 0.15);
-      }
-
-      .value-icon {
-        font-size: 3rem;
-        background: #ef6538;
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-        margin-bottom: 15px;
-      }
-
-      .value-card h3 {
-        font-size: 1.3rem;
-        color: #333;
-        margin-bottom: 15px;
-        font-weight: 700;
-      }
-
-      .value-card p {
-        font-size: 0.95rem;
-        color: #666;
-        line-height: 1.6;
-      }
-
-      /* Brand Voice Section */
-      #brand-voice {
-        padding: 80px 0;
-        background: #ffffff;
-      }
-
-      .brand-voice-content {
-        background: linear-gradient(135deg, #ffffff 0%, #f9f9f9 100%);
-        padding: 50px;
-        border-radius: 15px;
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
-      }
-
-      .brand-voice-text p {
-        font-size: 1.05rem;
-        color: #555;
-        line-height: 1.8;
-        margin-bottom: 25px;
-      }
-
-      .brand-voice-list {
-        list-style: none;
-        padding: 0;
-      }
-
-      .brand-voice-list li {
-        font-size: 1rem;
-        color: #666;
-        line-height: 1.8;
-        margin-bottom: 20px;
-        padding-left: 30px;
-        position: relative;
-      }
-
-      .brand-voice-list li:before {
-        content: "✓";
-        position: absolute;
-        left: 0;
-        color: #ff8c08;
-        font-weight: 700;
-        font-size: 1.2rem;
-      }
-
-      .brand-voice-list strong {
-        color: #333;
-      }
-      #our-story ul li,
-      .year ul li {
-        list-style-type: disc;
-      }
       .year ul {
-        padding-left: 40px;
+        padding-left: 10px;
       }
+
       .year {
-        width: 70%;
-        margin: 0 auto;
-      }
-      /* CTA Section */
-      #about-cta {
-        padding: 80px 0;
-        background: #ef6538;
-        text-align: center;
+        width: 100%;
       }
 
-      .cta-content h2 {
-        font-size: 2.2rem;
-        color: #ffffff;
-        margin-bottom: 20px;
-        font-weight: 700;
+      .mission-vision-grid {
+        grid-template-columns: 1fr;
       }
 
-      .cta-content p {
-        font-size: 1.1rem;
-        color: rgba(255, 255, 255, 0.9);
-        margin-bottom: 30px;
-        max-width: 700px;
-        margin-left: auto;
-        margin-right: auto;
+      .section-header h2 {
+        font-size: 2rem;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .story-text p {
+        text-align: left;
       }
 
       .cta-buttons {
-        display: flex;
-        gap: 20px;
-        justify-content: center;
+        flex-direction: column;
       }
 
-      /* Animations */
-      @keyframes slideInUp {
-        from {
-          opacity: 0;
-          transform: translateY(30px);
-        }
-
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
+      .cta-content h2 {
+        font-size: 1.8rem;
       }
+    }
+  </style>
+</head>
 
-      @keyframes slideInRight {
-        from {
-          opacity: 0;
-          transform: translateX(-30px);
-        }
+<body>
+  <!-- Header Section -->
+  <header id="header">
+    <div class="container">
+      <div class="nav-center-wrapper">
+        <div class="logo">
+          <a href="index.html"><img src="media/logo8.png" alt="Bubbles Media Logo" /></a>
+        </div>
+        <div class="nav-call">
+          <nav>
+            <ul class="nav-menu">
+              <li><a href="index.html">Home</a></li>
+              <li class="dropdown">
+                <a href="#">Services <i class="fa fa-angle-down"></i></a>
+                <ul class="dropdown-menu">
+                  <li><a href="services/seo.html">SEO Services</a></li>
+                  <li><a href="services/meta-ads.html">Meta Ads</a></li>
+                  <li><a href="services/google-ads.html">Google Ads</a></li>
+                  <li>
+                    <a href="services/social-media.html">Social Media Marketing</a>
+                  </li>
+                  <li>
+                    <a href="services/website-design.html">Website Design</a>
+                  </li>
+                  <li>
+                    <a href="services/app-development.html">App Development</a>
+                  </li>
+                  <li>
+                    <a href="services/shopify-ecommerce.html">E-Commerce Solutions</a>
+                  </li>
+                  <li>
+                    <a href="services/graphic-designing.html">Graphic Designing</a>
+                  </li>
+                  <li>
+                    <a href="services/ai-marketing.html">AI Marketing</a>
+                  </li>
+                </ul>
+              </li>
+              <li><a href="about.html" class="active">About Us</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="career.html">Career</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </nav>
+          <div class="header-actions">
+            <a href="tel:+919849869055" class="btn-icon call-icon" title="Call Us"><i class="fas fa-phone"></i></a>
 
-        to {
-          opacity: 1;
-          transform: translateX(0);
-        }
-      }
-
-      /* Responsive Design */
-      @media (max-width: 992px) {
-        .story-content {
-          grid-template-columns: 1fr;
-          gap: 40px;
-        }
-        .year ul {
-          padding-left: 10px;
-        }
-        .year {
-          width: 100%;
-        }
-        .mission-vision-grid {
-          grid-template-columns: 1fr;
-        }
-
-        .section-header h2 {
-          font-size: 2rem;
-        }
-      }
-
-      @media (max-width: 768px) {
-        .story-text p {
-          text-align: left;
-        }
-
-        .cta-buttons {
-          flex-direction: column;
-        }
-
-        .cta-content h2 {
-          font-size: 1.8rem;
-        }
-      }
-    </style>
-  </head>
-
-  <body>
-    <!-- Header Section -->
-    <header id="header">
-      <div class="container">
-        <div class="nav-center-wrapper">
-          <div class="logo">
-            <a href="index.html"
-              ><img src="media/logo8.png" alt="Bubbles Media Logo"
-            /></a>
-          </div>
-          <div class="nav-call">
-            <nav>
-              <ul class="nav-menu">
-                <li><a href="index.html">Home</a></li>
-                <li class="dropdown">
-                  <a href="#">Services <i class="fa fa-angle-down"></i></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="services/seo.html">SEO Services</a></li>
-                    <li><a href="services/meta-ads.html">Meta Ads</a></li>
-                    <li><a href="services/google-ads.html">Google Ads</a></li>
-                    <li>
-                      <a href="services/social-media.html"
-                        >Social Media Marketing</a
-                      >
-                    </li>
-                    <li>
-                      <a href="services/website-design.html">Website Design</a>
-                    </li>
-                    <li>
-                      <a href="services/app-development.html"
-                        >App Development</a
-                      >
-                    </li>
-                    <li>
-                      <a href="services/shopify-ecommerce.html"
-                        >E-Commerce Solutions</a
-                      >
-                    </li>
-                    <li>
-                      <a href="services/graphic-designing.html"
-                        >Graphic Designing</a
-                      >
-                    </li>
-                    <li>
-                      <a href="services/ai-marketing.html">AI Marketing</a>
-                    </li>
-                  </ul>
-                </li>
-                <li><a href="about.html" class="active">About Us</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="career.html">Career</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-              </ul>
-            </nav>
-            <div class="header-actions">
-              <a
-                href="tel:+919849869055"
-                class="btn-icon call-icon"
-                title="Call Us"
-                ><i class="fas fa-phone"></i
-              ></a>
-
-              <div class="mobile-nav-trigger">
-                <button id="openMobileNav" aria-label="Open Menu">
-                  <i class="fas fa-bars"></i>
-                </button>
-              </div>
+            <div class="mobile-nav-trigger">
+              <button id="openMobileNav" aria-label="Open Menu">
+                <i class="fas fa-bars"></i>
+              </button>
             </div>
           </div>
         </div>
       </div>
-    </header>
+    </div>
+  </header>
 
-    <!-- Slide-in Mobile Nav -->
-    <nav id="mobileNav" class="mobile-nav">
-      <div class="mobile-nav-header">
-        <a href="index.html"
-          ><img src="media/logo8.png" alt="Bubbles Media Logo"
-        /></a>
-        <button id="closeMobileNav" aria-label="Close Menu">
-          <i class="fas fa-times"></i>
-        </button>
+  <!-- Slide-in Mobile Nav -->
+  <nav id="mobileNav" class="mobile-nav">
+    <div class="mobile-nav-header">
+      <a href="index.html"><img src="media/logo8.png" alt="Bubbles Media Logo" /></a>
+      <button id="closeMobileNav" aria-label="Close Menu">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+    <ul>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li class="dropdown">
+        <a href="#">Services <i class="fa fa-angle-down"></i></a>
+        <ul class="dropdown-menu">
+          <li><a href="services/seo.html">SEO Services</a></li>
+          <li><a href="services/meta-ads.html">Meta Ads</a></li>
+          <li><a href="services/google-ads.html">Google Ads</a></li>
+          <li>
+            <a href="services/social-media.html">Social Media Marketing</a>
+          </li>
+          <li><a href="services/website-design.html">Website Design</a></li>
+          <li><a href="services/app-development.html">App Development</a></li>
+          <li>
+            <a href="services/shopify-ecommerce.html">E-Commerce Solutions</a>
+          </li>
+          <li>
+            <a href="services/graphic-designing.html">Graphic Designing</a>
+          </li>
+          <li><a href="services/ai-marketing.html">AI Marketing</a></li>
+        </ul>
+      </li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="career.html">Career</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+  <div id="mobileNavOverlay" class="mobile-nav-overlay"></div>
+
+  <!-- Our Story Section -->
+  <section id="our-story" class="section-padding bg-light1">
+    <div class="container">
+      <div class="section-header">
+        <h2>Our Story</h2>
+        <p>
+          How Bubbles Media became Hyderabad's trusted digital marketing
+          partner
+        </p>
       </div>
+      <div class="story-content">
+        <div class="story-image">
+          <img src="media/bubble.jpg" alt="Bubbles Media Office" style="
+                border-radius: 15px;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+              " />
+        </div>
+        <div class="story-text">
+          <h2>Bubbles Media — Powered by The Patterns Company</h2>
+
+          <p>
+            <strong>Bubbles Media</strong> is a dedicated digital marketing
+            subsidiary of <strong>The Patterns Company</strong>, created with
+            a clear mission:
+            <strong>to make high-quality digital marketing accessible, affordable,
+              and trustworthy for everyone.</strong>
+          </p>
+
+          <p>
+            In today’s world, having a strong online presence is no longer
+            optional—it is essential. However, digital marketing has become
+            increasingly expensive, leaving many startups and growing
+            businesses behind. Bubbles Media was born to solve this problem.
+          </p>
+
+          <p>
+            We focus purely on delivering result-driven digital marketing
+            services, including:
+          </p>
+
+          <ul>
+            <li>Search Engine Optimisation (SEO)</li>
+            <li>Social Media Marketing (SMM)</li>
+            <li>Meta Ads & Google Ads</li>
+            <li>Affordable, high-quality websites</li>
+            <li>Complete online presence solutions</li>
+          </ul>
+
+          <p>
+            <strong>Our goal is simple:</strong> empower small startups,
+            growing businesses, and established companies to build a powerful
+            digital identity without financial barriers.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-padding year">
+    <div class="container">
+      <div class="section-header">
+        <h2>Backed by 8+ Years of Excellence</h2>
+      </div>
+      <p>
+        Bubbles Media is powered by the strong foundation of
+        <strong>The Patterns Company</strong>, which brings over 8 years of
+        tremendous experience in the technology and digital ecosystem.
+      </p>
+
+      <p>Our parent company has successfully served:</p>
       <ul>
-        <li><a href="index.html" class="active">Home</a></li>
-        <li class="dropdown">
-          <a href="#">Services <i class="fa fa-angle-down"></i></a>
-          <ul class="dropdown-menu">
+        <li>Hundreds of clients across industries</li>
+        <li>Public limited companies</li>
+        <li>Film production houses</li>
+        <li>Government initiatives such as Telangana PM KUSUM project</li>
+        <li>Prestigious organizations like the Indian Dental Association</li>
+        <li>And many more enterprise-level clients</li>
+      </ul>
+
+      <p>
+        With proven expertise, experienced teams, and strong systems, we
+        deliver the same enterprise-level quality through
+        <strong> Bubbles Media </strong>at accessible pricing.
+      </p>
+    </div>
+  </section>
+
+  <!-- Mission & Vision Section -->
+  <section id="mission-vision" class="section-padding">
+    <div class="container">
+      <div class="mission-vision-grid">
+        <div class="mission-card">
+          <div class="mission-icon">
+            <i class="fas fa-bullseye"></i>
+          </div>
+          <h2>Our Mission</h2>
+          <p>
+            Our mission at Bubbles Media is to provide affordable digital
+            marketing services, professional SEO solutions, high-converting
+            Google Ads and Meta Ads management, and SEO-optimized website
+            development that drive measurable business growth.
+          </p>
+
+          <ul>
+            <li>Improve Google search rankings with advanced SEO</li>
+            <li>Increase brand visibility through Social Media Marketing</li>
+            <li>Generate high-quality leads using Google & Meta Ads</li>
+            <li>Build fast, secure, SEO-friendly business websites</li>
+            <li>Establish strong online presence in all markets</li>
+          </ul>
+
+          <p>
+            With the strong foundation of The Patterns Company, we deliver
+            transparent, ethical, and performance-focused digital marketing
+            solutions businesses can trust.
+          </p>
+        </div>
+        <div class="vision-card">
+          <div class="vision-icon">
+            <i class="fas fa-eye"></i>
+          </div>
+          <h2>Our Vision</h2>
+          <p>
+            Our vision is to become a globally trusted digital marketing
+            agency that empowers startups, small businesses, and enterprises
+            with affordable, professional, and result-driven digital marketing
+            services.
+          </p>
+
+          <p>
+            We aim to build a future where every business—regardless of size
+            or budget—can access high-quality SEO services, social media
+            marketing, Google Ads management, Meta Ads campaigns, and
+            professional website development to establish a powerful online
+            presence.
+          </p>
+
+          <p>
+            As a subsidiary of The Patterns Company, we envision creating a
+            scalable global digital ecosystem where businesses can grow
+            faster, rank higher on Google, generate consistent leads, and
+            build strong brand authority.
+          </p>
+        </div>
+        <div class="vision-card">
+          <div class="vision-icon">
+            <i class="fas fa-handshake"></i>
+          </div>
+          <h2>Our Promise</h2>
+          <p>
+            At Bubbles Media, we don’t just provide services—we build trust,
+            growth, and digital futures.
+          </p>
+
+          <p>
+            We believe every business deserves an opportunity to shine online,
+            regardless of its size or budget.
+          </p>
+
+          <p>
+            Thank you for your support and blessings as we begin this journey
+            to empower businesses worldwide.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Core Values Section -->
+  <section class="core-values-box-section">
+    <div class="value-card">
+      <div class="value-icon"><i class="fas fa-lightbulb"></i></div>
+      <h3>Innovation</h3>
+      <p>
+        We don’t chase trends—we create them. While others wait for change, we
+        build ahead of it. Innovation at Bubbles Media is our instinct to
+        constantly evolve, adapt, and engineer digital growth that stays ahead
+        of the future.
+      </p>
+    </div>
+
+    <div class="value-card">
+      <div class="value-icon"><i class="fas fa-handshake"></i></div>
+      <h3>Integrity</h3>
+      <p>
+        We choose truth over shortcuts. No fake promises, no illusions—only
+        real strategies and real results. Our word is our contract, and our
+        reputation is built on trust, not marketing.
+      </p>
+    </div>
+
+    <div class="value-card">
+      <div class="value-icon"><i class="fas fa-users"></i></div>
+      <h3>Collaboration</h3>
+      <p>
+        We don’t work for clients—we grow with partners. We align with your
+        vision, your ambition, and your success, because your growth is the
+        measure of our existence.
+      </p>
+    </div>
+
+    <div class="value-card">
+      <div class="value-icon"><i class="fas fa-glasses"></i></div>
+      <h3>Transparency</h3>
+      <p>
+        We hide nothing. No confusing reports, no hidden costs, no false
+        metrics. Every action, every result, and every step is clear, honest,
+        and visible.
+      </p>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section id="about-cta" class="section-padding" style="background-color: #ef6538">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="cta-content">
+            <h2>Ready to work with us</h2>
+            <h4>
+              Your competitors are already investing in digital growth. The
+              question is—are you ready to lead or be left behind?
+            </h4>
+            <p>
+              Join Bubbles Media and unlock the power of professional SEO,
+              performance marketing, and digital strategy backed by 8+ years
+              of proven expertise.
+            </p>
+            <p>
+              <strong>Start today. Build authority. Dominate your market.
+              </strong>
+            </p>
+            <div class="cta-buttons">
+              <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <style>
+    #about-cta .col-md-8 {
+      width: 80%;
+      margin: 0 auto;
+    }
+  </style>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-column">
+          <div class="footer-logo">
+            <img src="./media/logo.png" alt="Bubbles Media Logo" />
+          </div>
+          <p>
+            Your trusted digital marketing partner in Hyderabad, helping
+            businesses grow their online presence and achieve measurable
+            results through data-driven strategies.
+          </p>
+          <div class="social-links">
+            <a href="https://www.facebook.com/thebubblesmedia" target="_blank" title="Follow us on Facebook"><i
+                class="fab fa-facebook-f"></i></a>
+
+            <a href="#" target="_blank" title="Follow us on Twitter"><i class="fab fa-x-twitter"></i></a>
+            <a href="#" target="_blank" title="Follow us on Pinterest"><i class="fab fa-pinterest"></i></a>
+            <a href="https://www.instagram.com/thebubblesmedia" target="_blank" title="Follow us on Instagram"><i
+                class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/the-bubbles-media/" target="_blank"
+              title="Connect with us on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://share.google/zBdG7tGCscYQftUMC" target="_blank" title="Google"><i
+                class="fab fa-google"></i></a>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="career.html">Career</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Our Services</h4>
+          <ul class="footer-links">
             <li><a href="services/seo.html">SEO Services</a></li>
             <li><a href="services/meta-ads.html">Meta Ads</a></li>
             <li><a href="services/google-ads.html">Google Ads</a></li>
@@ -459,415 +776,65 @@
               <a href="services/social-media.html">Social Media Marketing</a>
             </li>
             <li><a href="services/website-design.html">Website Design</a></li>
-            <li><a href="services/app-development.html">App Development</a></li>
             <li>
-              <a href="services/shopify-ecommerce.html">E-Commerce Solutions</a>
+              <a href="services/app-development.html">App Development</a>
             </li>
-            <li>
-              <a href="services/graphic-designing.html">Graphic Designing</a>
-            </li>
-            <li><a href="services/ai-marketing.html">AI Marketing</a></li>
           </ul>
-        </li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="career.html">Career</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-      </ul>
-    </nav>
-    <div id="mobileNavOverlay" class="mobile-nav-overlay"></div>
-
-    <!-- Our Story Section -->
-    <section id="our-story" class="section-padding bg-light1">
-      <div class="container">
-        <div class="section-header">
-          <h2>Our Story</h2>
-          <p>
-            How Bubbles Media became Hyderabad's trusted digital marketing
-            partner
-          </p>
         </div>
-        <div class="story-content">
-          <div class="story-image">
-            <img
-              src="media/bubble.jpg"
-              alt="Bubbles Media Office"
-              style="
-                border-radius: 15px;
-                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-              "
-            />
-          </div>
-          <div class="story-text">
-            <h2>Bubbles Media — Powered by The Patterns Company</h2>
-
-            <p>
-              <strong>Bubbles Media</strong> is a dedicated digital marketing
-              subsidiary of <strong>The Patterns Company</strong>, created with
-              a clear mission:
-              <strong
-                >to make high-quality digital marketing accessible, affordable,
-                and trustworthy for everyone.</strong
-              >
-            </p>
-
-            <p>
-              In today’s world, having a strong online presence is no longer
-              optional—it is essential. However, digital marketing has become
-              increasingly expensive, leaving many startups and growing
-              businesses behind. Bubbles Media was born to solve this problem.
-            </p>
-
-            <p>
-              We focus purely on delivering result-driven digital marketing
-              services, including:
-            </p>
-
-            <ul>
-              <li>Search Engine Optimisation (SEO)</li>
-              <li>Social Media Marketing (SMM)</li>
-              <li>Meta Ads & Google Ads</li>
-              <li>Affordable, high-quality websites</li>
-              <li>Complete online presence solutions</li>
-            </ul>
-
-            <p>
-              <strong>Our goal is simple:</strong> empower small startups,
-              growing businesses, and established companies to build a powerful
-              digital identity without financial barriers.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section-padding year">
-      <div class="container">
-        <div class="section-header">
-          <h2>Backed by 8+ Years of Excellence</h2>
-        </div>
-        <p>
-          Bubbles Media is powered by the strong foundation of
-          <strong>The Patterns Company</strong>, which brings over 8 years of
-          tremendous experience in the technology and digital ecosystem.
-        </p>
-
-        <p>Our parent company has successfully served:</p>
-        <ul>
-          <li>Hundreds of clients across industries</li>
-          <li>Public limited companies</li>
-          <li>Film production houses</li>
-          <li>Government initiatives such as Telangana PM KUSUM project</li>
-          <li>Prestigious organizations like the Indian Dental Association</li>
-          <li>And many more enterprise-level clients</li>
-        </ul>
-
-        <p>
-          With proven expertise, experienced teams, and strong systems, we
-          deliver the same enterprise-level quality through
-          <strong> Bubbles Media </strong>at accessible pricing.
-        </p>
-      </div>
-    </section>
-
-    <!-- Mission & Vision Section -->
-    <section id="mission-vision" class="section-padding">
-      <div class="container">
-        <div class="mission-vision-grid">
-          <div class="mission-card">
-            <div class="mission-icon">
-              <i class="fas fa-bullseye"></i>
-            </div>
-            <h2>Our Mission</h2>
-            <p>
-              Our mission at Bubbles Media is to provide affordable digital
-              marketing services, professional SEO solutions, high-converting
-              Google Ads and Meta Ads management, and SEO-optimized website
-              development that drive measurable business growth.
-            </p>
-
-            <ul>
-              <li>Improve Google search rankings with advanced SEO</li>
-              <li>Increase brand visibility through Social Media Marketing</li>
-              <li>Generate high-quality leads using Google & Meta Ads</li>
-              <li>Build fast, secure, SEO-friendly business websites</li>
-              <li>Establish strong online presence in all markets</li>
-            </ul>
-
-            <p>
-              With the strong foundation of The Patterns Company, we deliver
-              transparent, ethical, and performance-focused digital marketing
-              solutions businesses can trust.
-            </p>
-          </div>
-          <div class="vision-card">
-            <div class="vision-icon">
-              <i class="fas fa-eye"></i>
-            </div>
-            <h2>Our Vision</h2>
-            <p>
-              Our vision is to become a globally trusted digital marketing
-              agency that empowers startups, small businesses, and enterprises
-              with affordable, professional, and result-driven digital marketing
-              services.
-            </p>
-
-            <p>
-              We aim to build a future where every business—regardless of size
-              or budget—can access high-quality SEO services, social media
-              marketing, Google Ads management, Meta Ads campaigns, and
-              professional website development to establish a powerful online
-              presence.
-            </p>
-
-            <p>
-              As a subsidiary of The Patterns Company, we envision creating a
-              scalable global digital ecosystem where businesses can grow
-              faster, rank higher on Google, generate consistent leads, and
-              build strong brand authority.
-            </p>
-          </div>
-          <div class="vision-card">
-            <div class="vision-icon">
-              <i class="fas fa-handshake"></i>
-            </div>
-            <h2>Our Promise</h2>
-            <p>
-              At Bubbles Media, we don’t just provide services—we build trust,
-              growth, and digital futures.
-            </p>
-
-            <p>
-              We believe every business deserves an opportunity to shine online,
-              regardless of its size or budget.
-            </p>
-
-            <p>
-              Thank you for your support and blessings as we begin this journey
-              to empower businesses worldwide.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Core Values Section -->
-    <section class="core-values-box-section">
-      <div class="value-card">
-        <div class="value-icon"><i class="fas fa-lightbulb"></i></div>
-        <h3>Innovation</h3>
-        <p>
-          We don’t chase trends—we create them. While others wait for change, we
-          build ahead of it. Innovation at Bubbles Media is our instinct to
-          constantly evolve, adapt, and engineer digital growth that stays ahead
-          of the future.
-        </p>
-      </div>
-
-      <div class="value-card">
-        <div class="value-icon"><i class="fas fa-handshake"></i></div>
-        <h3>Integrity</h3>
-        <p>
-          We choose truth over shortcuts. No fake promises, no illusions—only
-          real strategies and real results. Our word is our contract, and our
-          reputation is built on trust, not marketing.
-        </p>
-      </div>
-
-      <div class="value-card">
-        <div class="value-icon"><i class="fas fa-users"></i></div>
-        <h3>Collaboration</h3>
-        <p>
-          We don’t work for clients—we grow with partners. We align with your
-          vision, your ambition, and your success, because your growth is the
-          measure of our existence.
-        </p>
-      </div>
-
-      <div class="value-card">
-        <div class="value-icon"><i class="fas fa-glasses"></i></div>
-        <h3>Transparency</h3>
-        <p>
-          We hide nothing. No confusing reports, no hidden costs, no false
-          metrics. Every action, every result, and every step is clear, honest,
-          and visible.
-        </p>
-      </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section
-      id="about-cta"
-      class="section-padding"
-      style="background-color: #ef6538"
-    >
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8">
-            <div class="cta-content">
-              <h2>Ready to work with us</h2>
-              <h4>
-                Your competitors are already investing in digital growth. The
-                question is—are you ready to lead or be left behind?
-              </h4>
-              <p>
-                Join Bubbles Media and unlock the power of professional SEO,
-                performance marketing, and digital strategy backed by 8+ years
-                of proven expertise.
-              </p>
-              <p>
-                <strong
-                  >Start today. Build authority. Dominate your market.
-                </strong>
-              </p>
-              <div class="cta-buttons">
-                <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+        <div class="footer-column">
+          <h4>Contact Info</h4>
+          <ul class="contact-info">
+            <li>
+              <i class="fas fa-map-marker-alt"></i> Hyderabad, Telangana,
+              India
+            </li>
+            <li>
+              <i class="fas fa-phone"></i>
+              <a href="tel:+919849869055" style="color: inherit; text-decoration: none">+91 9849869055</a>
+            </li>
+            <li>
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:info@thebubblesmedia.com"
+                style="color: inherit; text-decoration: none">info@thebubblesmedia.com</a>
+            </li>
+          </ul>
+          <div class="newsletter">
+            <form id="newsletter-form">
+              <div class="form-group">
+                <input type="email" id="newsletter-email" placeholder="Your Business Email" required />
+                <button type="submit" class="btn">Subscribe</button>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <style>
-      #about-cta .col-md-8 {
-        width: 80%;
-        margin: 0 auto;
-      }
-    </style>
-
-    <!-- Footer -->
-    <footer id="footer">
-      <div class="container">
-        <div class="footer-content">
-          <div class="footer-column">
-            <div class="footer-logo">
-              <img src="./media/logo.png" alt="Bubbles Media Logo" />
-            </div>
-            <p>
-              Your trusted digital marketing partner in Hyderabad, helping
-              businesses grow their online presence and achieve measurable
-              results through data-driven strategies.
-            </p>
-            <div class="social-links">
-              <a
-                href="https://www.facebook.com/thebubblesmedia"
-                target="_blank"
-                title="Follow us on Facebook"
-                ><i class="fab fa-facebook-f"></i
-              ></a>
-              <a href="#" target="_blank" title="Follow us on X"
-                ><i class="fab fa-x-twitter"></i
-              ></a>
-              <a
-                href="https://www.instagram.com/thebubblesmedia/?hl=en"
-                target="_blank"
-                title="Follow us on Instagram"
-                ><i class="fab fa-instagram"></i
-              ></a>
-              <a href="#" target="_blank" title="Connect with us on LinkedIn"
-                ><i class="fab fa-linkedin-in"></i
-              ></a>
-              <a href="#" target="_blank" title="Read our blog on Medium"
-                ><i class="fab fa-medium-m"></i
-              ></a>
-            </div>
-          </div>
-          <div class="footer-column">
-            <h4>Quick Links</h4>
-            <ul class="footer-links">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="about.html">About Us</a></li>
-              <li><a href="blog.html">Blog</a></li>
-              <li><a href="career.html">Career</a></li>
-              <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-          </div>
-          <div class="footer-column">
-            <h4>Our Services</h4>
-            <ul class="footer-links">
-              <li><a href="services/seo.html">SEO Services</a></li>
-              <li><a href="services/meta-ads.html">Meta Ads</a></li>
-              <li><a href="services/google-ads.html">Google Ads</a></li>
-              <li>
-                <a href="services/social-media.html">Social Media Marketing</a>
-              </li>
-              <li><a href="services/website-design.html">Website Design</a></li>
-              <li>
-                <a href="services/app-development.html">App Development</a>
-              </li>
-            </ul>
-          </div>
-          <div class="footer-column">
-            <h4>Contact Info</h4>
-            <ul class="contact-info">
-              <li>
-                <i class="fas fa-map-marker-alt"></i> Hyderabad, Telangana,
-                India
-              </li>
-              <li>
-                <i class="fas fa-phone"></i>
-                <a
-                  href="tel:+919849869055"
-                  style="color: inherit; text-decoration: none"
-                  >+91 9849869055</a
-                >
-              </li>
-              <li>
-                <i class="fas fa-envelope"></i>
-                <a
-                  href="mailto:info@thebubblesmedia.com"
-                  style="color: inherit; text-decoration: none"
-                  >info@thebubblesmedia.com</a
-                >
-              </li>
-            </ul>
-            <div class="newsletter">
-              <form id="newsletter-form">
-                <div class="form-group">
-                  <input
-                    type="email"
-                    id="newsletter-email"
-                    placeholder="Your Business Email"
-                    required
-                  />
-                  <button type="submit" class="btn">Subscribe</button>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <div class="container-fluid copy-right">
-      <div class="container">
-        <div class="footer-bottom">
-          <div class="copyright">
-            <p>&copy; 2024 Bubbles Media. All Rights Reserved.</p>
-          </div>
-          <div class="legal-links">
-            <a href="privacy-policy.html">Privacy Policy</a>
-            <a href="terms-of-service.html">Terms of Service</a>
+            </form>
           </div>
         </div>
       </div>
     </div>
-
-    <!-- WhatsApp Floating Button -->
-    <div id="whatsapp-float" class="whatsapp-float">
-      <a
-        href="https://wa.me/919849869055?text=Hi%20Bubbles%20Media!%20I%20would%20like%20to%20know%20more%20about%20your%20digital%20marketing%20services."
-        target="_blank"
-        class="whatsapp-btn"
-      >
-        <i class="fab fa-whatsapp"></i>
-        <span class="whatsapp-text">Chat on WhatsApp</span>
-      </a>
+  </footer>
+  <div class="container-fluid copy-right">
+    <div class="container">
+      <div class="footer-bottom">
+        <div class="copyright">
+          <p>&copy; 2024 Bubbles Media. All Rights Reserved.</p>
+        </div>
+        <div class="legal-links">
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="terms-of-service.html">Terms of Service</a>
+        </div>
+      </div>
     </div>
+  </div>
 
-    <!-- Live Chat Widget -->
-    <!-- <div id="live-chat-widget" class="live-chat-widget">
+  <!-- WhatsApp Floating Button -->
+  <div id="whatsapp-float" class="whatsapp-float">
+    <a href="https://wa.me/919849869055?text=Hi%20Bubbles%20Media!%20I%20would%20like%20to%20know%20more%20about%20your%20digital%20marketing%20services."
+      target="_blank" class="whatsapp-btn">
+      <i class="fab fa-whatsapp"></i>
+      <span class="whatsapp-text">Chat on WhatsApp</span>
+    </a>
+  </div>
+
+  <!-- Live Chat Widget -->
+  <!-- <div id="live-chat-widget" class="live-chat-widget">
         <button class="chat-toggle">
             <i class="fas fa-comments"></i>
             <span class="chat-badge">1</span>
@@ -923,8 +890,9 @@
         </div>
     </div> -->
 
-    <!-- JavaScript -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="js/main.js"></script>
-  </body>
+  <!-- JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
 </html>
