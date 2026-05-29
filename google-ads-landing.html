@@ -474,7 +474,52 @@
         background: #34a853;
       }
 
-      /* ===== MINI CTA BANNER ===== */
+      /* ===== REVIEWS ===== */
+    .lp-reviews-section {
+      padding: 36px 0 40px;
+    }
+
+    .lp-reviews-title {
+      text-align: center;
+      font-size: 1.2rem;
+      font-weight: 800;
+      color: var(--ink);
+      margin-bottom: 20px;
+    }
+
+    .lp-reviews-grid {
+      display: grid;
+      gap: 16px;
+    }
+
+    .lp-review-card {
+      padding: 24px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: #fff;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .lp-stars {
+      color: #fbbc05;
+      margin-bottom: 12px;
+      font-size: 0.9rem;
+    }
+
+    .lp-review-card p {
+      font-size: 0.95rem;
+      color: var(--ink);
+      font-style: italic;
+      margin-bottom: 16px;
+    }
+
+    .lp-review-card strong {
+      font-size: 0.85rem;
+      color: var(--muted);
+      display: block;
+    }
+
+    /* ===== MINI CTA BANNER ===== */
       .lp-cta-banner {
         padding: 36px 0;
       }
@@ -667,7 +712,8 @@
           gap: 40px;
         }
 
-        .lp-services-grid {
+        .lp-services-grid,
+        .lp-reviews-grid {
           grid-template-columns: 1fr 1fr 1fr;
         }
 
@@ -876,6 +922,36 @@
               <i class="fas fa-shield-halved"></i> No spam. We'll contact you
               within 2 hours.
             </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- REVIEWS -->
+      <section class="lp-reviews-section">
+        <div class="lp-wrap">
+          <h2 class="lp-reviews-title">What Our Clients Say</h2>
+          <div class="lp-reviews-grid">
+            <div class="lp-review-card">
+              <div class="lp-stars">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+              <p>"Bubbles Media completely transformed our online presence. Our leads increased by 150% in just two months!"</p>
+              <strong>- Rahul Reddy, E-commerce Store</strong>
+            </div>
+            <div class="lp-review-card">
+              <div class="lp-stars">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+              <p>"Excellent team. They handle our Google Ads and SEO perfectly. Highly recommended for any business in Hyderabad."</p>
+              <strong>- Priya Sharma, Clinic Owner</strong>
+            </div>
+            <div class="lp-review-card">
+              <div class="lp-stars">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+              <p>"The website they designed for us is beautiful and fast. We got multiple compliments from our clients."</p>
+              <strong>- Amit Patel, Real Estate</strong>
+            </div>
           </div>
         </div>
       </section>
