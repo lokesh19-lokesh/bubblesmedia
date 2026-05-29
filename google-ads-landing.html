@@ -3,976 +3,859 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5">
   <meta name="description"
-    content="Bubbles Media digital marketing landing page for SEO, Meta Ads, Google Ads, social media marketing, website design, app development, ecommerce, graphic design, and AI marketing.">
+    content="Bubbles Media — Hyderabad's digital marketing agency. Get leads with SEO, Google Ads, Meta Ads, website design, and more. Free consultation.">
   <meta name="keywords"
-    content="digital marketing services Hyderabad, SEO services, Meta Ads, Google Ads, website design, app development, ecommerce solutions, graphic designing, AI marketing">
-  <title>Digital Marketing Services Landing Page | Bubbles Media</title>
+    content="digital marketing Hyderabad, SEO, Google Ads, Meta Ads, website design, social media marketing, app development">
+  <title>Get More Leads — Digital Marketing Services | Bubbles Media</title>
 
   <link rel="canonical" href="https://thebubblesmedia.com/google-ads-landing.html">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Digital Marketing Services Landing Page | Bubbles Media">
+  <meta property="og:title" content="Get More Leads — Digital Marketing Services | Bubbles Media">
   <meta property="og:description"
-    content="Get a focused digital growth plan covering SEO, ads, social media, websites, apps, ecommerce, design, and AI marketing.">
+    content="SEO, Google Ads, Meta Ads, websites, apps & more. Free strategy call for your business.">
   <meta property="og:url" content="https://thebubblesmedia.com/google-ads-landing.html">
   <meta property="og:site_name" content="Bubbles Media">
   <meta property="og:image" content="https://thebubblesmedia.com/media/logo.png">
   <meta name="twitter:card" content="summary_large_image">
 
   <link rel="icon" type="image/png" href="media/logo.png">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/responsive.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <style>
-    :root {
-      --ads-orange: #f26522;
-      --ads-ink: #17202a;
-      --ads-muted: #5c6672;
-      --ads-line: #e8edf2;
-      --ads-soft: #f6fafb;
-      --ads-blue: #1a73e8;
-      --ads-green: #34a853;
-      --ads-yellow: #fbbc05;
-      --ads-red: #ea4335;
+    /* ===== RESET & BASE ===== */
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      -webkit-tap-highlight-color: transparent;
     }
 
     body {
+      font-family: 'Cormorant Garamond', serif;
       background: #fff;
+      color: #1a1a2e;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
     }
 
-    .ads-page {
-      color: var(--ads-ink);
-      overflow: hidden;
+    a {
+      text-decoration: none;
+      color: inherit;
     }
 
-    .ads-container {
-      width: min(1180px, calc(100% - 32px));
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* ===== CSS VARIABLES ===== */
+    :root {
+      --orange: #f26522;
+      --orange-dark: #d95416;
+      --ink: #1a1a2e;
+      --muted: #64748b;
+      --light: #f8fafc;
+      --border: #e2e8f0;
+      --green: #25d366;
+      --radius: 12px;
+      --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.06);
+      --shadow-md: 0 8px 30px rgba(0, 0, 0, 0.08);
+      --shadow-lg: 0 20px 60px rgba(0, 0, 0, 0.12);
+    }
+
+    /* ===== CONTAINER ===== */
+    .lp-wrap {
+      width: min(100% - 32px, 540px);
       margin: 0 auto;
     }
 
-    .ads-hero {
-      padding: 150px 0 80px;
-      background:
-        linear-gradient(135deg, rgba(255, 255, 255, 0.96), rgba(246, 250, 251, 0.9)),
-        url("images/service-hero/google-ads.png") center right / contain no-repeat;
-      position: relative;
+    /* ===== MINIMAL HEADER ===== */
+    .lp-header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border);
+      padding: 12px 0;
     }
 
-    .ads-hero::after {
-      content: "";
-      position: absolute;
-      inset: auto 0 0;
-      height: 1px;
-      background: var(--ads-line);
-    }
-
-    .ads-hero-grid {
-      display: grid;
-      grid-template-columns: minmax(0, 1.08fr) minmax(340px, 0.72fr);
-      gap: 44px;
+    .lp-header-inner {
+      display: flex;
       align-items: center;
+      justify-content: space-between;
     }
 
-    .ads-kicker {
+    .lp-logo img {
+      height: 38px;
+      width: auto;
+    }
+
+    .lp-header-call {
       display: inline-flex;
       align-items: center;
-      gap: 10px;
-      padding: 9px 14px;
-      border: 1px solid rgba(242, 101, 34, 0.28);
+      gap: 8px;
+      background: var(--orange);
+      color: #fff;
+      padding: 10px 18px;
       border-radius: 999px;
-      background: #fff;
-      color: var(--ads-orange);
       font-weight: 700;
-      font-size: 0.92rem;
+      font-size: 0.88rem;
+      transition: background 0.2s, transform 0.2s;
+    }
+
+    .lp-header-call:hover {
+      background: var(--orange-dark);
+      transform: translateY(-1px);
+    }
+
+    /* ===== HERO ===== */
+    .lp-hero {
+      padding: 100px 0 48px;
+      text-align: center;
+    }
+
+    .lp-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 14px;
+      background: rgba(242, 101, 34, 0.08);
+      color: var(--orange);
+      font-weight: 700;
+      font-size: 0.82rem;
+      border-radius: 999px;
+      margin-bottom: 20px;
+      letter-spacing: 0.02em;
+    }
+
+    .lp-badge i {
+      font-size: 0.72rem;
+    }
+
+    .lp-hero h1 {
+      font-size: clamp(1.75rem, 7vw, 2.5rem);
+      font-weight: 900;
+      line-height: 1.15;
+      color: var(--ink);
+      margin-bottom: 14px;
+      letter-spacing: -0.02em;
+    }
+
+    .lp-hero h1 span {
+      background: linear-gradient(135deg, var(--orange), #ff8a50);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .lp-hero-sub {
+      color: var(--muted);
+      font-size: 1rem;
+      line-height: 1.65;
+      margin-bottom: 28px;
+      max-width: 420px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* ===== CTA BUTTONS (HERO) ===== */
+    .lp-cta-stack {
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      margin-bottom: 28px;
+      justify-content: center;
+    }
+
+    .lp-cta {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 12px 20px;
+      border-radius: 999px;
+      font-weight: 700;
+      font-size: 0.9rem;
+      border: none;
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.2s;
+      min-height: 46px;
+      white-space: nowrap;
+    }
+
+    .lp-cta:active {
+      transform: scale(0.97);
+    }
+
+    .lp-cta-call {
+      background: var(--orange);
+      color: #fff;
+      box-shadow: 0 8px 24px rgba(242, 101, 34, 0.3);
+    }
+
+    .lp-cta-call:hover {
+      color: #fff;
+      box-shadow: 0 12px 32px rgba(242, 101, 34, 0.4);
+      transform: translateY(-2px);
+    }
+
+    .lp-cta-wa {
+      background: var(--green);
+      color: #fff;
+      box-shadow: 0 8px 24px rgba(37, 211, 102, 0.25);
+    }
+
+    .lp-cta-wa:hover {
+      color: #fff;
+      box-shadow: 0 12px 32px rgba(37, 211, 102, 0.35);
+      transform: translateY(-2px);
+    }
+
+    /* ===== TRUST STRIP ===== */
+    .lp-trust {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      padding: 18px 0;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 0;
+    }
+
+    .lp-trust-item {
+      text-align: center;
+    }
+
+    .lp-trust-item strong {
+      display: block;
+      font-size: 1.35rem;
+      font-weight: 900;
+      color: var(--ink);
+      line-height: 1.2;
+    }
+
+    .lp-trust-item span {
+      font-size: 0.72rem;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      font-weight: 600;
+    }
+
+    /* ===== LEAD FORM ===== */
+    .lp-form-section {
+      padding: 40px 0;
+    }
+
+    .lp-form-card {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 28px 22px;
+      box-shadow: var(--shadow-md);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .lp-form-card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, var(--orange), #ff8a50);
+    }
+
+    .lp-form-card h2 {
+      font-size: 1.3rem;
+      font-weight: 800;
+      margin-bottom: 6px;
+      color: var(--ink);
+    }
+
+    .lp-form-card .lp-form-sub {
+      color: var(--muted);
+      font-size: 0.9rem;
       margin-bottom: 20px;
     }
 
-    .ads-kicker i {
-      color: var(--ads-blue);
-    }
-
-    .ads-hero h1 {
-      font-size: clamp(2.35rem, 6vw, 4.85rem);
-      line-height: 1.02;
-      letter-spacing: 0;
-      margin: 0 0 22px;
-      max-width: 850px;
-      color: var(--ads-ink);
-    }
-
-    .ads-hero h1 span {
-      color: var(--ads-orange);
-    }
-
-    .ads-lead {
-      max-width: 690px;
-      color: var(--ads-muted);
-      font-size: 1.18rem;
-      line-height: 1.75;
-      margin-bottom: 30px;
-    }
-
-    .ads-actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 14px;
-      align-items: center;
-      margin-bottom: 34px;
-    }
-
-    .ads-btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-      min-height: 48px;
-      padding: 13px 22px;
-      border-radius: 8px;
-      font-weight: 800;
-      border: 1px solid transparent;
-      text-align: center;
-    }
-
-    .ads-btn-primary {
-      background: var(--ads-orange);
-      color: #fff;
-      box-shadow: 0 14px 28px rgba(242, 101, 34, 0.24);
-    }
-
-    .ads-btn-primary:hover {
-      background: #d95416;
-      color: #fff;
-      transform: translateY(-2px);
-    }
-
-    .ads-btn-secondary {
-      background: #fff;
-      color: var(--ads-ink);
-      border-color: var(--ads-line);
-    }
-
-    .ads-btn-secondary:hover {
-      color: var(--ads-orange);
-      border-color: rgba(242, 101, 34, 0.4);
-    }
-
-    .ads-proof-row {
+    .lp-form {
       display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 14px;
-      max-width: 690px;
-    }
-
-    .ads-proof {
-      padding: 18px;
-      border: 1px solid var(--ads-line);
-      background: rgba(255, 255, 255, 0.82);
-      border-radius: 8px;
-    }
-
-    .ads-proof strong {
-      display: block;
-      font-size: 1.55rem;
-      color: var(--ads-ink);
-      margin-bottom: 4px;
-    }
-
-    .ads-proof span {
-      color: var(--ads-muted);
-      font-size: 0.92rem;
-    }
-
-    .ads-form-panel {
-      background: #fff;
-      border: 1px solid var(--ads-line);
-      border-top: 5px solid var(--ads-orange);
-      border-radius: 8px;
-      box-shadow: 0 26px 70px rgba(23, 32, 42, 0.14);
-      padding: 28px;
-    }
-
-    .ads-form-panel h2 {
-      font-size: 1.55rem;
-      margin-bottom: 8px;
-    }
-
-    .ads-form-panel p {
-      color: var(--ads-muted);
-      margin-bottom: 22px;
-    }
-
-    .ads-form-grid {
-      display: grid;
-      gap: 13px;
-    }
-
-    .ads-form-grid input,
-    .ads-form-grid select,
-    .ads-form-grid textarea {
-      width: 100%;
-      border: 1px solid #dce3ea;
-      border-radius: 8px;
-      padding: 13px 14px;
-      font: inherit;
-      color: var(--ads-ink);
-      background: #fff;
-      outline: none;
-    }
-
-    .ads-form-grid textarea {
-      min-height: 96px;
-      resize: vertical;
-    }
-
-    .ads-form-grid input:focus,
-    .ads-form-grid select:focus,
-    .ads-form-grid textarea:focus {
-      border-color: var(--ads-orange);
-      box-shadow: 0 0 0 4px rgba(242, 101, 34, 0.12);
-    }
-
-    .ads-form-note {
-      font-size: 0.85rem;
-      color: var(--ads-muted);
-      margin: 12px 0 0;
-    }
-
-    .ads-section {
-      padding: 78px 0;
-    }
-
-    .ads-section.alt {
-      background: var(--ads-soft);
-    }
-
-    .ads-section-header {
-      max-width: 760px;
-      margin: 0 auto 38px;
-      text-align: center;
-    }
-
-    .ads-section-header h2 {
-      font-size: clamp(2rem, 4vw, 3rem);
-      margin-bottom: 12px;
-    }
-
-    .ads-section-header p {
-      color: var(--ads-muted);
-      font-size: 1.08rem;
-      line-height: 1.7;
-    }
-
-    .ads-card-grid {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 18px;
-    }
-
-    .ads-card {
-      background: #fff;
-      border: 1px solid var(--ads-line);
-      border-radius: 8px;
-      padding: 26px;
-      min-height: 100%;
-      transition: transform 0.25s ease, box-shadow 0.25s ease;
-    }
-
-    .ads-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 18px 45px rgba(23, 32, 42, 0.1);
-    }
-
-    .ads-icon {
-      width: 48px;
-      height: 48px;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 8px;
-      color: #fff;
-      margin-bottom: 18px;
-      font-size: 1.2rem;
-    }
-
-    .ads-icon.blue {
-      background: var(--ads-blue);
-    }
-
-    .ads-icon.green {
-      background: var(--ads-green);
-    }
-
-    .ads-icon.yellow {
-      background: var(--ads-yellow);
-      color: var(--ads-ink);
-    }
-
-    .ads-icon.red {
-      background: var(--ads-red);
-    }
-
-    .ads-icon.orange {
-      background: var(--ads-orange);
-    }
-
-    .ads-card h3 {
-      font-size: 1.28rem;
-      margin-bottom: 10px;
-    }
-
-    .ads-card p,
-    .ads-card li {
-      color: var(--ads-muted);
-      line-height: 1.7;
-    }
-
-    .ads-split {
-      display: grid;
-      grid-template-columns: 0.95fr 1.05fr;
-      gap: 44px;
-      align-items: center;
-    }
-
-    .ads-dashboard {
-      border-radius: 8px;
-      border: 1px solid var(--ads-line);
-      background: #fff;
-      box-shadow: 0 22px 60px rgba(23, 32, 42, 0.12);
-      overflow: hidden;
-    }
-
-    .ads-dashboard-top {
-      display: flex;
-      gap: 8px;
-      padding: 16px;
-      border-bottom: 1px solid var(--ads-line);
-      background: #fbfcfd;
-    }
-
-    .ads-dot {
-      width: 10px;
-      height: 10px;
-      border-radius: 50%;
-      background: var(--ads-red);
-    }
-
-    .ads-dot:nth-child(2) {
-      background: var(--ads-yellow);
-    }
-
-    .ads-dot:nth-child(3) {
-      background: var(--ads-green);
-    }
-
-    .ads-dashboard-body {
-      padding: 24px;
-    }
-
-    .ads-metric {
-      display: grid;
-      grid-template-columns: 110px 1fr 54px;
-      gap: 14px;
-      align-items: center;
-      padding: 15px 0;
-      border-bottom: 1px solid var(--ads-line);
-      color: var(--ads-muted);
-    }
-
-    .ads-metric:last-child {
-      border-bottom: 0;
-    }
-
-    .ads-bar {
-      height: 10px;
-      border-radius: 999px;
-      background: #edf2f6;
-      overflow: hidden;
-    }
-
-    .ads-bar span {
-      display: block;
-      height: 100%;
-      border-radius: inherit;
-      background: var(--ads-orange);
-    }
-
-    .ads-check-list {
-      display: grid;
-      gap: 14px;
-      margin-top: 24px;
-    }
-
-    .ads-check-list li {
-      display: flex;
       gap: 12px;
-      align-items: flex-start;
-      color: var(--ads-muted);
-      line-height: 1.65;
     }
 
-    .ads-check-list i {
-      color: var(--ads-green);
-      margin-top: 5px;
+    .lp-form input,
+    .lp-form select {
+      width: 100%;
+      padding: 14px 16px;
+      border: 1.5px solid var(--border);
+      border-radius: 10px;
+      font: inherit;
+      font-size: 1rem;
+      color: var(--ink);
+      background: var(--light);
+      outline: none;
+      transition: border-color 0.2s, box-shadow 0.2s;
+      -webkit-appearance: none;
     }
 
-    .ads-process {
-      display: grid;
-      grid-template-columns: repeat(4, minmax(0, 1fr));
-      gap: 16px;
-      counter-reset: process;
-    }
-
-    .ads-step {
-      position: relative;
+    .lp-form input:focus,
+    .lp-form select:focus {
+      border-color: var(--orange);
+      box-shadow: 0 0 0 4px rgba(242, 101, 34, 0.1);
       background: #fff;
-      border: 1px solid var(--ads-line);
-      border-radius: 8px;
-      padding: 28px 22px;
-      counter-increment: process;
     }
 
-    .ads-step::before {
-      content: counter(process, decimal-leading-zero);
-      display: inline-flex;
+    .lp-form input::placeholder {
+      color: #94a3b8;
+    }
+
+    .lp-form-submit {
+      display: flex;
       align-items: center;
       justify-content: center;
-      width: 42px;
-      height: 42px;
-      border-radius: 8px;
-      background: rgba(242, 101, 34, 0.1);
-      color: var(--ads-orange);
-      font-weight: 900;
-      margin-bottom: 18px;
-    }
-
-    .ads-step h3 {
-      font-size: 1.15rem;
-    }
-
-    .ads-step p {
-      color: var(--ads-muted);
-      line-height: 1.7;
-    }
-
-    .ads-package {
-      background: var(--ads-ink);
+      gap: 10px;
+      width: 100%;
+      padding: 16px;
+      background: var(--orange);
       color: #fff;
-      border-radius: 8px;
-      padding: 36px;
+      border: none;
+      border-radius: 10px;
+      font: inherit;
+      font-size: 1rem;
+      font-weight: 800;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.2s;
+      min-height: 54px;
+    }
+
+    .lp-form-submit:hover {
+      background: var(--orange-dark);
+    }
+
+    .lp-form-submit:active {
+      transform: scale(0.97);
+    }
+
+    .lp-form-note {
+      text-align: center;
+      font-size: 0.78rem;
+      color: #94a3b8;
+      margin-top: 10px;
+    }
+
+    .lp-form-note i {
+      color: var(--green);
+      margin-right: 4px;
+    }
+
+    /* ===== SERVICES (compact pills) ===== */
+    .lp-services-section {
+      padding: 36px 0 40px;
+      background: var(--light);
+    }
+
+    .lp-services-title {
+      text-align: center;
+      font-size: 1.2rem;
+      font-weight: 800;
+      color: var(--ink);
+      margin-bottom: 20px;
+    }
+
+    .lp-services-grid {
       display: grid;
-      grid-template-columns: 1fr auto;
-      gap: 28px;
-      align-items: center;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
     }
 
-    .ads-package h2 {
-      color: #fff;
-      font-size: clamp(1.9rem, 4vw, 3rem);
-      margin-bottom: 10px;
-    }
-
-    .ads-package p {
-      color: rgba(255, 255, 255, 0.78);
-      max-width: 740px;
-      margin-bottom: 0;
-    }
-
-    .ads-faq {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 16px;
-    }
-
-    .ads-faq-item {
-      background: #fff;
-      border: 1px solid var(--ads-line);
-      border-radius: 8px;
-      padding: 24px;
-    }
-
-    .ads-faq-item h3 {
-      font-size: 1.1rem;
-      margin-bottom: 8px;
-    }
-
-    .ads-faq-item p {
-      color: var(--ads-muted);
-      margin-bottom: 0;
-    }
-
-    .ads-whatsapp {
-      position: fixed;
-      right: 20px;
-      bottom: 22px;
-      z-index: 999;
-      display: inline-flex;
+    .lp-service-pill {
+      display: flex;
       align-items: center;
       gap: 10px;
-      background: #25d366;
+      padding: 14px 16px;
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--ink);
+      transition: border-color 0.2s, box-shadow 0.2s, transform 0.15s;
+    }
+
+    .lp-service-pill:hover {
+      border-color: var(--orange);
+      box-shadow: var(--shadow-sm);
+      transform: translateY(-1px);
+    }
+
+    .lp-service-pill i {
+      width: 32px;
+      height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 8px;
+      font-size: 0.85rem;
       color: #fff;
-      padding: 13px 18px;
-      border-radius: 999px;
+      flex-shrink: 0;
+    }
+
+    .lp-service-pill i.bg-blue {
+      background: #1a73e8;
+    }
+
+    .lp-service-pill i.bg-yellow {
+      background: #fbbc05;
+      color: var(--ink);
+    }
+
+    .lp-service-pill i.bg-red {
+      background: #ea4335;
+    }
+
+    .lp-service-pill i.bg-orange {
+      background: var(--orange);
+    }
+
+    .lp-service-pill i.bg-green {
+      background: #34a853;
+    }
+
+    /* ===== MINI CTA BANNER ===== */
+    .lp-cta-banner {
+      padding: 36px 0;
+    }
+
+    .lp-cta-banner-card {
+      background: var(--ink);
+      color: #fff;
+      border-radius: var(--radius);
+      padding: 28px 22px;
+      text-align: center;
+    }
+
+    .lp-cta-banner-card h2 {
+      font-size: 1.25rem;
       font-weight: 800;
-      box-shadow: 0 14px 30px rgba(37, 211, 102, 0.28);
-    }
-
-    .ads-whatsapp:hover {
+      margin-bottom: 8px;
       color: #fff;
-      transform: translateY(-2px);
     }
 
-    @media (max-width: 991px) {
-      .ads-hero {
-        padding: 132px 0 64px;
-        background:
-          linear-gradient(135deg, rgba(255, 255, 255, 0.98), rgba(246, 250, 251, 0.95)),
-          url("images/service-hero/google-ads.png") center bottom / 720px auto no-repeat;
+    .lp-cta-banner-card p {
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 0.9rem;
+      margin-bottom: 20px;
+    }
+
+    .lp-cta-banner-card .lp-cta-call {
+      width: 100%;
+    }
+
+    /* ===== MINIMAL FOOTER ===== */
+    .lp-footer {
+      padding: 28px 0;
+      border-top: 1px solid var(--border);
+      text-align: center;
+    }
+
+    .lp-footer-logo img {
+      height: 32px;
+      margin-bottom: 12px;
+      opacity: 0.7;
+    }
+
+    .lp-footer-contact {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      margin-bottom: 14px;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+
+    .lp-footer-contact a {
+      color: var(--muted);
+    }
+
+    .lp-footer-contact a:hover {
+      color: var(--orange);
+    }
+
+    .lp-footer-legal {
+      font-size: 0.75rem;
+      color: #94a3b8;
+    }
+
+    .lp-footer-legal a {
+      color: #94a3b8;
+      margin: 0 6px;
+    }
+
+    .lp-footer-legal a:hover {
+      color: var(--orange);
+    }
+
+    /* ===== STICKY MOBILE CTA BAR ===== */
+    .lp-sticky-bar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 200;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-top: 1px solid var(--border);
+      padding: 10px 16px;
+      padding-bottom: max(10px, env(safe-area-inset-bottom));
+      display: flex;
+      gap: 10px;
+      transform: translateY(100%);
+      opacity: 0;
+      transition: transform 0.35s ease, opacity 0.35s ease;
+    }
+
+    .lp-sticky-bar.visible {
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+    .lp-sticky-btn {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 14px 10px;
+      border-radius: 10px;
+      font-weight: 800;
+      font-size: 0.88rem;
+      border: none;
+      cursor: pointer;
+      transition: transform 0.15s;
+      min-height: 50px;
+    }
+
+    .lp-sticky-btn:active {
+      transform: scale(0.96);
+    }
+
+    .lp-sticky-btn.call {
+      background: var(--orange);
+      color: #fff;
+    }
+
+    .lp-sticky-btn.whatsapp {
+      background: var(--green);
+      color: #fff;
+    }
+
+    .lp-sticky-btn.form {
+      background: var(--ink);
+      color: #fff;
+    }
+
+    /* ===== SPACER for sticky bar ===== */
+    .lp-bottom-spacer {
+      height: 80px;
+    }
+
+    /* ===== ANIMATIONS ===== */
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
       }
 
-      .ads-hero-grid,
-      .ads-split,
-      .ads-package {
-        grid-template-columns: 1fr;
-      }
-
-      .ads-card-grid,
-      .ads-process,
-      .ads-faq {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+      to {
+        opacity: 1;
+        transform: translateY(0);
       }
     }
 
-    @media (max-width: 640px) {
-      .ads-container {
-        width: min(100% - 24px, 1180px);
+    .lp-hero h1,
+    .lp-hero-sub,
+    .lp-cta-stack,
+    .lp-badge {
+      animation: fadeUp 0.6s ease-out both;
+    }
+
+    .lp-hero-sub {
+      animation-delay: 0.1s;
+    }
+
+    .lp-cta-stack {
+      animation-delay: 0.2s;
+    }
+
+    /* ===== DESKTOP ENHANCEMENTS (>640px) ===== */
+    @media (min-width: 641px) {
+      .lp-wrap {
+        width: min(100% - 48px, 600px);
       }
 
-      .ads-hero {
-        padding: 118px 0 50px;
+      .lp-hero {
+        padding: 110px 0 50px;
       }
 
-      .ads-actions,
-      .ads-btn {
-        width: 100%;
+      .lp-cta-stack {
+        flex-direction: row;
       }
 
-      .ads-proof-row,
-      .ads-card-grid,
-      .ads-process,
-      .ads-faq {
-        grid-template-columns: 1fr;
+      .lp-cta {
+        flex: 1;
       }
 
-      .ads-form-panel,
-      .ads-package {
-        padding: 24px;
+      .lp-trust {
+        gap: 40px;
       }
 
-      .ads-metric {
-        grid-template-columns: 88px 1fr 46px;
-        gap: 10px;
-        font-size: 0.9rem;
+      .lp-services-grid {
+        grid-template-columns: 1fr 1fr 1fr;
       }
 
-      .ads-whatsapp span {
+      .lp-sticky-bar {
+        max-width: 600px;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 16px 16px 0 0;
+        border-left: 1px solid var(--border);
+        border-right: 1px solid var(--border);
+      }
+    }
+
+    /* ===== LARGE DESKTOP (>1024px) ===== */
+    @media (min-width: 1025px) {
+      .lp-wrap {
+        width: min(100% - 64px, 680px);
+      }
+
+      .lp-sticky-bar {
         display: none;
+      }
+
+      .lp-bottom-spacer {
+        height: 0;
       }
     }
   </style>
 </head>
 
 <body>
-  <header id="header">
-    <div class="container">
-      <div class="nav-center-wrapper">
-        <div class="logo">
-          <a href="index.html"><img src="media/logo8.png" alt="Bubbles Media Logo"></a>
-        </div>
-        <div class="nav-call">
-          <nav>
-            <ul class="nav-menu">
-              <li><a href="index.html">Home</a></li>
-              <li class="dropdown">
-                <a href="#" class="active">Services <i class="fa fa-angle-down"></i></a>
-                <ul class="dropdown-menu">
-                  <li><a href="services/seo.html">SEO Services</a></li>
-                  <li><a href="services/meta-ads.html">Meta Ads</a></li>
-                  <li><a href="services/google-ads.html">Google Ads</a></li>
-                  <li><a href="services/social-media.html">Social Media Marketing</a></li>
-                  <li><a href="services/website-design.html">Website Design</a></li>
-                  <li><a href="services/app-development.html">App Development</a></li>
-                  <li><a href="services/shopify-ecommerce.html">E-Commerce Solutions</a></li>
-                  <li><a href="services/graphic-designing.html">Graphic Designing</a></li>
-                  <li><a href="services/ai-marketing.html">AI Marketing</a></li>
-                </ul>
-              </li>
-              <li><a href="about.html">About Us</a></li>
-              <li><a href="gallery.html">Gallery</a></li>
-              <li><a href="career.html">Career</a></li>
-              <li><a href="blog.html">Blog</a></li>
-              <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-          </nav>
-          <div class="header-actions">
-            <a href="tel:+919849869055" class="btn-icon call-icon" title="Call Us"><i class="fas fa-phone"></i></a>
-            <div class="mobile-nav-trigger">
-              <button id="openMobileNav" aria-label="Open Menu">
-                <i class="fas fa-bars"></i>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
+
+  <!-- MINIMAL HEADER -->
+  <header class="lp-header">
+    <div class="lp-wrap lp-header-inner">
+      <a href="index.html" class="lp-logo">
+        <img src="media/logo.png" alt="Bubbles Media Logo">
+      </a>
+      <a href="tel:+919849869055" class="lp-header-call" id="header-call-btn">
+        <i class="fas fa-phone"></i> Call Now
+      </a>
     </div>
   </header>
 
-  <nav id="mobileNav" class="mobile-nav">
-    <div class="mobile-nav-header">
-      <a href="index.html"><img src="media/logo8.png" alt="Bubbles Media Logo"></a>
-      <button id="closeMobileNav" aria-label="Close Menu">
-        <i class="fas fa-times"></i>
-      </button>
+  <main>
+    <!-- HERO -->
+    <section class="lp-hero">
+      <div class="lp-wrap">
+        <div class="lp-badge"><i class="fas fa-bolt"></i> Digital Marketing Agency — Hyderabad</div>
+        <h1>Get more leads &amp; sales for <span>your business</span></h1>
+        <p class="lp-hero-sub">
+          SEO, Google Ads, Meta Ads, websites, apps &amp; design — everything your business needs to grow online.
+        </p>
+        <div class="lp-cta-stack">
+          <a href="tel:+919849869055" class="lp-cta lp-cta-call" id="hero-call-btn">
+            <i class="fas fa-phone"></i> Call Now
+          </a>
+          <a href="https://wa.me/919849869055?text=Hi%20Bubbles%20Media!%20I%20need%20digital%20marketing%20for%20my%20business."
+            target="_blank" class="lp-cta lp-cta-wa" id="hero-wa-btn">
+            <i class="fab fa-whatsapp"></i> WhatsApp
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRUST STRIP -->
+    <div class="lp-trust">
+      <div class="lp-trust-item">
+        <strong>100+</strong>
+        <span>Clients</span>
+      </div>
+      <div class="lp-trust-item">
+        <strong>9+</strong>
+        <span>Services</span>
+      </div>
+      <div class="lp-trust-item">
+        <strong>5★</strong>
+        <span>Google Rating</span>
+      </div>
     </div>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li class="dropdown">
-        <a href="#" class="active">Services <i class="fa fa-angle-down"></i></a>
-        <ul class="dropdown-menu">
-          <li><a href="services/seo.html">SEO Services</a></li>
-          <li><a href="services/meta-ads.html">Meta Ads</a></li>
-          <li><a href="services/google-ads.html">Google Ads</a></li>
-          <li><a href="services/social-media.html">Social Media Marketing</a></li>
-          <li><a href="services/website-design.html">Website Design</a></li>
-          <li><a href="services/app-development.html">App Development</a></li>
-          <li><a href="services/shopify-ecommerce.html">E-Commerce Solutions</a></li>
-          <li><a href="services/graphic-designing.html">Graphic Designing</a></li>
-          <li><a href="services/ai-marketing.html">AI Marketing</a></li>
-        </ul>
-      </li>
-      <li><a href="about.html">About Us</a></li>
-      <li><a href="gallery.html">Gallery</a></li>
-      <li><a href="career.html">Career</a></li>
-      <li><a href="blog.html">Blog</a></li>
-      <li><a href="contact.html">Contact Us</a></li>
-    </ul>
-  </nav>
-  <div id="mobileNavOverlay" class="mobile-nav-overlay"></div>
 
-  <main class="ads-page">
-    <section class="ads-hero">
-      <div class="ads-container">
-        <div class="ads-hero-grid">
-          <div>
-            <div class="ads-kicker"><i class="fas fa-bullhorn"></i> Digital Marketing Services</div>
-            <h1>Grow your business with <span>complete digital marketing</span> solutions.</h1>
-            <p class="ads-lead">
-              Bubbles Media helps businesses get more leads, sales, calls, bookings, and brand visibility through SEO,
-              paid ads, social media, websites, apps, ecommerce, graphic design, and AI-powered marketing.
-            </p>
-            <div class="ads-actions">
-              <a href="#ads-audit" class="ads-btn ads-btn-primary"><i class="fas fa-chart-line"></i> Get Free Consultation</a>
-              <a href="tel:+919849869055" class="ads-btn ads-btn-secondary"><i class="fas fa-phone"></i> Call +91 9849869055</a>
-            </div>
-            <div class="ads-proof-row">
-              <div class="ads-proof">
-                <strong>Leads</strong>
-                <span>Campaigns that convert</span>
-              </div>
-              <div class="ads-proof">
-                <strong>Design</strong>
-                <span>Web, app, and creatives</span>
-              </div>
-              <div class="ads-proof">
-                <strong>Growth</strong>
-                <span>SEO, ads, and social</span>
-              </div>
-            </div>
-          </div>
-
-          <aside class="ads-form-panel" id="ads-audit">
-            <h2>Request a Free Strategy Call</h2>
-            <p>Share your details and our team will contact you with the right service plan.</p>
-            <form class="ads-form-grid" action="send-booking.php" method="post">
-              <input type="text" name="name" placeholder="Your name" required>
-              <input type="tel" name="phone" placeholder="Phone number" required>
-              <input type="email" name="email" placeholder="Business email">
-              <input type="hidden" name="date" value="Digital marketing landing page enquiry">
-              <select name="service" required>
-                <option value="">Service interested in</option>
-                <option>SEO Services</option>
-                <option>Meta Ads</option>
-                <option>Google Ads</option>
-                <option>Social Media Marketing</option>
-                <option>Website Design</option>
-                <option>App Development</option>
-                <option>E-Commerce Solutions</option>
-                <option>Graphic Designing</option>
-                <option>AI Marketing</option>
-                <option>Multiple Services</option>
-              </select>
-              <textarea name="message" placeholder="Tell us about your business requirement"></textarea>
-              <button type="submit" class="ads-btn ads-btn-primary"><i class="fas fa-paper-plane"></i> Send Request</button>
-            </form>
-            <p class="ads-form-note">No spam. Just a practical growth conversation.</p>
-          </aside>
+    <!-- LEAD FORM -->
+    <section class="lp-form-section" id="enquiry">
+      <div class="lp-wrap">
+        <div class="lp-form-card">
+          <h2>Get a Free Strategy Call</h2>
+          <p class="lp-form-sub">Tell us what you need — we'll call you back.</p>
+          <form class="lp-form" action="send-booking.php" method="post">
+            <input type="text" name="name" placeholder="Your name" required id="form-name">
+            <input type="tel" name="phone" placeholder="Phone number" required id="form-phone">
+            <input type="hidden" name="date" value="Google Ads landing page enquiry">
+            <select name="service" required id="form-service">
+              <option value="">What do you need?</option>
+              <option>SEO Services</option>
+              <option>Google Ads</option>
+              <option>Meta Ads</option>
+              <option>Social Media Marketing</option>
+              <option>Website Design</option>
+              <option>App Development</option>
+              <option>E-Commerce Solutions</option>
+              <option>Graphic Designing</option>
+              <option>AI Marketing</option>
+              <option>Multiple Services</option>
+            </select>
+            <button type="submit" class="lp-form-submit" id="form-submit">
+              <i class="fas fa-paper-plane"></i> Send Request
+            </button>
+          </form>
+          <p class="lp-form-note"><i class="fas fa-shield-halved"></i> No spam. We'll contact you within 2 hours.</p>
         </div>
       </div>
     </section>
 
-    <section class="ads-section">
-      <div class="ads-container">
-        <div class="ads-section-header">
-          <h2>All digital services in one place</h2>
-          <p>Use this page for your ads and send customers directly to a focused service enquiry page built for lead
-            generation.</p>
-        </div>
-        <div class="ads-card-grid">
-          <article class="ads-card">
-            <div class="ads-icon blue"><i class="fas fa-magnifying-glass-chart"></i></div>
-            <h3>SEO Services</h3>
-            <p>Improve your Google rankings, organic traffic, and local visibility with keyword-led SEO strategies.</p>
-          </article>
-          <article class="ads-card">
-            <div class="ads-icon blue"><i class="fab fa-facebook-f"></i></div>
-            <h3>Meta Ads</h3>
-            <p>Run Facebook and Instagram campaigns for leads, enquiries, awareness, retargeting, and sales.</p>
-          </article>
-          <article class="ads-card">
-            <div class="ads-icon yellow"><i class="fas fa-bullseye"></i></div>
-            <h3>Google Ads</h3>
-            <p>Capture high-intent customers through Search, Display, YouTube, Shopping, and Performance Max campaigns.</p>
-          </article>
-          <article class="ads-card">
-            <div class="ads-icon red"><i class="fas fa-share-nodes"></i></div>
-            <h3>Social Media Marketing</h3>
-            <p>Build a consistent brand presence with content planning, posting, engagement, and growth campaigns.</p>
-          </article>
-          <article class="ads-card">
-            <div class="ads-icon orange"><i class="fas fa-laptop-code"></i></div>
-            <h3>Website Design</h3>
-            <p>Create modern, responsive, fast-loading websites that present your brand professionally and convert visitors.</p>
-          </article>
-          <article class="ads-card">
-            <div class="ads-icon green"><i class="fas fa-mobile-screen-button"></i></div>
-            <h3>App Development</h3>
-            <p>Build custom mobile app experiences for business operations, customer engagement, and digital products.</p>
-          </article>
-          <article class="ads-card">
-            <div class="ads-icon green"><i class="fas fa-cart-shopping"></i></div>
-            <h3>E-Commerce Solutions</h3>
-            <p>Launch online stores with product pages, checkout flows, payment integrations, and conversion-focused design.</p>
-          </article>
-          <article class="ads-card">
-            <div class="ads-icon red"><i class="fas fa-pen-nib"></i></div>
-            <h3>Graphic Designing</h3>
-            <p>Get scroll-stopping creatives, brand designs, ad graphics, brochures, and marketing visuals for every channel.</p>
-          </article>
-          <article class="ads-card">
-            <div class="ads-icon orange"><i class="fas fa-wand-magic-sparkles"></i></div>
-            <h3>AI Marketing</h3>
-            <p>Use AI tools and automation to improve content, campaign planning, customer journeys, and marketing speed.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="ads-section alt">
-      <div class="ads-container">
-        <div class="ads-split">
-          <div>
-            <div class="ads-section-header" style="text-align:left;margin:0 0 22px;">
-              <h2>Lead-focused marketing from first click to final enquiry</h2>
-              <p>Whether visitors come from Google Ads, Meta Ads, SEO, or social media, this page gives them a clear path
-                to contact your team.</p>
-            </div>
-            <ul class="ads-check-list">
-              <li><i class="fas fa-check-circle"></i> Clear sections for every core service you offer.</li>
-              <li><i class="fas fa-check-circle"></i> Strong call, WhatsApp, and enquiry form actions.</li>
-              <li><i class="fas fa-check-circle"></i> Responsive layout for mobile users coming from ads.</li>
-              <li><i class="fas fa-check-circle"></i> Professional style aligned with the Bubbles Media brand.</li>
-            </ul>
+    <!-- SERVICES (compact pills) -->
+    <section class="lp-services-section">
+      <div class="lp-wrap">
+        <h2 class="lp-services-title">Our Services</h2>
+        <div class="lp-services-grid">
+          <div class="lp-service-pill">
+            <i class="fas fa-magnifying-glass-chart bg-blue"></i>
+            <span>SEO</span>
           </div>
-          <div class="ads-dashboard" aria-label="Digital marketing performance dashboard illustration">
-            <div class="ads-dashboard-top">
-              <span class="ads-dot"></span>
-              <span class="ads-dot"></span>
-              <span class="ads-dot"></span>
-            </div>
-            <div class="ads-dashboard-body">
-              <div class="ads-metric">
-                <span>Leads</span>
-                <div class="ads-bar"><span style="width:86%"></span></div>
-                <strong>86%</strong>
-              </div>
-              <div class="ads-metric">
-                <span>Calls</span>
-                <div class="ads-bar"><span style="width:74%"></span></div>
-                <strong>74%</strong>
-              </div>
-              <div class="ads-metric">
-                <span>CTR</span>
-                <div class="ads-bar"><span style="width:68%"></span></div>
-                <strong>68%</strong>
-              </div>
-              <div class="ads-metric">
-                <span>Wasted Spend</span>
-                <div class="ads-bar"><span style="width:22%;background:var(--ads-red)"></span></div>
-                <strong>22%</strong>
-              </div>
-            </div>
+          <div class="lp-service-pill">
+            <i class="fas fa-bullseye bg-yellow"></i>
+            <span>Google Ads</span>
+          </div>
+          <div class="lp-service-pill">
+            <i class="fab fa-facebook-f bg-blue"></i>
+            <span>Meta Ads</span>
+          </div>
+          <div class="lp-service-pill">
+            <i class="fas fa-share-nodes bg-red"></i>
+            <span>Social Media</span>
+          </div>
+          <div class="lp-service-pill">
+            <i class="fas fa-laptop-code bg-orange"></i>
+            <span>Web Design</span>
+          </div>
+          <div class="lp-service-pill">
+            <i class="fas fa-mobile-screen-button bg-green"></i>
+            <span>App Dev</span>
+          </div>
+          <div class="lp-service-pill">
+            <i class="fas fa-cart-shopping bg-green"></i>
+            <span>E-Commerce</span>
+          </div>
+          <div class="lp-service-pill">
+            <i class="fas fa-pen-nib bg-red"></i>
+            <span>Design</span>
+          </div>
+          <div class="lp-service-pill">
+            <i class="fas fa-wand-magic-sparkles bg-orange"></i>
+            <span>AI Marketing</span>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="ads-section">
-      <div class="ads-container">
-        <div class="ads-section-header">
-          <h2>How we help your business grow</h2>
-          <p>A simple process makes it easy for customers to understand your services and contact you quickly.</p>
-        </div>
-        <div class="ads-process">
-          <article class="ads-step">
-            <h3>Understand</h3>
-            <p>We review your business goals, target audience, services, and current digital presence.</p>
-          </article>
-          <article class="ads-step">
-            <h3>Plan</h3>
-            <p>We recommend the right mix of SEO, ads, social, web, design, ecommerce, app, or AI services.</p>
-          </article>
-          <article class="ads-step">
-            <h3>Create</h3>
-            <p>We design campaigns, content, websites, creatives, and digital assets based on your growth goal.</p>
-          </article>
-          <article class="ads-step">
-            <h3>Grow</h3>
-            <p>We improve performance with reports, testing, creative updates, and regular optimization.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="ads-section alt">
-      <div class="ads-container">
-        <div class="ads-package">
-          <div>
-            <h2>Ready to grow your business online?</h2>
-            <p>Book a quick consultation and get a practical plan for the digital services that suit your business.</p>
-          </div>
-          <a href="#ads-audit" class="ads-btn ads-btn-primary"><i class="fas fa-calendar-check"></i> Book Free Consultation</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="ads-section">
-      <div class="ads-container">
-        <div class="ads-section-header">
-          <h2>Service FAQs</h2>
-          <p>Short answers to the questions most businesses ask before starting digital marketing.</p>
-        </div>
-        <div class="ads-faq">
-          <article class="ads-faq-item">
-            <h3>Can I choose only one service?</h3>
-            <p>Yes. You can enquire for one service like SEO, Google Ads, or Website Design, or request a complete package.</p>
-          </article>
-          <article class="ads-faq-item">
-            <h3>Is this page suitable for Google Ads?</h3>
-            <p>Yes. It is designed as a lead-generation landing page that you can use for traffic from Google Ads.</p>
-          </article>
-          <article class="ads-faq-item">
-            <h3>Do you work with existing websites?</h3>
-            <p>Yes. We can improve your current website, run campaigns to it, or create a new landing page if needed.</p>
-          </article>
-          <article class="ads-faq-item">
-            <h3>Will I get a custom plan?</h3>
-            <p>Yes. Our team suggests services based on your budget, industry, location, and business goals.</p>
-          </article>
+    <!-- MINI CTA BANNER -->
+    <section class="lp-cta-banner">
+      <div class="lp-wrap">
+        <div class="lp-cta-banner-card">
+          <h2>Ready to grow online?</h2>
+          <p>Book a free consultation — no commitment.</p>
+          <a href="tel:+919849869055" class="lp-cta lp-cta-call" id="banner-call-btn">
+            <i class="fas fa-phone"></i> Call +91 98498 69055
+          </a>
         </div>
       </div>
     </section>
   </main>
 
-  <footer id="footer">
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-column">
-          <div class="footer-logo">
-            <img src="media/logo.png" alt="Bubbles Media Logo">
-          </div>
-          <p>Your trusted digital marketing partner in Hyderabad, helping businesses grow their online presence and
-            achieve measurable results through data-driven strategies.</p>
-          <div class="social-links">
-            <a href="https://www.facebook.com/thebubblesmedia" target="_blank" title="Follow us on Facebook"><i
-                class="fab fa-facebook-f"></i></a>
-            <a href="#" target="_blank" title="Follow us on Twitter"><i class="fab fa-x-twitter"></i></a>
-            <a href="#" target="_blank" title="Follow us on Pinterest"><i class="fab fa-pinterest"></i></a>
-            <a href="https://www.instagram.com/thebubblesmedia" target="_blank" title="Follow us on Instagram"><i
-                class="fab fa-instagram"></i></a>
-            <a href="https://www.linkedin.com/company/the-bubbles-media/" target="_blank"
-              title="Connect with us on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-            <a href="https://share.google/zBdG7tGCscYQftUMC" target="_blank" title="Google"><i
-                class="fab fa-google"></i></a>
-          </div>
-        </div>
-        <div class="footer-column">
-          <h4>Quick Links</h4>
-          <ul class="footer-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="career.html">Career</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-          </ul>
-        </div>
-        <div class="footer-column">
-          <h4>Our Services</h4>
-          <ul class="footer-links">
-            <li><a href="services/seo.html">SEO Services</a></li>
-            <li><a href="services/meta-ads.html">Meta Ads</a></li>
-            <li><a href="services/google-ads.html">Google Ads</a></li>
-            <li><a href="services/social-media.html">Social Media Marketing</a></li>
-            <li><a href="services/website-design.html">Website Design</a></li>
-            <li><a href="services/app-development.html">App Development</a></li>
-          </ul>
-        </div>
-        <div class="footer-column">
-          <h4>Contact Info</h4>
-          <ul class="contact-info">
-            <li><i class="fas fa-map-marker-alt"></i> Hyderabad, Telangana, India</li>
-            <li><i class="fas fa-phone"></i> <a href="tel:+919849869055"
-                style="color: inherit; text-decoration: none">+91 9849869055</a></li>
-            <li><i class="fas fa-envelope"></i> <a href="mailto:info@thebubblesmedia.com"
-                style="color: inherit; text-decoration: none">info@thebubblesmedia.com</a></li>
-          </ul>
-        </div>
+  <!-- MINIMAL FOOTER -->
+  <footer class="lp-footer">
+    <div class="lp-wrap">
+      <div class="lp-footer-logo">
+        <img src="media/logo.png" alt="Bubbles Media">
+      </div>
+      <div class="lp-footer-contact">
+        <span><i class="fas fa-map-marker-alt"></i> Hyderabad, Telangana, India</span>
+        <a href="tel:+919849869055"><i class="fas fa-phone"></i> +91 9849869055</a>
+        <a href="mailto:info@thebubblesmedia.com"><i class="fas fa-envelope"></i> info@thebubblesmedia.com</a>
+      </div>
+      <div class="lp-footer-legal">
+        &copy; 2024 Bubbles Media.
+        <a href="privacy-policy.html">Privacy</a>
+        <a href="terms-of-service.html">Terms</a>
       </div>
     </div>
   </footer>
-  <div class="container-fluid copy-right">
-    <div class="container">
-      <div class="footer-bottom">
-        <div class="copyright">
-          <p>&copy; 2024 Bubbles Media. All Rights Reserved.</p>
-        </div>
-        <div class="legal-links">
-          <a href="privacy-policy.html">Privacy Policy</a>
-          <a href="terms-of-service.html">Terms of Service</a>
-        </div>
-      </div>
-    </div>
+
+  <!-- Bottom spacer for sticky bar -->
+  <div class="lp-bottom-spacer"></div>
+
+  <!-- STICKY MOBILE CTA BAR -->
+  <div class="lp-sticky-bar" id="sticky-bar">
+    <a href="tel:+919849869055" class="lp-sticky-btn call" id="sticky-call-btn">
+      <i class="fas fa-phone"></i> Call
+    </a>
+    <a href="https://wa.me/919849869055?text=Hi%20Bubbles%20Media!%20I%20need%20digital%20marketing%20for%20my%20business."
+      target="_blank" class="lp-sticky-btn whatsapp" id="sticky-wa-btn">
+      <i class="fab fa-whatsapp"></i> WhatsApp
+    </a>
+    <a href="#enquiry" class="lp-sticky-btn form" id="sticky-form-btn">
+      <i class="fas fa-pen-to-square"></i> Enquire
+    </a>
   </div>
 
-  <a class="ads-whatsapp"
-    href="https://wa.me/919849869055?text=Hi%20Bubbles%20Media!%20I%20want%20to%20discuss%20digital%20marketing%20services%20for%20my%20business."
-    target="_blank">
-    <i class="fab fa-whatsapp"></i>
-    <span>Chat on WhatsApp</span>
-  </a>
+  <script>
+    // Show sticky bar only after scrolling past hero CTA buttons
+    (function () {
+      const stickyBar = document.getElementById('sticky-bar');
+      const heroCtas = document.querySelector('.lp-cta-stack');
+      if (!stickyBar || !heroCtas) return;
 
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="js/main.js"></script>
+      function checkScroll() {
+        const ctaBottom = heroCtas.getBoundingClientRect().bottom;
+        if (ctaBottom < 0) {
+          stickyBar.classList.add('visible');
+        } else {
+          stickyBar.classList.remove('visible');
+        }
+      }
+
+      window.addEventListener('scroll', checkScroll, { passive: true });
+      checkScroll();
+    })();
+  </script>
+
 </body>
 
 </html>
